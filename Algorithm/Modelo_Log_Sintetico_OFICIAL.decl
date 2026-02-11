@@ -1,0 +1,30 @@
+activity Manutencao de funcionalidade
+activity Atualizacao de requisitos funcionais
+activity Construcao de funcionalidade
+activity Documentacao de requisitos funcionais
+activity Contagem de ponto de funcao
+activity Gestao da demanda
+activity Planejamento de entrega
+activity Review da entrega
+activity Publicar solucao
+activity Elaborar caso de teste
+activity Executar teste
+activity Corrigir erro
+Existence[Contagem de ponto de funcao] | |
+Existence[Gestao da demanda] | |
+Existence[Planejamento de entrega] | |
+Existence[Review da entrega] | |
+Existence[Publicar solucao] | |
+Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |
+Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |
+Response[Planejamento de entrega, Review da entrega] | | |
+Response[Construcao de funcionalidade, Publicar solucao] | | |
+Response[Manutencao de funcionalidade, Publicar solucao] | | |
+Existence[Elaborar caso de teste] | |
+Existence[Executar teste] | |
+Response[Elaborar caso de teste, Executar teste] | | |
+Response[Documentacao de requisitos funcionais, Elaborar caso de teste] | | |
+Response[Atualizacao de requisitos funcionais, Elaborar caso de teste] | | |
+Precedence[Corrigir erro, Executar teste] | | |
+Precedence[Documentacao de requisitos funcionais, Elaborar caso de teste] | | |
+Precedence[Atualizacao de requisitos funcionais, Elaborar caso de teste] | | |

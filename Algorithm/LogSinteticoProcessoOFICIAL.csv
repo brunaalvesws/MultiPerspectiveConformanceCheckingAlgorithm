@@ -1,0 +1,73 @@
+time:timestamp;lifecycle:transition;concept:name;case:concept:name;concept:resource;concept:instance
+2025-03-31 08:52:16.547270+00:00;begin;Manutencao de funcionalidade;case_0;re2;1
+2025-03-31 20:52:16.547270+00:00;complete;Manutencao de funcionalidade;case_0;re2;1
+2025-03-31 09:58:10.547270+00:00;begin;Manutencao de funcionalidade;case_0;re5;2
+2025-04-01 01:58:10.547270+00:00;complete;Manutencao de funcionalidade;case_0;re5;2
+2025-03-31 10:23:58.547270+00:00;begin;Manutencao de funcionalidade;case_0;re5;3
+2025-04-01 02:23:58.547270+00:00;complete;Manutencao de funcionalidade;case_0;re5;3
+2025-03-31 11:49:44.547270+00:00;begin;Atualizacao de requisitos funcionais;case_0;re4;4
+2025-04-01 03:49:44.547270+00:00;complete;Atualizacao de requisitos funcionais;case_0;re4;4
+2025-03-31 13:07:52.547270+00:00;begin;Atualizacao de requisitos funcionais;case_0;re5;5
+2025-03-31 17:07:52.547270+00:00;complete;Atualizacao de requisitos funcionais;case_0;re5;5
+2025-03-31 13:49:57.547270+00:00;begin;Atualizacao de requisitos funcionais;case_0;re5;6
+2025-03-31 17:49:57.547270+00:00;complete;Atualizacao de requisitos funcionais;case_0;re5;6
+2025-03-31 14:32:41.547270+00:00;begin;Atualizacao de requisitos funcionais;case_0;re5;7
+2025-04-01 06:32:41.547270+00:00;complete;Atualizacao de requisitos funcionais;case_0;re5;7
+2025-03-31 15:24:24.547270+00:00;begin;Atualizacao de requisitos funcionais;case_0;re4;8
+2025-04-01 03:24:24.547270+00:00;complete;Atualizacao de requisitos funcionais;case_0;re4;8
+2025-03-31 16:50:14.547270+00:00;begin;Construcao de funcionalidade;case_0;re4;9
+2025-03-31 20:50:14.547270+00:00;complete;Construcao de funcionalidade;case_0;re4;9
+2025-03-31 18:01:00.547270+00:00;begin;Construcao de funcionalidade;case_0;re2;10
+2025-03-31 22:01:00.547270+00:00;complete;Construcao de funcionalidade;case_0;re2;10
+2025-03-31 18:34:35.547270+00:00;begin;Construcao de funcionalidade;case_0;re2;11
+2025-04-01 10:34:35.547270+00:00;complete;Construcao de funcionalidade;case_0;re2;11
+2025-03-31 19:53:23.547270+00:00;begin;Documentacao de requisitos funcionais;case_0;re4;12
+2025-04-01 03:53:23.547270+00:00;complete;Documentacao de requisitos funcionais;case_0;re4;12
+2025-03-31 20:57:33.547270+00:00;begin;Contagem de ponto de funcao;case_0;re5;13
+2025-04-01 04:57:33.547270+00:00;complete;Contagem de ponto de funcao;case_0;re5;13
+2025-03-31 21:36:03.547270+00:00;begin;Contagem de ponto de funcao;case_0;re2;14
+2025-03-31 22:36:03.547270+00:00;complete;Contagem de ponto de funcao;case_0;re2;14
+2025-03-31 22:59:54.547270+00:00;begin;Gestao da demanda;case_0;re4;15
+2025-03-31 23:59:54.547270+00:00;complete;Gestao da demanda;case_0;re4;15
+2025-03-31 23:51:17.547270+00:00;begin;Planejamento de entrega;case_0;re4;16
+2025-04-01 01:51:17.547270+00:00;complete;Planejamento de entrega;case_0;re4;16
+2025-04-01 01:00:27.547270+00:00;begin;Planejamento de entrega;case_0;re2;17
+2025-04-01 07:00:27.547270+00:00;complete;Planejamento de entrega;case_0;re2;17
+2025-04-01 01:27:59.547270+00:00;begin;Review da entrega;case_0;re4;18
+2025-04-01 05:27:59.547270+00:00;complete;Review da entrega;case_0;re4;18
+2025-04-01 03:17:50.547270+00:00;begin;Publicar solucao;case_0;re5;19
+2025-04-01 07:17:50.547270+00:00;complete;Publicar solucao;case_0;re5;19
+2025-04-01 03:38:43.547270+00:00;begin;Publicar solucao;case_0;re2;20
+2025-04-01 09:38:43.547270+00:00;complete;Publicar solucao;case_0;re2;20
+2025-04-01 05:02:04.547270+00:00;begin;Elaborar caso de teste;case_0;re4;21
+2025-04-01 09:02:04.547270+00:00;complete;Elaborar caso de teste;case_0;re4;21
+2025-04-01 05:40:52.547270+00:00;begin;Elaborar caso de teste;case_0;re5;22
+2025-04-01 13:40:52.547270+00:00;complete;Elaborar caso de teste;case_0;re5;22
+2025-04-01 07:15:01.547270+00:00;begin;Elaborar caso de teste;case_0;re2;23
+2025-04-01 09:15:01.547270+00:00;complete;Elaborar caso de teste;case_0;re2;23
+2025-04-01 07:56:57.547270+00:00;begin;Elaborar caso de teste;case_0;re2;24
+2025-04-01 11:56:57.547270+00:00;complete;Elaborar caso de teste;case_0;re2;24
+2025-04-01 08:21:21.547270+00:00;begin;Elaborar caso de teste;case_0;re2;25
+2025-04-01 16:21:21.547270+00:00;complete;Elaborar caso de teste;case_0;re2;25
+2025-04-01 09:41:36.547270+00:00;begin;Elaborar caso de teste;case_0;re2;26
+2025-04-01 21:41:36.547270+00:00;complete;Elaborar caso de teste;case_0;re2;26
+2025-04-01 10:39:33.547270+00:00;begin;Elaborar caso de teste;case_0;re2;27
+2025-04-01 12:39:33.547270+00:00;complete;Elaborar caso de teste;case_0;re2;27
+2025-04-01 12:03:04.547270+00:00;begin;Elaborar caso de teste;case_0;re4;28
+2025-04-01 14:03:04.547270+00:00;complete;Elaborar caso de teste;case_0;re4;28
+2025-04-01 12:30:27.547270+00:00;begin;Elaborar caso de teste;case_0;re4;29
+2025-04-02 00:30:27.547270+00:00;complete;Elaborar caso de teste;case_0;re4;29
+2025-04-01 13:23:16.547270+00:00;begin;Elaborar caso de teste;case_0;re5;30
+2025-04-01 15:23:16.547270+00:00;complete;Elaborar caso de teste;case_0;re5;30
+2025-04-01 14:52:40.547270+00:00;begin;Executar teste;case_0;re2;31
+2025-04-01 22:52:40.547270+00:00;complete;Executar teste;case_0;re2;31
+2025-04-01 15:48:54.547270+00:00;begin;Executar teste;case_0;re4;32
+2025-04-01 17:48:54.547270+00:00;complete;Executar teste;case_0;re4;32
+2025-04-01 16:51:43.547270+00:00;begin;Corrigir erro;case_0;re2;33
+2025-04-01 20:51:43.547270+00:00;complete;Corrigir erro;case_0;re2;33
+2025-04-01 17:57:55.547270+00:00;begin;Corrigir erro;case_0;re5;34
+2025-04-01 21:57:55.547270+00:00;complete;Corrigir erro;case_0;re5;34
+2025-04-01 18:29:32.547270+00:00;begin;Corrigir erro;case_0;re2;35
+2025-04-02 02:29:32.547270+00:00;complete;Corrigir erro;case_0;re2;35
+2025-04-01 20:09:10.547270+00:00;begin;Corrigir erro;case_0;re4;36
+2025-04-02 04:09:10.547270+00:00;complete;Corrigir erro;case_0;re4;36

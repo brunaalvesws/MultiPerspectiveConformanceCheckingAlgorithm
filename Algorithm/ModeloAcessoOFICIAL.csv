@@ -1,0 +1,6 @@
+Ferramenta;Manutencao de funcionalidade;Atualizacao de requisitos funcionais;Construcao de funcionalidade;Documentacao de requisitos funcionais;Contagem de ponto de funcao;Gestao da demanda;Planejamento de entrega;Review da entrega;Publicar solucao;Elaborar caso de teste;Executar teste;Corrigir erro
+Gestao;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d;c, r, U, d
+Codigo;r, U, d;r;C, r, u, d;r;r;;;;;r;r;c, r, U, d
+Requisito;r;r, U, d;r;C, r, u, d;r;;r;r;;r;r;r
+PF;;;;;C, r, u, d;;r;;;;;
+Teste;r;r;r;r;;;r;r;;C, r, u, d;r, u;r
