@@ -1,0 +1,365 @@
+activity Manutencao de funcionalidade begin
+activity Manutencao de funcionalidade complete
+activity Atualizacao de requisitos funcionais begin
+activity Atualizacao de requisitos funcionais complete
+activity Construcao de funcionalidade begin
+activity Construcao de funcionalidade complete
+activity Documentacao de requisitos funcionais begin
+activity Documentacao de requisitos funcionais complete
+activity Contagem de ponto de funcao begin
+activity Contagem de ponto de funcao complete
+activity Gestao da demanda begin
+activity Gestao da demanda complete
+activity Planejamento de entrega begin
+activity Planejamento de entrega complete
+activity Review da entrega begin
+activity Review da entrega complete
+activity Publicar solucao begin
+activity Publicar solucao complete
+activity Elaborar caso de teste begin
+activity Elaborar caso de teste complete
+activity Executar teste begin
+activity Executar teste complete
+activity Corrigir erro begin
+activity Corrigir erro complete
+activity Gestao u
+activity Codigo c
+activity Codigo u
+activity Requisito c
+activity Requisito u
+activity Requisito d
+activity PF c
+activity PF r
+activity PF u
+activity PF d
+activity Teste c
+activity Teste u
+activity Teste d
+activity Codigo d
+activity Teste r
+activity Codigo r
+activity Requisito r
+Precedence[Gestao u, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Response[Manutencao de funcionalidade begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Codigo c] | |same concept:instance and same concept:resource |
+Precedence[Codigo u, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Response[Manutencao de funcionalidade begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Manutencao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Manutencao de funcionalidade begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Response[Atualizacao de requisitos funcionais begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Requisito c] | |same concept:instance and same concept:resource |
+Precedence[Requisito u, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Response[Atualizacao de requisitos funcionais begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Atualizacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Atualizacao de requisitos funcionais begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Response[Construcao de funcionalidade begin, Gestao u] | |same concept:instance and same concept:resource |
+Precedence[Codigo c, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Response[Construcao de funcionalidade begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Construcao de funcionalidade complete] | |same concept:instance and same concept:resource |
+Not Response[Construcao de funcionalidade begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Response[Documentacao de requisitos funcionais begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, Codigo d] | |same concept:instance and same concept:resource |
+Precedence[Requisito c, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Response[Documentacao de requisitos funcionais begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Documentacao de requisitos funcionais complete] | |same concept:instance and same concept:resource |
+Not Response[Documentacao de requisitos funcionais begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Response[Contagem de ponto de funcao begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Requisito d] | |same concept:instance and same concept:resource |
+Precedence[PF c, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Response[Contagem de ponto de funcao begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste r, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Teste r] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Contagem de ponto de funcao complete] | |same concept:instance and same concept:resource |
+Not Response[Contagem de ponto de funcao begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Response[Gestao da demanda begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo r, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Codigo r] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito r, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Requisito r] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste r, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Teste r] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Gestao da demanda complete] | |same concept:instance and same concept:resource |
+Not Response[Gestao da demanda begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Response[Planejamento de entrega begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo r, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Codigo r] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Planejamento de entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Planejamento de entrega begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Review da entrega complete] | |same concept:instance and same concept:resource |
+Response[Review da entrega begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo r, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Codigo r] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Review da entrega complete] | |same concept:instance and same concept:resource |
+Not Response[Review da entrega begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Response[Publicar solucao begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo r, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Codigo r] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito r, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Requisito r] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste r, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Teste r] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Publicar solucao complete] | |same concept:instance and same concept:resource |
+Not Response[Publicar solucao begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Response[Elaborar caso de teste begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Not Response[Elaborar caso de teste begin, PF d] | |same concept:instance and same concept:resource |
+Precedence[Teste c, Elaborar caso de teste complete] | |same concept:instance and same concept:resource |
+Response[Elaborar caso de teste begin, Teste c] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Executar teste complete] | |same concept:instance and same concept:resource |
+Response[Executar teste begin, Gestao u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo c, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Codigo c] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo u, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Codigo d, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Codigo d] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Executar teste complete] | |same concept:instance and same concept:resource |
+Not Response[Executar teste begin, Teste d] | |same concept:instance and same concept:resource |
+Precedence[Gestao u, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Response[Corrigir erro begin, Gestao u] | |same concept:instance and same concept:resource |
+Precedence[Codigo u, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Response[Corrigir erro begin, Codigo u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito c, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, Requisito c] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito u, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, Requisito u] | |same concept:instance and same concept:resource |
+Not Precedence[Requisito d, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, Requisito d] | |same concept:instance and same concept:resource |
+Not Precedence[PF c, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, PF c] | |same concept:instance and same concept:resource |
+Not Precedence[PF r, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, PF r] | |same concept:instance and same concept:resource |
+Not Precedence[PF u, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, PF u] | |same concept:instance and same concept:resource |
+Not Precedence[PF d, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, PF d] | |same concept:instance and same concept:resource |
+Not Precedence[Teste c, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, Teste c] | |same concept:instance and same concept:resource |
+Not Precedence[Teste u, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, Teste u] | |same concept:instance and same concept:resource |
+Not Precedence[Teste d, Corrigir erro complete] | |same concept:instance and same concept:resource |
+Not Response[Corrigir erro begin, Teste d] | |same concept:instance and same concept:resource |
