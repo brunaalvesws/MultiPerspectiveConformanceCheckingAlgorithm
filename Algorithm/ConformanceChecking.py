@@ -1,16 +1,16 @@
-from FormatMapping import format_violations
+from FormatMapping import format_violations, format_violations_access
 from Declare4Py.D4PyEventLog import D4PyEventLog
 import pm4py
 from Declare4Py.ProcessMiningTasks.ConformanceChecking.MPDeclareAnalyzer import MPDeclareAnalyzer
 from Declare4Py.ProcessMiningTasks.ConformanceChecking.MPDeclareResultsBrowser import MPDeclareResultsBrowser
 
-def check_process_conformance(process_model, process_log):
+def check_process_conformance(process_model, process_log, consider_vacuity):
     '''
     Checks process conformance between the log and the DECLARE model using the Declare4Py library.
     Accepts a process log (EventLog) and a process model (DeclareModel).
     '''
 
-    basic_checker = MPDeclareAnalyzer(log=process_log, declare_model=process_model, consider_vacuity=False, track_violations="concept:instance")
+    basic_checker = MPDeclareAnalyzer(log=process_log, declare_model=process_model, consider_vacuity=consider_vacuity, track_violations="concept:instance")
     conf_check_res: MPDeclareResultsBrowser = basic_checker.run()
     violations = format_violations(conf_check_res.get_metric(metric="events_violated"))
     return violations
@@ -22,9 +22,9 @@ def check_access_conformance(process_model, log):
     '''
     event_log = D4PyEventLog(case_name="case:concept:name", log=log)
 
-    basic_checker = MPDeclareAnalyzer(log=event_log, declare_model=process_model, consider_vacuity=False, track_violations='concept:instance')
+    basic_checker = MPDeclareAnalyzer(log=event_log, declare_model=process_model, consider_vacuity=True, track_violations='concept:instance')
     conf_check_res: MPDeclareResultsBrowser = basic_checker.run()
-    violations = format_violations(conf_check_res.get_metric(metric="events_violated"))
+    violations = format_violations_access(conf_check_res.get_metric(metric="events_violated"))
     size = sum(len(trace) for trace in event_log.get_log())
     return violations, size
 
@@ -57,9 +57,9 @@ def check_resource_conformance(process_log, access_log, resource_model):
             activity_access = accesses[accesses['concept:instance']== activity['concept:instance']]
             for j, acc in activity_access.iterrows():
                 if activity_resource != acc['concept:resource']:
-                    violations["IllegalResourceAccess"].append([acc['concept:tool'], activity['concept:name'], case_id, acc['concept:resource'], activity_resource, acc['concept:instance']])
+                    violations["IllegalResourceAccess"].append([acc['concept:tool'], activity['concept:name'], case_id, acc['concept:resource'], activity_resource, acc['concept:instance'], acc['concept:operation']])
                 if acc['concept:resource'] not in resources:
-                    violations["IllegalTeamAccess"].append([acc['concept:tool'], activity['concept:name'], case_id, acc['concept:resource'], acc['concept:instance']])
+                    violations["IllegalTeamAccess"].append([acc['concept:tool'], activity['concept:name'], case_id, acc['concept:resource'], acc['concept:instance'], acc['concept:operation']])
 
     return violations
 
@@ -88,7 +88,7 @@ def check_activity_conformance(process_log, access_log, allowed_activities_set):
             activity_accesses = accesses[accesses['concept:instance'] == activity['concept:instance']]
             activity_conformance['UnexpectedActivity'].append([activity_name, case_id, instance, activity_resource])
             for j, acc in activity_accesses.iterrows():
-                activity_conformance['UnexpectedDataAccess'].append([acc['concept:tool'], case_id, instance, acc['concept:resource'], activity_name])
+                activity_conformance['UnexpectedDataAccess'].append([acc['concept:tool'], acc['concept:operation'], case_id, instance, acc['concept:resource'], activity_name])
 
 
     return activity_conformance
