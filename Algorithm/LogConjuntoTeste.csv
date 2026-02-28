@@ -1,0 +1,145 @@
+,concept:name,lifecycle:transition,time:timestamp,concept:resource,concept:instance,@@index,@@case_index,case:concept:name,concept:operation
+2,Atualizacao de requisitos funcionais,begin,2026-01-06 06:10:18.751000+00:00,re7,1,2,0,Demanda 0001,A
+38,Requisito,complete,2026-01-06 09:05:01.886184+00:00,re7,1,38,0,Demanda 0001,r
+39,Gestao,complete,2026-01-06 10:32:40.071672+00:00,re7,1,39,0,Demanda 0001,c
+40,Requisito,complete,2026-01-06 10:38:50.570822+00:00,re7,1,40,0,Demanda 0001,r
+41,Requisito,complete,2026-01-06 12:05:45.926421+00:00,re7,1,41,0,Demanda 0001,d
+42,Codigo,complete,2026-01-06 12:39:42.045402+00:00,re7,1,42,0,Demanda 0001,r
+43,PF,complete,2026-01-06 12:46:19.778777+00:00,re7,1,43,0,Demanda 0001,r
+14,Atualizacao de requisitos funcionais,complete,2026-01-06 14:10:18.751000+00:00,re7,1,15,0,Demanda 0001,A
+0,TESTE ERRO,begin,2026-01-05 22:10:25.751000+00:00,re7,2,0,0,Demanda 0001,A
+44,Gestao,complete,2026-01-06 00:07:06.869651+00:00,re7,2,44,0,Demanda 0001,d
+45,Requisito,complete,2026-01-06 02:23:30.817105+00:00,re7,2,45,0,Demanda 0001,u
+46,Requisito,complete,2026-01-06 02:36:50.943892+00:00,re7,2,46,0,Demanda 0001,r
+47,Requisito,complete,2026-01-06 03:28:17.687918+00:00,re7,2,47,0,Demanda 0001,c
+48,Codigo,complete,2026-01-06 06:01:58.762268+00:00,re7,2,48,0,Demanda 0001,r
+49,Requisito,complete,2026-01-06 10:54:17.388057+00:00,re7,2,49,0,Demanda 0001,d
+50,Gestao,complete,2026-01-06 13:44:02.651334+00:00,re7,2,50,0,Demanda 0001,u
+15,TESTE ERRO,complete,2026-01-06 14:10:25.751000+00:00,re7,2,16,0,Demanda 0001,A
+3,Contagem de ponto de funcao,begin,2026-01-06 06:26:06.751000+00:00,re7,3,3,0,Demanda 0001,A
+51,Gestao,complete,2026-01-06 07:42:01.023880+00:00,re7,3,51,0,Demanda 0001,d
+52,PF,complete,2026-01-06 09:02:45.491460+00:00,re7,3,52,0,Demanda 0001,c
+53,PF,complete,2026-01-06 09:07:21.489662+00:00,re7,3,53,0,Demanda 0001,d
+54,Gestao,complete,2026-01-06 09:13:50.574285+00:00,re7,3,54,0,Demanda 0001,u
+55,Gestao,complete,2026-01-06 11:03:42.800103+00:00,re7,3,55,0,Demanda 0001,c
+16,Contagem de ponto de funcao,complete,2026-01-06 14:26:06.751000+00:00,re7,3,17,0,Demanda 0001,A
+4,Contagem de ponto de funcao,begin,2026-01-06 06:42:28.751000+00:00,re7,4,4,0,Demanda 0001,A
+56,Gestao,complete,2026-01-06 08:00:06.772091+00:00,re7,4,56,0,Demanda 0001,u
+57,PF,complete,2026-01-06 08:11:22.376895+00:00,re7,4,57,0,Demanda 0001,u
+58,Gestao,complete,2026-01-06 08:51:49.656000+00:00,re7,4,58,0,Demanda 0001,r
+59,Codigo,complete,2026-01-06 10:03:33.725097+00:00,re7,4,59,0,Demanda 0001,r
+60,PF,complete,2026-01-06 10:43:16.083187+00:00,re7,4,60,0,Demanda 0001,c
+61,Requisito,complete,2026-01-06 12:32:56.692869+00:00,re7,4,61,0,Demanda 0001,r
+62,Gestao,complete,2026-01-06 14:21:34.619922+00:00,re7,4,62,0,Demanda 0001,d
+18,Contagem de ponto de funcao,complete,2026-01-06 14:42:28.751000+00:00,re7,4,19,0,Demanda 0001,A
+10,Publicar solucao,begin,2026-01-06 12:50:17.751000+00:00,re7,5,11,0,Demanda 0001,A
+63,Gestao,complete,2026-01-06 13:01:56.843093+00:00,re7,5,63,0,Demanda 0001,c
+64,Gestao,complete,2026-01-06 14:31:40.357897+00:00,re7,5,64,0,Demanda 0001,u
+19,Publicar solucao,complete,2026-01-06 14:50:17.751000+00:00,re7,5,20,0,Demanda 0001,A
+11,Gestao da demanda,begin,2026-01-06 13:12:43.751000+00:00,re7,6,12,0,Demanda 0001,A
+65,Gestao,complete,2026-01-06 15:08:04.290437+00:00,re7,6,65,0,Demanda 0001,u
+66,Gestao,complete,2026-01-06 15:09:43.064497+00:00,re7,6,66,0,Demanda 0001,c
+21,Gestao da demanda,complete,2026-01-06 15:12:43.751000+00:00,re7,6,22,0,Demanda 0001,A
+6,Construcao de funcionalidade,begin,2026-01-06 11:21:37.751000+00:00,re7,7,6,0,Demanda 0001,A
+67,Gestao,complete,2026-01-06 12:07:00.677614+00:00,re7,7,67,0,Demanda 0001,d
+68,Codigo,complete,2026-01-06 12:17:24.408981+00:00,re7,7,68,0,Demanda 0001,d
+69,Codigo,complete,2026-01-06 12:22:27.455628+00:00,re7,7,69,0,Demanda 0001,u
+70,Codigo,complete,2026-01-06 12:46:27.688538+00:00,re7,7,70,0,Demanda 0001,c
+71,Requisito,complete,2026-01-06 13:18:04.557568+00:00,re7,7,71,0,Demanda 0001,r
+72,Teste,complete,2026-01-06 13:23:10.770019+00:00,re7,7,72,0,Demanda 0001,r
+73,Gestao,complete,2026-01-06 13:58:59.759235+00:00,re7,7,73,0,Demanda 0001,r
+74,Gestao,complete,2026-01-06 14:12:20.436370+00:00,re7,7,74,0,Demanda 0001,u
+22,Construcao de funcionalidade,complete,2026-01-06 15:21:37.751000+00:00,re7,7,23,0,Demanda 0001,A
+12,Contagem de ponto de funcao,begin,2026-01-06 13:25:46.751000+00:00,re7,8,13,0,Demanda 0001,A
+75,Gestao,complete,2026-01-06 13:31:41.937432+00:00,re7,8,75,0,Demanda 0001,u
+76,Requisito,complete,2026-01-06 13:45:56.816321+00:00,re7,8,76,0,Demanda 0001,r
+77,PF,complete,2026-01-06 13:50:14.848453+00:00,re7,8,77,0,Demanda 0001,r
+78,PF,complete,2026-01-06 14:04:55.286152+00:00,re7,8,78,0,Demanda 0001,c
+79,Codigo,complete,2026-01-06 14:12:26.116448+00:00,re7,8,79,0,Demanda 0001,r
+80,Gestao,complete,2026-01-06 14:19:39.450580+00:00,re7,8,80,0,Demanda 0001,c
+81,PF,complete,2026-01-06 15:15:19.184414+00:00,re7,8,81,0,Demanda 0001,u
+82,PF,complete,2026-01-06 15:25:09.196825+00:00,re7,8,82,0,Demanda 0001,d
+23,Contagem de ponto de funcao,complete,2026-01-06 15:25:46.751000+00:00,re7,8,24,0,Demanda 0001,A
+17,Contagem de ponto de funcao,begin,2026-01-06 14:30:52.751000+00:00,re7,9,18,0,Demanda 0001,A
+83,Gestao,complete,2026-01-06 14:40:49.840583+00:00,re7,9,83,0,Demanda 0001,d
+84,Gestao,complete,2026-01-06 14:52:56.667175+00:00,re7,9,84,0,Demanda 0001,c
+85,Gestao,complete,2026-01-06 14:53:15.474351+00:00,re7,9,85,0,Demanda 0001,r
+86,Gestao,complete,2026-01-06 15:00:21.652376+00:00,re7,9,86,0,Demanda 0001,u
+87,Codigo,complete,2026-01-06 15:02:38.889718+00:00,re7,9,87,0,Demanda 0001,r
+88,PF,complete,2026-01-06 15:06:47.762276+00:00,re7,9,88,0,Demanda 0001,c
+89,PF,complete,2026-01-06 15:09:34.859245+00:00,re7,9,89,0,Demanda 0001,r
+24,Contagem de ponto de funcao,complete,2026-01-06 15:30:52.751000+00:00,re7,9,25,0,Demanda 0001,A
+1,Manutencao de funcionalidade,begin,2026-01-06 03:40:51.751000+00:00,re7,10,1,0,Demanda 0001,A
+90,Gestao,complete,2026-01-06 04:24:17.574869+00:00,re7,10,90,0,Demanda 0001,u
+91,Gestao,complete,2026-01-06 09:06:17.698639+00:00,re7,10,91,0,Demanda 0001,d
+92,Codigo,complete,2026-01-06 10:24:06.436306+00:00,re7,10,92,0,Demanda 0001,u
+93,Gestao,complete,2026-01-06 10:27:20.948361+00:00,re7,10,93,0,Demanda 0001,r
+94,Requisito,complete,2026-01-06 15:01:48.733677+00:00,re7,10,94,0,Demanda 0001,r
+95,Codigo,complete,2026-01-06 15:13:04.962168+00:00,re7,10,95,0,Demanda 0001,r
+25,Manutencao de funcionalidade,complete,2026-01-06 15:40:51.751000+00:00,re7,10,26,0,Demanda 0001,A
+8,Planejamento de entrega,begin,2026-01-06 11:42:10.751000+00:00,re7,11,8,0,Demanda 0001,A
+96,Gestao,complete,2026-01-06 12:10:13.658973+00:00,re7,11,96,0,Demanda 0001,r
+97,Requisito,complete,2026-01-06 12:14:12.658643+00:00,re7,11,97,0,Demanda 0001,r
+98,Gestao,complete,2026-01-06 12:20:40.432830+00:00,re7,11,98,0,Demanda 0001,d
+99,Gestao,complete,2026-01-06 12:47:51.269683+00:00,re7,11,99,0,Demanda 0001,u
+100,Gestao,complete,2026-01-06 14:47:05.334243+00:00,re7,11,100,0,Demanda 0001,c
+26,Planejamento de entrega,complete,2026-01-06 15:42:10.751000+00:00,re7,11,27,0,Demanda 0001,A
+9,Publicar solucao,begin,2026-01-06 11:52:13.751000+00:00,re7,12,9,0,Demanda 0001,A
+101,Gestao,complete,2026-01-06 12:13:16.285176+00:00,re7,12,101,0,Demanda 0001,u
+102,Gestao,complete,2026-01-06 15:18:30.952790+00:00,re7,12,102,0,Demanda 0001,r
+103,Gestao,complete,2026-01-06 15:45:58.778135+00:00,re7,12,103,0,Demanda 0001,d
+27,Publicar solucao,complete,2026-01-06 15:52:13.751000+00:00,re7,12,28,0,Demanda 0001,A
+20,Contagem de ponto de funcao,begin,2026-01-06 15:04:13.751000+00:00,re7,13,21,0,Demanda 0001,A
+104,Gestao,complete,2026-01-06 15:15:57.842669+00:00,re7,13,104,0,Demanda 0001,r
+105,PF,complete,2026-01-06 15:30:45.298638+00:00,re7,13,105,0,Demanda 0001,c
+106,PF,complete,2026-01-06 15:31:50.834986+00:00,re7,13,106,0,Demanda 0001,u
+107,Gestao,complete,2026-01-06 15:33:17.506554+00:00,re7,13,107,0,Demanda 0001,u
+108,Codigo,complete,2026-01-06 15:35:53.413312+00:00,re7,13,108,0,Demanda 0001,r
+109,Requisito,complete,2026-01-06 15:50:12.194123+00:00,re7,13,109,0,Demanda 0001,r
+110,PF,complete,2026-01-06 16:01:16.036975+00:00,re7,13,110,0,Demanda 0001,r
+29,Contagem de ponto de funcao,complete,2026-01-06 16:04:13.751000+00:00,re7,13,30,0,Demanda 0001,A
+5,Contagem de ponto de funcao,begin,2026-01-06 08:46:43.751000+00:00,re7,14,5,0,Demanda 0001,A
+111,Gestao,complete,2026-01-06 10:33:05.712640+00:00,re7,14,111,0,Demanda 0001,u
+112,PF,complete,2026-01-06 10:34:09.323818+00:00,re7,14,112,0,Demanda 0001,r
+113,Gestao,complete,2026-01-06 10:36:56.165180+00:00,re7,14,113,0,Demanda 0001,c
+114,PF,complete,2026-01-06 10:59:17.066546+00:00,re7,14,114,0,Demanda 0001,c
+115,Requisito,complete,2026-01-06 12:40:41.280643+00:00,re7,14,115,0,Demanda 0001,r
+116,Codigo,complete,2026-01-06 15:48:08.466707+00:00,re7,14,116,0,Demanda 0001,r
+30,Contagem de ponto de funcao,complete,2026-01-06 16:46:43.751000+00:00,re7,14,31,0,Demanda 0001,A
+117,Gestao,complete,2026-01-06 13:38:45.788160+00:00,re7,15,117,0,Demanda 0001,u
+118,Requisito,complete,2026-01-06 16:30:15.038171+00:00,re7,15,118,0,Demanda 0001,r
+34,Elaborar caso de teste,begin,2026-01-06 22:51:05.751000+00:00,re7,16,36,0,Demanda 0001,A
+119,Teste,complete,2026-01-07 00:32:04.377555+00:00,re7,16,119,0,Demanda 0001,r
+120,Teste,complete,2026-01-07 01:26:46.140868+00:00,re7,16,120,0,Demanda 0001,d
+121,Teste,complete,2026-01-07 04:26:39.575621+00:00,re7,16,121,0,Demanda 0001,c
+122,Gestao,complete,2026-01-07 04:29:52.705653+00:00,re7,16,122,0,Demanda 0001,c
+123,Gestao,complete,2026-01-07 05:11:16.849227+00:00,re7,16,123,0,Demanda 0001,u
+35,Elaborar caso de teste,complete,2026-01-07 06:51:05.751000+00:00,re7,16,37,0,Demanda 0001,A
+7,Corrigir erro,begin,2026-01-06 11:37:09.751000+00:00,re7,17,7,0,Demanda 0001,A
+124,Codigo,complete,2026-01-06 11:48:05.093456+00:00,re7,17,124,0,Demanda 0001,u
+125,Gestao,complete,2026-01-06 13:11:33.646543+00:00,re7,17,125,0,Demanda 0001,d
+126,Gestao,complete,2026-01-06 15:27:36.133026+00:00,re7,17,126,0,Demanda 0001,u
+127,Codigo,complete,2026-01-06 17:05:16.336839+00:00,re7,17,127,0,Demanda 0001,c
+128,Codigo,complete,2026-01-06 17:10:55.249691+00:00,re7,17,128,0,Demanda 0001,d
+31,Corrigir erro,complete,2026-01-06 17:37:09.751000+00:00,re7,17,33,0,Demanda 0001,A
+28,Contagem de ponto de funcao,begin,2026-01-06 16:01:29.751000+00:00,re7,18,29,0,Demanda 0001,A
+129,Gestao,complete,2026-01-06 16:14:51.959757+00:00,re7,18,129,0,Demanda 0001,u
+130,Gestao,complete,2026-01-06 16:22:41.393713+00:00,re7,18,130,0,Demanda 0001,d
+131,PF,complete,2026-01-06 16:51:48.372379+00:00,re7,18,131,0,Demanda 0001,c
+132,Codigo,complete,2026-01-06 17:15:55.822532+00:00,re7,18,132,0,Demanda 0001,r
+133,PF,complete,2026-01-06 17:22:50.160680+00:00,re7,18,133,0,Demanda 0001,u
+32,Contagem de ponto de funcao,complete,2026-01-06 18:01:29.751000+00:00,re7,18,34,0,Demanda 0001,A
+13,Contagem de ponto de funcao,begin,2026-01-06 14:04:29.751000+00:00,re7,19,14,0,Demanda 0001,A
+134,Requisito,complete,2026-01-06 14:24:34.661667+00:00,re7,19,134,0,Demanda 0001,r
+135,Codigo,complete,2026-01-06 14:42:06.777361+00:00,re7,19,135,0,Demanda 0001,r
+136,PF,complete,2026-01-06 16:52:55.178576+00:00,re7,19,136,0,Demanda 0001,c
+137,Gestao,complete,2026-01-06 16:59:03.677741+00:00,re7,19,137,0,Demanda 0001,u
+138,Gestao,complete,2026-01-06 17:07:49.296201+00:00,re7,19,138,0,Demanda 0001,r
+33,Contagem de ponto de funcao,complete,2026-01-06 18:04:29.751000+00:00,re7,19,35,0,Demanda 0001,A
+36,Executar teste,begin,2026-01-07 18:06:19.751000+00:00,re10,20,38,0,Demanda 0001,A
+139,Teste,complete,2026-01-07 18:26:27.152105+00:00,re7,20,139,0,Demanda 0001,u
+140,Requisito,complete,2026-01-07 18:36:02.411544+00:00,re7,20,140,0,Demanda 0001,r
+141,Teste,complete,2026-01-07 18:53:23.715402+00:00,re7,20,141,0,Demanda 0001,r
+142,Codigo,complete,2026-01-07 18:56:16.275121+00:00,re7,20,142,0,Demanda 0001,r
+143,Gestao,complete,2026-01-07 19:01:31.674163+00:00,re7,20,143,0,Demanda 0001,u
+37,Executar teste,complete,2026-01-07 19:06:19.751000+00:00,re10,20,39,0,Demanda 0001,A
