@@ -8,7 +8,7 @@ def check_letters(cell, model, access, activity):
 
     letters = ['c', 'r', 'u', 'd']
 
-    if activity == 'Tool':
+    if activity == 'Data Objects':
         return model
 
     cell = str(cell)
@@ -16,17 +16,24 @@ def check_letters(cell, model, access, activity):
         uppercase_present = letter.upper() in cell
 
         if uppercase_present:
-            if f'{access} {letter}\n' not in model:
-                model += 'activity ' + f'{access} {letter}\n'
-            model += f'Precedence[{access} {letter}, {activity} complete] | |same concept:instance and same concept:resource |\n'
-            model += f'Response[{activity} begin, {access} {letter}] | |same concept:instance and same concept:resource |\n'
+            if f'{access}\n' not in model:
+                model += 'activity ' + f'{access}\n'
+            model += f'Precedence[{access}, {activity}] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is {letter} |\n'
+            model += f'Response[{activity}, {access}] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is {letter} |\n'
 
-        if letter not in cell and not uppercase_present:
-            if f'{access} {letter}\n' not in model:
-                model += 'activity ' + f'{access} {letter}\n'
-            model += f'NotPrecedence[{access} {letter}, {activity} complete] | |same concept:instance and same concept:resource |\n'
-            model += f'NotResponse[{activity} begin, {access} {letter}] | |same concept:instance and same concept:resource |\n'
-
+        if not uppercase_present and letter not in cell:
+            if f'{access}\n' not in model:
+                model += 'activity ' + f'{access}\n'
+            model += f'NotPrecedence[{access}, {activity}] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is {letter} AND (same concept:resource OR different concept:resource) |\n'
+            model += f'NotResponse[{activity}, {access}] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is {letter} AND (same concept:resource OR different concept:resource)asz\56t |\n'
+            
+        if not uppercase_present and letter in cell:
+            if f'{access}\n' not in model:
+                model += 'activity ' + f'{access}\n'
+            model += f'Precedence[{access}, {activity}] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is {letter} |\n'
+            model += f'Response[{activity}, {access}] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is {letter} |\n'
+            model += f'NotPrecedence[{access}, {activity}] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is {letter} AND different concept:resource |\n'
+            model += f'NotResponse[{activity}, {access}] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is {letter} AND different concept:resource |\n'
 
     return model
 
@@ -36,14 +43,14 @@ def convert_model_to_rules(access_model, process_model):
     new_model = ''
 
     for act in declare_model_activities:
-            new_model += 'activity ' + act + ' begin' + '\n'
-            new_model += 'activity ' + act + ' complete' +'\n'
+            new_model += 'activity ' + act + '\n'
 
     for col in access_model.columns:
         for index, value in access_model[col].items():
             new_model = check_letters(value, new_model, access_model.iloc[index,0], col)
 
     declare_model = DeclareModel().parse_from_string(new_model)
+    declare_model.to_file('ModeloConjuntoTeste.decl')
     return declare_model
 
 def convert_logs(process_log, access_log):
@@ -52,11 +59,10 @@ def convert_logs(process_log, access_log):
     '''
     process_log_df = pm4py.convert_to_dataframe(process_log.get_log())
     process_log_df = process_log_df.sort_values(['case:concept:name', 'concept:instance'])
-    for index, row in process_log_df.iterrows():
-        process_log_df.at[index, 'concept:name'] = row['concept:name'] + ' ' + row['lifecycle:transition']
-    process_log_df.drop('lifecycle:transition', axis=1, inplace=True)
+    process_log_df['concept:operation'] = 'A'
 
     for index, row in access_log.iterrows():
-        process_log_df.loc[len(process_log_df)] = [(row['concept:tool'] + ' ' + row['concept:operation'].lower()),row['time:timestamp'], row['concept:resource'], row['concept:instance'], len(process_log_df), row['@@case_index'], row['case:concept:name']]
+        process_log_df.loc[len(process_log_df)] = [row['concept:tool'],row['lifecycle:transition'], row['time:timestamp'], row['concept:resource'], row['concept:instance'], len(process_log_df), row['@@case_index'], row['case:concept:name'],row['concept:operation'].lower()]
     process_log_df = process_log_df.sort_values(['case:concept:name', 'concept:instance','time:timestamp'])
+    process_log_df.to_csv('LogConjuntoTeste.csv')
     return pm4py.convert_to_event_log(process_log_df)
