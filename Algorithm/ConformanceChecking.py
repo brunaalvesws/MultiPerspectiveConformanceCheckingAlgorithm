@@ -1,4 +1,4 @@
-from FormatMapping import format_violations, format_violations_access
+from FormatMapping import format_violations, format_violations_access, parse_constraint
 from Declare4Py.D4PyEventLog import D4PyEventLog
 import pm4py
 from Declare4Py.ProcessMiningTasks.ConformanceChecking.MPDeclareAnalyzer import MPDeclareAnalyzer
@@ -28,10 +28,13 @@ def check_access_conformance(process_model, log):
     size = sum(len(trace) for trace in event_log.get_log())
     return violations, size
 
-def check_resource_conformance(process_log, access_log, resource_model):
+def check_resource_activities_conformance(process_log, access_log, allowed_activities_set, resource_model, access_violations):
     '''
     Checks conformance between the access log, process log, and the resource model.
-    Accepts the resource model (DataFrame), process log (EventLog object), and access log (DataFrame).
+    
+    Identifies activities that are not in the allowed set (Unexpected Activities) and checks for specific access violations within those contexts.
+    
+    Accepts a process log (EventLog object), access log (DataFrame), access violations (DataFrame), set of allowed activities and a Resource Model (DataFrame).
     '''
 
     process_log_df = pm4py.convert_to_dataframe(process_log.get_log())
@@ -42,54 +45,57 @@ def check_resource_conformance(process_log, access_log, resource_model):
     violations["IllegalTeamAccess"] = []
     violations["IllegalResourceAccess"] = []
     violations["IllegalTeamActivity"] = []
-
-    for index, row in resource_model.iterrows():
-        case_id = row['case:concept:name']
-        resources = row['concept:resources'].split(", ")
-        activities = processed_process_log[processed_process_log['case:concept:name'] == case_id]
-        accesses = access_log[access_log['case:concept:name'] == case_id]
-
-        for i, activity in activities.iterrows():
-            activity_resource = activity['concept:resource']
-            if activity_resource not in resources:
-                violations["IllegalTeamActivity"].append([activity['concept:name'], case_id, activity_resource, activity['concept:instance']])
-
-            activity_access = accesses[accesses['concept:instance']== activity['concept:instance']]
-            for j, acc in activity_access.iterrows():
-                if activity_resource != acc['concept:resource']:
-                    violations["IllegalResourceAccess"].append([acc['concept:tool'], activity['concept:name'], case_id, acc['concept:resource'], activity_resource, acc['concept:instance'], acc['concept:operation']])
-                if acc['concept:resource'] not in resources:
-                    violations["IllegalTeamAccess"].append([acc['concept:tool'], activity['concept:name'], case_id, acc['concept:resource'], acc['concept:instance'], acc['concept:operation']])
-
-    return violations
-
-
-def check_activity_conformance(process_log, access_log, allowed_activities_set):
-    '''
-    Identifies activities that are not in the allowed set (Unexpected Activities) and checks for specific access violations within those contexts.
-    Accepts a process log (EventLog object), access log (DataFrame), and a set of allowed activities.
-    '''
-
-    process_log_df = pm4py.convert_to_dataframe(process_log.get_log())
-    processed_process_log = process_log_df[process_log_df["lifecycle:transition"] == "begin"].drop_duplicates(subset=['concept:name'])
-
-
     activity_conformance = {}
     activity_conformance["UnexpectedActivity"] = []
     activity_conformance["UnexpectedDataAccess"] = []
+    mandatory_access = access_violations['Mandatory']
+    prohibited_access = access_violations['Prohibited']
 
-    for index, activity in processed_process_log.iterrows():
-        activity_name = activity['concept:name']
-        if activity_name not in allowed_activities_set:
-            case_id = activity['case:concept:name']
-            instance = activity['concept:instance']
-            activity_resource = activity.get('concept:resource', 'MissingResource')
-            accesses = access_log[access_log['case:concept:name'] == case_id]
-            activity_accesses = accesses[accesses['concept:instance'] == activity['concept:instance']]
-            activity_conformance['UnexpectedActivity'].append([activity_name, case_id, instance, activity_resource])
-            for j, acc in activity_accesses.iterrows():
-                activity_conformance['UnexpectedDataAccess'].append([acc['concept:tool'], acc['concept:operation'], case_id, instance, acc['concept:resource'], activity_name])
+    for _, row in resource_model.iterrows():
+        case_name = row['case:concept:name']
+        resources = row['concept:resources'].split(", ")
+        activities = processed_process_log[processed_process_log['case:concept:name'] == case_name]
+        accesses = access_log[access_log['case:concept:name'] == case_name]
 
+        for _, activity in activities.iterrows():
+            unexpected = False
+            activity_resource = activity['concept:resource']
+            activity_name = activity['concept:name']
+            
+            if activity_resource not in resources:
+                violations["IllegalTeamActivity"].append([activity_name, activity['@@case_index'], activity_resource, activity['concept:instance']])
+                
+            if activity_name not in allowed_activities_set:
+                unexpected = True
+                activity_conformance['UnexpectedActivity'].append([activity_name, activity['@@case_index'], activity['concept:instance'], activity_resource])
+                
+            instance_in_mandatory = [item for item in mandatory_access if activity['concept:instance'] in item[2]]
+            activity_access = accesses[accesses['concept:instance']== activity['concept:instance']]
+            for _, acc in activity_access.iterrows():
+                if unexpected:
+                    activity_conformance['UnexpectedDataAccess'].append([acc['concept:tool'], acc['concept:operation'], activity['@@case_index'], acc['concept:instance'], acc['concept:resource'], activity_name])
 
-    return activity_conformance
+                verified_violations = []
+                for violation in instance_in_mandatory:
+                    _, tool, op = parse_constraint(violation[1])
+                    elements = [tool, op]
+                    if acc['concept:tool'] in elements and acc['concept:operation'].lower() in elements:
+                        verified_violations.append(instance_in_mandatory.index(violation))
+                        if 'Precedence' in violation[1]:
+                            access_violations['Resource'].append(violation)
+                            access_violations['Mandatory'].remove(violation)
+                        else:
+                            access_violations['Mandatory'].remove(violation)
+                instance_in_mandatory = [i for i in instance_in_mandatory if instance_in_mandatory.index(i) not in verified_violations]
+                            
+                instance_in_prohibited = [item for item in prohibited_access if activity['concept:instance'] in item[2] and 'Precedence' in item[1] and acc['concept:tool'] in parse_constraint(item[1])[1] and acc['concept:operation'].lower() in parse_constraint(item[1])[2]]
+                
+                for violation in instance_in_prohibited:
+                    if acc['concept:resource'] != activity_resource:
+                        access_violations['Resource'].append(violation)
+                
+                if acc['concept:resource'] not in resources:
+                    violations["IllegalTeamAccess"].append([acc['concept:tool'], activity['concept:name'], activity['@@case_index'], acc['concept:resource'], acc['concept:instance'], acc['concept:operation']])
+
+    return violations, activity_conformance, access_violations
             

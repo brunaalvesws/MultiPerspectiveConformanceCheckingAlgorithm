@@ -25,7 +25,7 @@ def check_letters(cell, model, access, activity):
             if f'{access}\n' not in model:
                 model += 'activity ' + f'{access}\n'
             model += f'NotPrecedence[{access}, {activity}] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is {letter} AND (same concept:resource OR different concept:resource) |\n'
-            model += f'NotResponse[{activity}, {access}] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is {letter} AND (same concept:resource OR different concept:resource)asz\56t |\n'
+            model += f'NotResponse[{activity}, {access}] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is {letter} AND (same concept:resource OR different concept:resource) |\n'
             
         if not uppercase_present and letter in cell:
             if f'{access}\n' not in model:
