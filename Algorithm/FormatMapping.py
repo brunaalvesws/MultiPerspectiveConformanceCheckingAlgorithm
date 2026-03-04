@@ -1,5 +1,3 @@
-
-
 from LogStatistics import total_number_of_violations, success_rate
 from collections import defaultdict
 
@@ -11,7 +9,7 @@ def parse_constraint(rule: str):
     match = re.search(pattern, rule)
 
     if not match:
-        raise ValueError("Invalid rule")
+        raise ValueError(f"Invalid rule: {rule}")
 
     tool = match.group(1).strip()
     operation = match.group(3).lower()
@@ -166,7 +164,7 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     
     for violation in access_violations['Resource']:
         activity, tool, operation = parse_constraint(violation[1])
-        patterns['Illegal data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': violation[2]})
+        patterns['Illegal data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': violation[2], 'resource': violation[3], 'designated_resource': violation[4]})
     
     for violation in access_violations['Mandatory']:
         if 'Precedence' in violation[1]:
@@ -200,4 +198,3 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     report['violations'] = patterns
     print(report)    
     return report
-            

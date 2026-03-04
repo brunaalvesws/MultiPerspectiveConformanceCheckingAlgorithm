@@ -50,6 +50,9 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
     activity_conformance["UnexpectedDataAccess"] = []
     mandatory_access = access_violations['Mandatory']
     prohibited_access = access_violations['Prohibited']
+    optional_access = access_violations['Resource']
+    
+    optional_data = [parse_constraint(item[1]) for item in optional_access]
 
     for _, row in resource_model.iterrows():
         case_name = row['case:concept:name']
@@ -82,6 +85,7 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
                     if acc['concept:tool'] in elements and acc['concept:operation'].lower() in elements:
                         verified_violations.append(instance_in_mandatory.index(violation))
                         if 'Precedence' in violation[1]:
+                            violation.extend([acc['concept:resource'], activity_resource])
                             access_violations['Resource'].append(violation)
                             access_violations['Mandatory'].remove(violation)
                         else:
@@ -92,10 +96,14 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
                 
                 for violation in instance_in_prohibited:
                     if acc['concept:resource'] != activity_resource:
+                        violation.extend([acc['concept:resource'], activity_resource])
                         access_violations['Resource'].append(violation)
+                        
+                optional_indexes = [i for i, t in enumerate(optional_data) if set(t) == set((acc['concept:tool'], acc['concept:operation'].lower(), activity_name))]
+
+                for i in optional_indexes:
+                    access_violations['Resource'][i].extend([acc['concept:resource'], activity_resource])
                 
                 if acc['concept:resource'] not in resources:
-                    violations["IllegalTeamAccess"].append([acc['concept:tool'], activity['concept:name'], activity['@@case_index'], acc['concept:resource'], acc['concept:instance'], acc['concept:operation']])
-
+                    violations["IllegalTeamAccess"].append([acc['concept:tool'], activity_name, activity['@@case_index'], acc['concept:resource'], acc['concept:instance'], acc['concept:operation']])
     return violations, activity_conformance, access_violations
-            
