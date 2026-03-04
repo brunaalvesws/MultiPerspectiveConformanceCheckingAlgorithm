@@ -91,7 +91,7 @@
 			<string key="concept:name" value="Publicar solucao" />
 			<string key="lifecycle:transition" value="begin" />
 			<date key="time:timestamp" value="2026-01-06T11:52:13.751000+00:00" />
-			<string key="concept:resource" value="re7" />
+			<string key="concept:resource" value="re3" />
 			<int key="concept:instance" value="12" />
 			<int key="@@index" value="9" />
 			<int key="@@case_index" value="0" />
@@ -253,7 +253,7 @@
 			<string key="concept:name" value="Publicar solucao" />
 			<string key="lifecycle:transition" value="complete" />
 			<date key="time:timestamp" value="2026-01-06T15:52:13.751000+00:00" />
-			<string key="concept:resource" value="re7" />
+			<string key="concept:resource" value="re3" />
 			<int key="concept:instance" value="12" />
 			<int key="@@index" value="28" />
 			<int key="@@case_index" value="0" />

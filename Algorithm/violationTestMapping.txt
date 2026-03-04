@@ -1,0 +1,11 @@
+Prohibited activity: Elaborar Caso de Teste (instance 16) occurs but not preceded by Documentacao de requisitos funcionais (1 violation)
+Unexpected activity: TESTE ERRO (instance 2) was not declared in the process model (1 violation)
+Illegal activity: Publicar solucao (instance 12) was done by re3 but it was not in the organizational model (1 violation)
+Ignored mandatory activity: Review da entrega did not happened, Existence1[Review da entrega] | | was violated and Planejamento da entrega happened (instance 11) so Response[Planejamento de entrega, Review da entrega] | | | was violated
+Prohibited data access: PF read in Atualizacao de requisitos funcionais (instance 1) was not allowed on data access model (1 violation)
+Unexpected data access: All the data accesses from TESTE ERRO (instance 2) (7 violations)
+Illegal data access: 5 accesses of Executar teste (instance 20) were done by re7 but the activity was done by re10 (5 violations), 
+PF r on Atualizacao de requisitos funcionais (instance 1) was done by re10 but the activity was done by re7 and
+3 accesses of Publicar Solucao (instance 12) were done by re7 and re6 but the activity was done by re3 (3 violations)
+Gestao r on Publicar solucao was done by re6 but it was not in the organizational model
+Ignored mandatory data access: Gestao update in Atualizacao de requisitos funcionais (instance 1) was not done, Requisito update in Atualizacao de requisitos funcionais (instance 1) was not done
