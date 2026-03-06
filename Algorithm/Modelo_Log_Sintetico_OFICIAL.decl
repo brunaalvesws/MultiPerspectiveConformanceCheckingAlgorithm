@@ -15,6 +15,7 @@ Existence[Gestao da demanda] | |
 Existence[Planejamento de entrega] | |
 Existence[Review da entrega] | |
 Existence[Publicar solucao] | |
+Absence2[Contagem de ponto de funcao] | |
 Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |
 Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |
 Response[Planejamento de entrega, Review da entrega] | | |

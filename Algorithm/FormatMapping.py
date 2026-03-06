@@ -17,8 +17,6 @@ def parse_constraint(rule: str):
 
     return activity, tool, operation
 
-
-
 def format_violations(df_violations):
     '''
     Formats the violations detected by Declare4Py conformance checking.
@@ -178,7 +176,7 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     
     #O Declare4Py não tem implementações das regras Succesion (e suas variantes) e CoExistence (e suas variantes)
     for violation in process_violations:
-        if any(regra in violation[1] for regra in ["Precedence", "Absense", "Not Succession", "Not Chain Succession", "Not CoExistence", "Not Response", "Not Responded Existence", "Not Chain Response", "Exclusive Choice", "Exactly"]): 
+        if any(regra in violation[1] for regra in ["Precedence", "Absence", "Not Succession", "Not Chain Succession", "Not CoExistence", "Not Response", "Not Responded Existence", "Not Chain Response", "Exclusive Choice", "Exactly"]): 
             # Aqui, a ocorrência em si já é o problema se algo não ocorreu junto
             patterns['Prohibited activity'].append({'case_id': violation[0], 'rule': violation[1], 'instance': ", ".join(violation[2])})
         elif any(regra in violation[1] for regra in ["Existence", "Response", "Init", "End", "Chain Response", "Succession", "CoExistence", "Choice"]):
