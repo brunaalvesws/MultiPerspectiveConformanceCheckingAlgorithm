@@ -60,19 +60,5 @@ def pre_process_data(process_log_path, access_log_path, model_log_path, process_
     event_log = D4PyEventLog(case_name="case:concept:name")
     temp_xes_path = normalize_xes_timestamps_to_tempfile(process_log_path)
     event_log.parse_xes_log(str(temp_xes_path))
-    allowed_activities = extract_allowed_activities(process_model_path)
+    allowed_activities = declare_model.activities
     return event_log, processed_access_log, processed_process_model, declare_model, processed_access_model, allowed_activities
-
-
-def extract_allowed_activities(declare_filepath):
-    allowed_activities = set()
-
-    with open(declare_filepath, 'r', encoding='utf-8') as f:
-        for line in f:
-            clean_line = line.strip()
-            if clean_line.startswith('activity '):
-                activity_name = clean_line[len('activity '):].strip()
-                if activity_name:
-                    allowed_activities.add(activity_name)
-
-    return allowed_activities
