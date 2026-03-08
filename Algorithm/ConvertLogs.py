@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 import pm4py
+import pandas as pd
 
 
 def check_letters(cell, model, access, activity):
@@ -60,9 +61,11 @@ def convert_logs(process_log, access_log):
     process_log_df = pm4py.convert_to_dataframe(process_log.get_log())
     process_log_df = process_log_df.sort_values(['case:concept:name', 'concept:instance'])
     process_log_df['concept:operation'] = 'A'
+    
+    access_log['concept:operation'] = access_log['concept:operation'].str.lower()
 
-    for index, row in access_log.iterrows():
-        process_log_df.loc[len(process_log_df)] = [row['concept:tool'],row['lifecycle:transition'], row['time:timestamp'], row['concept:resource'], row['concept:instance'], len(process_log_df), row['@@case_index'], row['case:concept:name'],row['concept:operation'].lower()]
-    process_log_df = process_log_df.sort_values(['case:concept:name', 'concept:instance','time:timestamp'])
-    process_log_df.to_csv('LogConjuntoTeste.csv')
-    return pm4py.convert_to_event_log(process_log_df)
+    df_merged = pd.concat([process_log_df, access_log], ignore_index=True)
+    
+    df_merged = df_merged.sort_values(['case:concept:name', 'concept:instance','time:timestamp'])
+    df_merged.to_csv('LogConjuntoTeste.csv')
+    return pm4py.convert_to_event_log(df_merged)
