@@ -3,6 +3,17 @@ from Declare4Py.ProcessModels.DeclareModel import DeclareModel
 import pm4py
 import pandas as pd
 
+'''
+ About this implementation:
+ The Multi-perspective conformance checking algorithm paper/thesis states about the Between rule, a new DECLARE template
+ to enhance the idea of an activity that must occur after another and before a second one, so, between them. 
+ A formal definition was given but the rule was not implemented yet, since Declare4Py has no support for ternary rules.
+ As future work, is expected that this contribution will be done on Declare4Py or at least use the library as a solid basis.
+ Until them, Response and Precedence rules were used together to model the idea of Between. Since this context uses
+ activities with begin and complete time, we can be sure that the begin's event of an activity is always happening before the 
+ complete's event of the activity, and so we can say that Response[activity(begin), access] and Precendence[access, activity(complete)]
+ work for expressing Between's definition.
+'''
 
 def check_letters(cell, model, access, activity):
     """Checks which letters (c, r, u, d) are present in the cell, distinguishing between uppercase and lowercase."""

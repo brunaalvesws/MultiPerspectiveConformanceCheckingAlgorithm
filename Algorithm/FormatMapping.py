@@ -139,14 +139,14 @@ def format_inconformances(process_conformance, access_conformance, resource_conf
 
 def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, duration):
     patterns = {}
-    patterns['Prohibited activity'] = [] #1.5, 2.5, 3.5, 4.5, 5.5, 6.5
-    patterns['Unexpected activity'] = [] #7.7
-    patterns['Illegal activity'] = [] #Any process log event performed by someone outside the designated team
-    patterns['Ignored mandatory activity'] = [] #2.2, 4.2, 6.2
-    patterns['Prohibited data access'] = [] #5.1, 5.3, 5.5
-    patterns['Unexpected data access'] = [] #7.7
-    patterns['Illegal data access'] = [] #Any data log access performed by someone outside the team or not assigned to the corresponding activity
-    patterns['Ignored mandatory data access'] = [] #2.1, 2.3, 2.5
+    patterns['Prohibited activity'] = [] 
+    patterns['Unexpected activity'] = [] 
+    patterns['Illegal activity'] = [] 
+    patterns['Ignored mandatory activity'] = [] 
+    patterns['Prohibited data access'] = [] 
+    patterns['Unexpected data access'] = [] 
+    patterns['Illegal data access'] = [] 
+    patterns['Ignored mandatory data access'] = [] 
     
     for act in unexpected_activities['UnexpectedActivity']:
         patterns['Unexpected activity'].append({'name': act[0], 'case_id': act[1], 'instance': act[2], 'resource': act[3]})
@@ -174,13 +174,13 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
             activity, tool, operation = parse_constraint(violation[1])
             patterns['Prohibited data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': violation[2]})
     
-    #O Declare4Py não tem implementações das regras Succesion (e suas variantes) e CoExistence (e suas variantes)
+    # Declare4Py does not support Succession (and its variants) and CoExistence (and its variants) yet
     for violation in process_violations:
         if any(regra in violation[1] for regra in ["Precedence", "Absence", "Not Succession", "Not Chain Succession", "Not CoExistence", "Not Response", "Not Responded Existence", "Not Chain Response", "Exclusive Choice", "Exactly"]): 
-            # Aqui, a ocorrência em si já é o problema se algo não ocorreu junto
+            # Here, the occurrence of an activity is a problem if other activity doesn't occur too
             patterns['Prohibited activity'].append({'case_id': violation[0], 'rule': violation[1], 'instance': ", ".join(violation[2])})
         elif any(regra in violation[1] for regra in ["Existence", "Response", "Init", "End", "Chain Response", "Succession", "CoExistence", "Choice"]):
-            # Essas regras criam uma expectativa futura ou passada obrigatória.
+            # This rules create some mandatory expectation of another activity to happen in the future or that happened in the past
             patterns['Ignored mandatory activity'].append({'case_id': violation[0], 'rule': violation[1], 'instance': ", ".join(violation[2])})
         else:
             raise Exception("This rule is not supported")

@@ -52,7 +52,7 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
     prohibited_access = access_violations['Prohibited']
     optional_access = access_violations['Resource']
     
-    optional_data = [parse_constraint(item[1]) for item in optional_access]
+    optional_data = [(item[0], parse_constraint(item[1])) for item in optional_access]
 
     for _, row in resource_model.iterrows():
         case_name = row['case:concept:name']
@@ -72,7 +72,7 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
                 unexpected = True
                 activity_conformance['UnexpectedActivity'].append([activity_name, activity['@@case_index'], activity['concept:instance'], activity_resource])
                 
-            instance_in_mandatory = [item for item in mandatory_access if activity['concept:instance'] in item[2]]
+            instance_in_mandatory = [item for item in mandatory_access if activity['concept:instance'] in item[2] and item[0] == activity['@@case_index']]
             activity_access = accesses[accesses['concept:instance']== activity['concept:instance']]
             for _, acc in activity_access.iterrows():
                 if unexpected:
@@ -92,14 +92,14 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
                             access_violations['Mandatory'].remove(violation)
                 instance_in_mandatory = [i for i in instance_in_mandatory if instance_in_mandatory.index(i) not in verified_violations]
                             
-                instance_in_prohibited = [item for item in prohibited_access if activity['concept:instance'] in item[2] and 'Precedence' in item[1] and acc['concept:name'] in parse_constraint(item[1])[1] and acc['concept:operation'].lower() in parse_constraint(item[1])[2]]
+                instance_in_prohibited = [item for item in prohibited_access if activity['concept:instance'] in item[2] and item[0] == activity['@@case_index'] and 'Precedence' in item[1] and acc['concept:name'] in parse_constraint(item[1])[1] and acc['concept:operation'].lower() in parse_constraint(item[1])[2]]
                 
                 for violation in instance_in_prohibited:
                     if acc['concept:resource'] != activity_resource:
                         violation.extend([acc['concept:resource'], activity_resource])
                         access_violations['Resource'].append(violation)
                         
-                optional_indexes = [i for i, t in enumerate(optional_data) if set(t) == set((acc['concept:name'], acc['concept:operation'].lower(), activity_name))]
+                optional_indexes = [i for i, t in enumerate(optional_data) if set(t[1]) == set((acc['concept:name'], acc['concept:operation'].lower(), activity_name)) and t[0] == activity['@@case_index']]
 
                 for i in optional_indexes:
                     access_violations['Resource'][i].extend([acc['concept:resource'], activity_resource])
