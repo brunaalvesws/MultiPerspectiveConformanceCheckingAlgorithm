@@ -1,0 +1,431 @@
+{
+    "overview": {
+        "successRate": 95.7983193277311,
+        "averageDuration": 5.982445955276489,
+        "violationCount": 80
+    },
+    "activityDistribution": {
+        "Manutencao de funcionalidade": 70,
+        "Atualizacao de requisitos funcionais": 74,
+        "Construcao de funcionalidade": 46,
+        "Documentacao de requisitos funcionais": 38,
+        "Contagem de ponto de funcao": 20,
+        "Gestao da demanda": 44,
+        "Planejamento de entrega": 32,
+        "Review da entrega": 32,
+        "teste": 100,
+        "Elaborar caso de teste": 64,
+        "Corrigir erro": 38
+    },
+    "violations": {
+        "Prohibited activity": [],
+        "Unexpected activity": [],
+        "Illegal activity": [],
+        "Ignored mandatory activity": [
+            {
+                "case_id": 0,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 0,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "6, 5, 4"
+            },
+            {
+                "case_id": 0,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "9, 10"
+            },
+            {
+                "case_id": 0,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "8, 7"
+            },
+            {
+                "case_id": 0,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 2, 3"
+            },
+            {
+                "case_id": 0,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 0,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "11"
+            },
+            {
+                "case_id": 0,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "22, 23, 24"
+            },
+            {
+                "case_id": 1,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 1,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "8, 6, 5, 9, 10, 7"
+            },
+            {
+                "case_id": 1,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "12, 13"
+            },
+            {
+                "case_id": 1,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "11"
+            },
+            {
+                "case_id": 1,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 2, 4, 3"
+            },
+            {
+                "case_id": 1,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 1,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "14"
+            },
+            {
+                "case_id": 1,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "31, 29, 30"
+            },
+            {
+                "case_id": 2,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 2,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "2, 3"
+            },
+            {
+                "case_id": 2,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "6, 7"
+            },
+            {
+                "case_id": 2,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "5, 4"
+            },
+            {
+                "case_id": 2,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1"
+            },
+            {
+                "case_id": 2,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 2,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "8"
+            },
+            {
+                "case_id": 2,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "18, 16, 17"
+            },
+            {
+                "case_id": 3,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 3,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "4, 3"
+            },
+            {
+                "case_id": 3,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "8, 7"
+            },
+            {
+                "case_id": 3,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "6, 5"
+            },
+            {
+                "case_id": 3,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 2"
+            },
+            {
+                "case_id": 3,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 3,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "9"
+            },
+            {
+                "case_id": 3,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "16, 15"
+            },
+            {
+                "case_id": 4,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 4,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "3"
+            },
+            {
+                "case_id": 4,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "6"
+            },
+            {
+                "case_id": 4,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "5, 4"
+            },
+            {
+                "case_id": 4,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 2"
+            },
+            {
+                "case_id": 4,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 4,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "7"
+            },
+            {
+                "case_id": 4,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "14, 13"
+            },
+            {
+                "case_id": 5,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 5,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "5, 4"
+            },
+            {
+                "case_id": 5,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "9"
+            },
+            {
+                "case_id": 5,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "8, 6, 7"
+            },
+            {
+                "case_id": 5,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 2, 3"
+            },
+            {
+                "case_id": 5,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 5,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "10"
+            },
+            {
+                "case_id": 5,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "18, 19"
+            },
+            {
+                "case_id": 6,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 6,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "8, 9, 11, 10, 12, 7"
+            },
+            {
+                "case_id": 6,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "16, 15"
+            },
+            {
+                "case_id": 6,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "14, 13"
+            },
+            {
+                "case_id": 6,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 6, 5, 2, 4, 3"
+            },
+            {
+                "case_id": 6,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 6,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "17"
+            },
+            {
+                "case_id": 6,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "27, 23, 29, 25, 24, 28, 26"
+            },
+            {
+                "case_id": 7,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 7,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "8, 6, 5, 9, 7"
+            },
+            {
+                "case_id": 7,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "12"
+            },
+            {
+                "case_id": 7,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "10, 11"
+            },
+            {
+                "case_id": 7,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 2, 4, 3"
+            },
+            {
+                "case_id": 7,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 7,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "13"
+            },
+            {
+                "case_id": 7,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "23, 24"
+            },
+            {
+                "case_id": 8,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 8,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "8, 6, 9, 11, 10, 7"
+            },
+            {
+                "case_id": 8,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "16, 17, 15"
+            },
+            {
+                "case_id": 8,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "14, 12, 13"
+            },
+            {
+                "case_id": 8,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 5, 2, 4, 3"
+            },
+            {
+                "case_id": 8,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 8,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "18"
+            },
+            {
+                "case_id": 8,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "27, 28, 25, 26"
+            },
+            {
+                "case_id": 9,
+                "rule": "Existence1[Publicar solucao] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 9,
+                "rule": "Response[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |",
+                "instance": "8, 9, 6, 7"
+            },
+            {
+                "case_id": 9,
+                "rule": "Response[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |",
+                "instance": "14, 15, 16"
+            },
+            {
+                "case_id": 9,
+                "rule": "Response[Construcao de funcionalidade, Publicar solucao] | | |",
+                "instance": "10, 12, 11, 13"
+            },
+            {
+                "case_id": 9,
+                "rule": "Chain Response[Manutencao de funcionalidade, Publicar solucao] | | |",
+                "instance": "1, 5, 2, 4, 3"
+            },
+            {
+                "case_id": 9,
+                "rule": "Existence1[Executar teste] | |",
+                "instance": ""
+            },
+            {
+                "case_id": 9,
+                "rule": "Response[Contagem de ponto de funcao, inesperada] | | |",
+                "instance": "17"
+            },
+            {
+                "case_id": 9,
+                "rule": "Response[Elaborar caso de teste, Executar teste] | | |",
+                "instance": "27, 29, 28, 30"
+            }
+        ],
+        "Prohibited data access": [],
+        "Unexpected data access": [],
+        "Illegal data access": [],
+        "Ignored mandatory data access": []
+    }
+}

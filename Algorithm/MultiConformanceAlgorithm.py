@@ -19,12 +19,12 @@ from ParseFiles import pre_process_data
 from LogStatistics import activities_distribution
 
 
-def MultiperspectiveConformanceAlgorithm(eventPATH=str(Path(__file__).resolve().parent / 'LogSinteticoProcessoOFICIALv4.xes'),
-                                         accessPATH=str(Path(__file__).resolve().parent / 'LogSinteticoAcessoOFICIALv4.xes'),
-                                         resourcePATH=str(Path(__file__).resolve().parent / 'ModeloRecursosOFICIALv4.csv'),
-                                         declarePATH=str(Path(__file__).resolve().parent / 'Modelo_Log_Sintetico_OFICIAL.decl'),
-                                         accessmodelPATH=str(Path(__file__).resolve().parent / 'ModeloAcessoOFICIAL.csv'),
-                                         consider_vacuity=True):
+def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/SyntheticProcessLog.xes',
+                                         accessPATH='../ModelosLogsTeste/SyntheticDataAccessLog.xes',
+                                         resourcePATH='../ModelosLogsTeste/OrganizationalModel.csv',
+                                         declarePATH='../ModelosLogsTeste/ProcessModel.decl',
+                                         accessmodelPATH='../ModelosLogsTeste/DataAccessRestrictionModel.csv',
+                                         consider_vacuity=True, cases=1):
   '''
   The algorithm accepts: a process log, a data access log, a resource model, a process DECLARE model, and a data access model.
   '''
@@ -40,14 +40,25 @@ def MultiperspectiveConformanceAlgorithm(eventPATH=str(Path(__file__).resolve().
   activities_stats = activities_distribution(process_log)
   access_conformance, log_size = check_access_conformance(processed_access_model, complete_log)
   resource_conformance, activity_conformance, access_violations = check_resource_activities_conformance(process_log, access_log, allowed_activities, resource_model, access_conformance)
-  end = time.time()
-  duration = end - begin
   return non_conformance_patterns_mapping(process_conformance, 
                                           access_violations, 
                                           resource_conformance, 
                                           activity_conformance, 
                                           activities_stats, 
-                                          log_size, 
-                                          duration)
-
-MultiperspectiveConformanceAlgorithm()
+                                          log_size, begin, cases)
+for i in range(30):
+    MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogTenCasesNoErrors.xes',
+                                            '../ModelosLogsTeste/SyntheticDataAccessLogTenCasesNoErrors.xes',
+                                            '../ModelosLogsTeste/OrganizationalModelTenCases.csv',
+                                            '../ModelosLogsTeste/ProcessModel.decl',
+                                            '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 10)
+    MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogHundredCases.xes',
+                                            '../ModelosLogsTeste/SyntheticDataAccessLogHundredCases.xes',
+                                            '../ModelosLogsTeste/OrganizationalModelHundredCases.csv',
+                                            '../ModelosLogsTeste/ProcessModel.decl',
+                                            '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 100)
+    MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogThousandCases.xes',
+                                            '../ModelosLogsTeste/SyntheticDataAccessLogThousandCases.xes',
+                                            '../ModelosLogsTeste/OrganizationalModelThousandCases.csv',
+                                            '../ModelosLogsTeste/ProcessModel.decl',
+                                            '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 1000)

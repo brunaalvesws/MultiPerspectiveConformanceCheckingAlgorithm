@@ -1,6 +1,8 @@
+import time
+
 from LogStatistics import total_number_of_violations, success_rate
 from collections import defaultdict
-
+import json
 import re
 
 def parse_constraint(rule: str):
@@ -137,7 +139,7 @@ def format_inconformances(process_conformance, access_conformance, resource_conf
 
     return report
 
-def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, duration):
+def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, begin, cases):
     patterns = {}
     patterns['Prohibited activity'] = [] 
     patterns['Unexpected activity'] = [] 
@@ -187,6 +189,8 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
         
     report = {}
     num_violations = total_number_of_violations(patterns)
+    end = time.time()
+    duration = end - begin
     report['overview'] = {
         'successRate': success_rate(log_size, num_violations),
         'averageDuration': duration,
@@ -194,5 +198,6 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     }
     report['activityDistribution'] = activities_stats
     report['violations'] = patterns
-    print(report)    
+    with open(f"report{cases}.txt", "a", encoding="utf-8") as f:
+        f.write('\n' + str(duration))    
     return report

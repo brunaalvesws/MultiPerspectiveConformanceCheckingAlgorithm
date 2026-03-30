@@ -1,0 +1,1001 @@
+case:concept:name;concept:team;concept:resources
+case_0;e6;re18, re6
+case_1;e9;re17, re12, re20
+case_2;e7;re20, re7
+case_3;e2;re16, re5, re1
+case_4;e6;re1, re7, re13, re3, re17
+case_5;e8;re13, re7, re9
+case_6;e4;re3, re5, re19, re1
+case_7;e9;re12, re9
+case_8;e1;re18, re8
+case_9;e1;re14, re9
+case_10;e2;re2, re19, re11, re5
+case_11;e4;re7, re14, re3, re20
+case_12;e6;re19, re15, re2, re10, re18
+case_13;e3;re18, re6, re20, re4, re10
+case_14;e9;re16, re3
+case_15;e7;re1, re7, re14, re12, re3
+case_16;e7;re17, re13, re9, re16, re3
+case_17;e9;re12, re1
+case_18;e2;re7, re9
+case_19;e1;re13, re8
+case_20;e7;re14, re2, re18, re15
+case_21;e6;re2, re8, re18, re14, re13
+case_22;e7;re18, re11, re14
+case_23;e8;re3, re19, re4, re6
+case_24;e9;re18, re12
+case_25;e3;re12, re2
+case_26;e5;re6, re15
+case_27;e1;re11, re10
+case_28;e7;re14, re6
+case_29;e3;re12, re7, re19, re2, re14
+case_30;e1;re5, re2, re15, re20
+case_31;e5;re2, re4
+case_32;e7;re16, re6
+case_33;e9;re12, re14, re13, re3
+case_34;e2;re5, re15, re1
+case_35;e3;re2, re6, re12, re10, re4
+case_36;e9;re12, re17
+case_37;e3;re7, re15, re11, re17
+case_38;e5;re15, re3
+case_39;e5;re13, re4, re10
+case_40;e5;re10, re4, re12
+case_41;e1;re18, re4, re2, re1, re10
+case_42;e3;re8, re2, re17, re7
+case_43;e6;re7, re11
+case_44;e7;re4, re14
+case_45;e7;re3, re1, re5, re7
+case_46;e7;re16, re20, re6
+case_47;e4;re17, re4
+case_48;e5;re3, re13
+case_49;e5;re10, re18
+case_50;e5;re10, re9, re4, re3, re12
+case_51;e8;re16, re4, re1, re3, re2
+case_52;e6;re10, re4
+case_53;e8;re9, re7, re1, re15
+case_54;e6;re20, re3, re16, re14, re8
+case_55;e7;re7, re20, re17, re4
+case_56;e7;re4, re14
+case_57;e2;re7, re9
+case_58;e3;re1, re12, re2
+case_59;e3;re7, re11, re3
+case_60;e4;re1, re7, re10, re3, re15
+case_61;e1;re17, re16, re9
+case_62;e8;re17, re14, re4, re20
+case_63;e9;re5, re10
+case_64;e2;re1, re6, re15
+case_65;e6;re15, re18
+case_66;e9;re15, re3, re8, re5
+case_67;e9;re12, re5, re13, re9
+case_68;e3;re10, re8, re1, re14
+case_69;e1;re11, re2, re9, re10
+case_70;e1;re7, re5, re18, re6
+case_71;e7;re17, re2, re5, re3, re1
+case_72;e2;re9, re5, re14
+case_73;e2;re9, re13, re18, re3
+case_74;e9;re6, re3, re14
+case_75;e6;re13, re16, re18, re8, re2
+case_76;e4;re5, re4, re20
+case_77;e6;re17, re4, re16
+case_78;e3;re12, re9, re18, re15, re7
+case_79;e7;re1, re9, re16, re10, re19
+case_80;e4;re8, re19
+case_81;e9;re12, re11, re10, re3, re14
+case_82;e6;re9, re17, re1, re14
+case_83;e9;re6, re12, re2, re16, re9
+case_84;e4;re15, re18, re16, re7, re13
+case_85;e8;re9, re19, re5
+case_86;e9;re7, re4, re17, re10, re19
+case_87;e3;re12, re4, re14
+case_88;e1;re18, re4
+case_89;e7;re20, re16, re17, re4
+case_90;e7;re5, re14
+case_91;e1;re6, re5, re12, re17, re8
+case_92;e1;re7, re19, re2, re13
+case_93;e5;re20, re16
+case_94;e8;re1, re4, re9
+case_95;e8;re15, re1, re17, re10, re14
+case_96;e1;re6, re11, re13, re12, re8
+case_97;e4;re8, re13, re7, re2
+case_98;e7;re19, re20, re18, re5, re4
+case_99;e4;re6, re20, re14, re13
+case_100;e5;re3, re8, re4, re10, re5
+case_101;e4;re20, re14, re18, re17, re16
+case_102;e4;re9, re18, re10, re16
+case_103;e6;re12, re4, re15
+case_104;e3;re14, re1, re7
+case_105;e1;re20, re19
+case_106;e2;re9, re14, re13, re15, re10
+case_107;e2;re9, re3, re6, re1
+case_108;e7;re7, re4
+case_109;e7;re15, re4, re10, re11
+case_110;e1;re18, re4, re17, re14, re9
+case_111;e3;re14, re20, re8
+case_112;e4;re19, re20, re16, re5
+case_113;e3;re6, re5, re12, re7
+case_114;e1;re11, re5, re6
+case_115;e2;re12, re2, re3, re20, re6
+case_116;e8;re18, re8
+case_117;e6;re6, re2, re5
+case_118;e1;re1, re2, re3, re7
+case_119;e9;re1, re6, re15, re2, re11
+case_120;e6;re10, re16, re6, re3, re4
+case_121;e5;re20, re17, re2, re14, re18
+case_122;e2;re14, re1, re4, re16
+case_123;e3;re5, re12
+case_124;e5;re9, re1
+case_125;e2;re16, re10, re13, re3, re6
+case_126;e5;re13, re19, re14, re7
+case_127;e9;re13, re19, re1, re2, re3
+case_128;e6;re15, re5, re13, re12
+case_129;e8;re9, re1, re17
+case_130;e4;re19, re6
+case_131;e9;re7, re15, re20, re8
+case_132;e6;re11, re17, re6, re4, re20
+case_133;e1;re19, re12, re10, re17
+case_134;e6;re6, re3, re1, re8, re7
+case_135;e5;re11, re15, re6, re19
+case_136;e1;re8, re3, re7, re10
+case_137;e6;re5, re12, re3
+case_138;e1;re20, re7, re4
+case_139;e3;re8, re2, re20, re19
+case_140;e5;re11, re13, re9, re14, re17
+case_141;e1;re14, re6, re9, re16
+case_142;e5;re16, re8
+case_143;e2;re9, re19
+case_144;e6;re10, re9, re11, re12, re3
+case_145;e8;re6, re15, re9
+case_146;e1;re10, re18, re1
+case_147;e2;re2, re19, re9
+case_148;e7;re1, re3
+case_149;e6;re11, re16
+case_150;e7;re13, re6, re18, re7
+case_151;e5;re9, re7, re15, re18
+case_152;e3;re1, re15, re14, re6, re2
+case_153;e2;re4, re19, re15, re8
+case_154;e5;re1, re16, re12, re7
+case_155;e5;re12, re11, re1
+case_156;e3;re2, re11, re4, re6, re12
+case_157;e7;re4, re20, re5, re2, re18
+case_158;e9;re6, re17, re5, re10, re14
+case_159;e6;re1, re5
+case_160;e9;re14, re3
+case_161;e7;re3, re6, re20
+case_162;e1;re1, re17, re16, re4
+case_163;e4;re17, re20, re8
+case_164;e7;re20, re8, re16
+case_165;e5;re12, re19, re9, re6
+case_166;e3;re19, re2, re15
+case_167;e2;re17, re18, re5, re1, re20
+case_168;e1;re14, re16
+case_169;e9;re6, re7
+case_170;e9;re13, re18, re19, re17
+case_171;e5;re9, re19
+case_172;e3;re1, re12, re10, re14
+case_173;e3;re20, re5
+case_174;e3;re2, re1
+case_175;e6;re17, re18, re4
+case_176;e6;re16, re11, re20, re13, re5
+case_177;e4;re8, re3
+case_178;e5;re17, re13, re18
+case_179;e9;re19, re8
+case_180;e9;re9, re14, re8, re12
+case_181;e1;re19, re13, re8
+case_182;e4;re9, re3
+case_183;e1;re14, re3, re7, re11
+case_184;e7;re1, re5
+case_185;e5;re10, re2, re11, re20, re13
+case_186;e6;re12, re11, re19
+case_187;e7;re17, re14, re11
+case_188;e5;re2, re4, re20, re9, re18
+case_189;e1;re6, re8, re1, re13, re9
+case_190;e4;re7, re16, re15, re13, re19
+case_191;e8;re8, re6, re13, re7
+case_192;e9;re8, re7
+case_193;e5;re2, re19, re11, re13, re5
+case_194;e6;re11, re18
+case_195;e6;re18, re11, re17
+case_196;e5;re3, re20, re8, re2, re7
+case_197;e7;re11, re5, re8, re17
+case_198;e1;re9, re3, re13, re1, re4
+case_199;e4;re7, re20, re17, re13
+case_200;e7;re16, re11, re8, re4
+case_201;e2;re13, re19, re20, re14, re5
+case_202;e7;re14, re10, re11, re1
+case_203;e6;re14, re19, re2, re12, re8
+case_204;e5;re18, re9, re14
+case_205;e9;re14, re9, re12
+case_206;e6;re1, re4, re13, re15, re7
+case_207;e6;re6, re13, re2, re18
+case_208;e6;re8, re7, re18, re9, re13
+case_209;e7;re3, re4, re13, re1, re10
+case_210;e7;re7, re19, re5, re11
+case_211;e8;re20, re1
+case_212;e1;re11, re17
+case_213;e3;re5, re1
+case_214;e4;re2, re17, re18
+case_215;e7;re11, re10, re1, re14, re18
+case_216;e9;re12, re8
+case_217;e1;re10, re16, re15, re11, re8
+case_218;e7;re4, re1
+case_219;e9;re10, re19, re13
+case_220;e6;re17, re8, re18, re1
+case_221;e9;re13, re19, re16
+case_222;e4;re20, re14, re7, re5
+case_223;e1;re11, re8, re4, re10, re3
+case_224;e2;re18, re4, re6
+case_225;e8;re14, re10, re18, re4
+case_226;e1;re1, re15, re12, re9, re3
+case_227;e6;re1, re12, re4, re19, re20
+case_228;e9;re17, re16
+case_229;e8;re17, re16, re2, re15
+case_230;e5;re1, re15
+case_231;e7;re10, re2, re11, re9
+case_232;e2;re17, re8
+case_233;e1;re10, re12, re1
+case_234;e2;re12, re14
+case_235;e9;re10, re17
+case_236;e6;re5, re9, re6, re10
+case_237;e2;re17, re9
+case_238;e7;re1, re14, re6, re7
+case_239;e5;re16, re1
+case_240;e4;re11, re7, re5
+case_241;e1;re16, re13
+case_242;e9;re13, re4
+case_243;e5;re2, re19
+case_244;e4;re5, re1, re19, re11
+case_245;e2;re5, re20, re4
+case_246;e9;re10, re4
+case_247;e8;re14, re8, re17, re2
+case_248;e1;re3, re13
+case_249;e5;re20, re4, re9
+case_250;e9;re8, re20
+case_251;e3;re19, re8, re10, re16, re9
+case_252;e4;re8, re5, re3
+case_253;e8;re11, re8
+case_254;e9;re14, re11, re3, re4, re6
+case_255;e6;re4, re8, re9
+case_256;e6;re20, re3
+case_257;e6;re9, re19, re3, re18
+case_258;e3;re20, re14, re12, re2
+case_259;e5;re15, re7, re11, re5, re14
+case_260;e1;re4, re17
+case_261;e5;re15, re6, re19
+case_262;e7;re20, re11
+case_263;e6;re11, re8, re9, re17, re18
+case_264;e2;re19, re17, re18
+case_265;e9;re15, re19, re7, re4, re16
+case_266;e5;re7, re17, re8
+case_267;e7;re2, re5, re15, re18
+case_268;e4;re3, re20
+case_269;e6;re3, re6, re12, re1
+case_270;e6;re5, re3, re9, re19
+case_271;e7;re9, re17
+case_272;e5;re13, re14, re8, re19
+case_273;e3;re12, re20, re19, re4
+case_274;e1;re14, re3, re2
+case_275;e4;re11, re18, re2, re3, re13
+case_276;e7;re19, re2, re6, re17, re16
+case_277;e4;re20, re10
+case_278;e9;re4, re17, re7, re12
+case_279;e3;re4, re5, re1, re13, re11
+case_280;e4;re13, re1, re3
+case_281;e8;re11, re18, re4, re9, re14
+case_282;e7;re17, re12, re10
+case_283;e5;re16, re8, re11, re9
+case_284;e8;re14, re6, re4, re2
+case_285;e7;re2, re8
+case_286;e5;re14, re12
+case_287;e3;re3, re2
+case_288;e4;re9, re12
+case_289;e5;re14, re12
+case_290;e2;re11, re1, re5
+case_291;e7;re19, re4, re14, re5, re9
+case_292;e9;re8, re3, re17
+case_293;e8;re6, re13
+case_294;e8;re18, re15, re2, re10, re8
+case_295;e8;re3, re7, re8
+case_296;e8;re4, re5, re12
+case_297;e9;re13, re11, re4, re7, re19
+case_298;e7;re3, re12, re20, re17, re6
+case_299;e8;re20, re16, re15, re12, re5
+case_300;e2;re20, re8, re2
+case_301;e3;re4, re5
+case_302;e2;re7, re11
+case_303;e7;re1, re9, re8, re2
+case_304;e5;re7, re6, re11, re1, re15
+case_305;e4;re2, re6, re10, re13
+case_306;e9;re19, re4, re9, re6, re20
+case_307;e7;re18, re10, re20
+case_308;e8;re4, re6, re3, re1, re9
+case_309;e4;re13, re18
+case_310;e8;re14, re3, re10
+case_311;e3;re12, re9, re20
+case_312;e7;re13, re9, re5, re16, re3
+case_313;e9;re15, re9, re20, re12
+case_314;e7;re7, re2, re9
+case_315;e8;re20, re4
+case_316;e1;re20, re2, re9, re4
+case_317;e7;re1, re17, re18
+case_318;e9;re17, re16
+case_319;e5;re9, re6, re2
+case_320;e7;re12, re16
+case_321;e5;re7, re17, re8, re15, re16
+case_322;e9;re18, re6, re4, re9, re8
+case_323;e4;re17, re15, re14, re10
+case_324;e1;re16, re6, re4, re3
+case_325;e8;re8, re2, re3, re5, re14
+case_326;e8;re17, re10, re11
+case_327;e4;re9, re12, re5, re3
+case_328;e8;re9, re16
+case_329;e7;re16, re2, re6
+case_330;e5;re1, re12, re11
+case_331;e7;re13, re4, re19, re7, re1
+case_332;e7;re5, re3
+case_333;e1;re3, re15, re14
+case_334;e8;re9, re10, re4
+case_335;e5;re9, re15, re7, re14
+case_336;e7;re4, re7, re10, re2
+case_337;e7;re5, re4
+case_338;e1;re9, re20
+case_339;e6;re2, re20, re7, re15
+case_340;e3;re20, re14, re12, re2
+case_341;e5;re19, re9
+case_342;e7;re3, re7
+case_343;e5;re20, re10, re1, re8
+case_344;e2;re4, re10, re5, re14, re8
+case_345;e3;re16, re17, re1, re19, re5
+case_346;e9;re19, re2, re6, re5
+case_347;e9;re2, re11, re16, re9, re12
+case_348;e8;re8, re6, re4, re12
+case_349;e1;re9, re7, re18, re8
+case_350;e4;re15, re17
+case_351;e6;re2, re12, re17
+case_352;e8;re6, re20, re18, re11, re5
+case_353;e9;re15, re2, re10, re17, re9
+case_354;e8;re19, re13, re11, re8
+case_355;e4;re19, re7, re11, re2, re4
+case_356;e6;re7, re5
+case_357;e1;re5, re4, re13
+case_358;e8;re18, re16, re15
+case_359;e7;re11, re19, re15, re10
+case_360;e2;re3, re20, re1, re14, re7
+case_361;e4;re12, re7
+case_362;e2;re10, re18, re15
+case_363;e4;re14, re8, re7, re19, re4
+case_364;e9;re14, re7, re2
+case_365;e5;re10, re2, re6, re16
+case_366;e9;re14, re10, re6, re7, re12
+case_367;e1;re9, re16
+case_368;e8;re18, re19, re1, re15
+case_369;e8;re5, re17, re19
+case_370;e6;re18, re19
+case_371;e3;re4, re7, re6, re19, re2
+case_372;e1;re4, re11, re9, re8, re1
+case_373;e2;re20, re14
+case_374;e7;re8, re18, re14, re19
+case_375;e7;re1, re9
+case_376;e7;re3, re20, re16, re11
+case_377;e6;re9, re15, re4, re1
+case_378;e3;re10, re19
+case_379;e8;re12, re2, re1, re16
+case_380;e7;re6, re17, re10
+case_381;e1;re17, re15, re20, re10, re18
+case_382;e2;re14, re7, re5
+case_383;e5;re4, re11, re6, re14, re13
+case_384;e2;re1, re18
+case_385;e9;re9, re7, re17
+case_386;e3;re16, re18, re1, re9, re8
+case_387;e1;re4, re10, re3
+case_388;e9;re9, re17
+case_389;e1;re6, re19
+case_390;e4;re18, re10, re12, re17
+case_391;e7;re19, re7, re8
+case_392;e8;re3, re14, re16
+case_393;e8;re18, re12, re16, re11
+case_394;e2;re9, re5, re11, re19
+case_395;e3;re11, re19, re14, re6, re9
+case_396;e9;re20, re8
+case_397;e5;re14, re18
+case_398;e7;re12, re5, re17
+case_399;e9;re7, re1, re13
+case_400;e7;re2, re19, re15
+case_401;e6;re10, re4
+case_402;e6;re6, re7, re13, re10, re12
+case_403;e3;re5, re14
+case_404;e8;re1, re11, re18, re5, re19
+case_405;e5;re4, re3, re16, re15
+case_406;e8;re4, re6, re20, re16
+case_407;e8;re8, re3, re9, re7
+case_408;e4;re20, re7, re8, re2
+case_409;e7;re3, re17, re13, re20
+case_410;e6;re6, re13, re1
+case_411;e1;re9, re2, re18, re7, re19
+case_412;e2;re17, re6, re15, re14, re18
+case_413;e2;re10, re16, re12, re7
+case_414;e1;re1, re16
+case_415;e4;re10, re9, re12, re19
+case_416;e3;re8, re5
+case_417;e3;re16, re3, re14
+case_418;e4;re11, re9, re6, re12
+case_419;e3;re8, re7, re5, re3, re4
+case_420;e6;re1, re2
+case_421;e1;re10, re7, re3, re20, re11
+case_422;e8;re12, re10, re4
+case_423;e2;re3, re7, re17, re15, re1
+case_424;e8;re10, re18, re8
+case_425;e5;re2, re7, re12, re17
+case_426;e4;re12, re3, re15, re10
+case_427;e8;re18, re9, re11
+case_428;e4;re4, re15, re3, re2
+case_429;e7;re16, re5, re4
+case_430;e3;re14, re6, re10
+case_431;e2;re16, re1, re9, re6, re8
+case_432;e5;re20, re3, re7, re5, re10
+case_433;e9;re11, re10, re3, re20
+case_434;e5;re12, re14
+case_435;e8;re20, re6, re13, re12, re11
+case_436;e1;re18, re16, re11, re6
+case_437;e1;re3, re18, re20, re16
+case_438;e5;re20, re16, re3
+case_439;e6;re9, re18, re19, re16, re1
+case_440;e3;re8, re17, re18, re9, re12
+case_441;e8;re13, re4
+case_442;e7;re4, re19, re6, re2
+case_443;e6;re11, re9, re10
+case_444;e3;re10, re18, re14, re3
+case_445;e6;re8, re13, re19, re2, re6
+case_446;e4;re18, re4, re16, re1, re17
+case_447;e9;re14, re4, re10, re7, re13
+case_448;e1;re18, re11, re6
+case_449;e8;re2, re8
+case_450;e5;re7, re9, re2, re17
+case_451;e6;re15, re8, re2
+case_452;e6;re17, re7, re11, re1
+case_453;e7;re11, re3, re2
+case_454;e6;re14, re6, re3, re20, re13
+case_455;e1;re13, re6, re5, re14
+case_456;e5;re15, re3, re18
+case_457;e4;re11, re17
+case_458;e6;re6, re5, re17, re2, re12
+case_459;e6;re3, re10
+case_460;e2;re2, re19, re11
+case_461;e3;re15, re14, re3, re18
+case_462;e7;re11, re18, re10, re13
+case_463;e6;re17, re16
+case_464;e3;re5, re12
+case_465;e3;re18, re5, re2
+case_466;e8;re4, re6, re11, re8
+case_467;e8;re11, re3, re5
+case_468;e7;re1, re7
+case_469;e9;re20, re5, re1, re9, re15
+case_470;e2;re19, re10, re14, re2, re15
+case_471;e9;re17, re11, re8, re2, re14
+case_472;e3;re19, re8
+case_473;e8;re8, re16
+case_474;e1;re18, re9, re8, re12
+case_475;e8;re10, re5, re19, re17, re12
+case_476;e1;re5, re9, re12, re13
+case_477;e9;re12, re14, re7
+case_478;e2;re18, re20
+case_479;e7;re10, re12, re19, re6, re9
+case_480;e3;re2, re4, re3
+case_481;e3;re3, re10, re2
+case_482;e5;re11, re2
+case_483;e2;re8, re18, re2, re13, re20
+case_484;e3;re16, re11, re7
+case_485;e8;re10, re6, re18, re14
+case_486;e3;re13, re10
+case_487;e5;re1, re16, re11
+case_488;e7;re9, re4, re2, re16, re10
+case_489;e5;re17, re20, re5, re7, re6
+case_490;e1;re7, re5, re9
+case_491;e7;re10, re3
+case_492;e5;re15, re19, re9, re5
+case_493;e2;re4, re19
+case_494;e5;re15, re1, re13, re17
+case_495;e8;re1, re17, re4
+case_496;e7;re15, re9, re3, re20, re8
+case_497;e8;re16, re6, re18, re8, re12
+case_498;e8;re10, re3, re20, re12
+case_499;e2;re2, re13, re11, re10
+case_500;e3;re11, re16, re1, re20
+case_501;e6;re14, re3
+case_502;e4;re8, re9, re20
+case_503;e2;re11, re1, re8, re19
+case_504;e9;re14, re3, re11
+case_505;e1;re3, re4, re11, re13
+case_506;e9;re20, re14, re9, re1
+case_507;e2;re5, re12
+case_508;e2;re20, re8, re6, re17, re12
+case_509;e7;re14, re1
+case_510;e7;re3, re6
+case_511;e9;re4, re19
+case_512;e7;re5, re1, re19, re16, re7
+case_513;e3;re2, re5, re14, re11, re12
+case_514;e1;re18, re17, re20, re4
+case_515;e9;re1, re18, re17, re16
+case_516;e6;re17, re13
+case_517;e7;re5, re14, re2, re16
+case_518;e6;re18, re10
+case_519;e2;re7, re5, re3, re19
+case_520;e6;re6, re2
+case_521;e9;re5, re7, re18, re13, re6
+case_522;e9;re10, re6, re3
+case_523;e7;re1, re5, re2, re20, re3
+case_524;e7;re4, re3
+case_525;e7;re20, re11, re12, re16
+case_526;e6;re12, re4, re5, re18, re16
+case_527;e1;re12, re7
+case_528;e9;re17, re13, re12, re2
+case_529;e2;re11, re9
+case_530;e6;re16, re19, re12, re11, re1
+case_531;e5;re10, re12, re7
+case_532;e7;re4, re17, re14, re9
+case_533;e5;re8, re4
+case_534;e4;re9, re16, re8, re14
+case_535;e4;re9, re19, re11, re5, re3
+case_536;e8;re8, re20
+case_537;e2;re16, re20
+case_538;e5;re19, re12, re17
+case_539;e7;re6, re12
+case_540;e4;re1, re16, re7
+case_541;e9;re6, re7, re3, re4
+case_542;e1;re14, re5, re7, re17
+case_543;e9;re12, re19, re1
+case_544;e7;re1, re17, re5, re2
+case_545;e6;re10, re11, re13, re15, re1
+case_546;e2;re11, re12
+case_547;e8;re15, re1, re9
+case_548;e2;re15, re20
+case_549;e3;re12, re5, re15
+case_550;e6;re14, re9
+case_551;e4;re5, re4, re12
+case_552;e2;re12, re15, re19, re1, re8
+case_553;e2;re18, re1
+case_554;e9;re1, re17
+case_555;e8;re19, re12, re3
+case_556;e3;re19, re13, re16, re18
+case_557;e4;re14, re10, re6, re2, re7
+case_558;e6;re15, re12, re7, re6
+case_559;e3;re10, re13, re17
+case_560;e2;re13, re4, re19, re20
+case_561;e2;re16, re12, re15, re10, re4
+case_562;e9;re1, re4
+case_563;e2;re16, re14, re6
+case_564;e4;re17, re13, re15, re4, re3
+case_565;e5;re4, re3, re19, re12
+case_566;e9;re6, re15, re1, re8, re5
+case_567;e7;re2, re15, re13, re1
+case_568;e5;re3, re18, re19, re6
+case_569;e4;re2, re7, re1, re14, re8
+case_570;e4;re1, re15, re3, re7
+case_571;e2;re6, re17
+case_572;e3;re19, re16, re1, re2, re8
+case_573;e5;re17, re2, re10, re6
+case_574;e3;re14, re17, re18, re4, re11
+case_575;e9;re7, re18, re8, re12
+case_576;e3;re18, re11
+case_577;e1;re15, re4, re11, re14, re16
+case_578;e5;re9, re1, re7, re12
+case_579;e8;re16, re13, re7
+case_580;e6;re6, re19, re20, re5, re4
+case_581;e4;re14, re13
+case_582;e8;re13, re3, re5, re17
+case_583;e6;re19, re8, re7, re13
+case_584;e2;re11, re15, re1, re2
+case_585;e1;re17, re4
+case_586;e2;re5, re1, re18, re12, re9
+case_587;e4;re7, re2, re9, re14, re15
+case_588;e3;re8, re19, re4
+case_589;e3;re18, re8, re6
+case_590;e2;re10, re4, re13, re16
+case_591;e5;re7, re15
+case_592;e1;re17, re8, re3, re1
+case_593;e7;re7, re2, re15
+case_594;e9;re9, re1
+case_595;e4;re5, re8, re16, re13, re10
+case_596;e4;re7, re13, re19, re9
+case_597;e6;re10, re1, re15, re12
+case_598;e2;re8, re5, re9
+case_599;e2;re7, re2, re3, re4, re20
+case_600;e9;re19, re4, re11
+case_601;e9;re4, re2, re7, re16
+case_602;e2;re18, re16
+case_603;e8;re1, re16
+case_604;e1;re18, re16, re17, re4, re7
+case_605;e1;re3, re2, re19, re5, re1
+case_606;e4;re20, re7, re9
+case_607;e2;re6, re11, re3
+case_608;e7;re15, re4, re14
+case_609;e9;re13, re8
+case_610;e7;re9, re2
+case_611;e2;re17, re3, re9, re8, re11
+case_612;e1;re18, re17, re3, re10
+case_613;e7;re18, re17
+case_614;e7;re12, re13, re14, re4, re18
+case_615;e8;re20, re9
+case_616;e8;re17, re3, re13, re16
+case_617;e1;re9, re6, re4, re5
+case_618;e8;re3, re10, re2, re18
+case_619;e8;re10, re4
+case_620;e8;re16, re19
+case_621;e2;re6, re18, re11, re5
+case_622;e5;re10, re14, re19, re8
+case_623;e6;re2, re3, re15, re12
+case_624;e6;re15, re3, re7
+case_625;e1;re9, re8, re14
+case_626;e4;re8, re7, re18, re4
+case_627;e4;re2, re3, re4, re11
+case_628;e2;re16, re4, re14
+case_629;e7;re19, re2, re6, re12
+case_630;e5;re19, re17, re1, re8, re6
+case_631;e1;re13, re14
+case_632;e8;re8, re9
+case_633;e8;re8, re3, re10, re5
+case_634;e1;re13, re12, re1
+case_635;e5;re6, re17, re12
+case_636;e4;re6, re11, re9, re18, re8
+case_637;e7;re7, re14, re11, re9
+case_638;e6;re11, re16, re15, re9, re13
+case_639;e9;re13, re19
+case_640;e7;re5, re13
+case_641;e3;re5, re10, re16
+case_642;e1;re9, re13, re1
+case_643;e8;re1, re20
+case_644;e6;re2, re18, re1
+case_645;e7;re7, re10, re2, re19, re14
+case_646;e8;re18, re17, re13
+case_647;e7;re11, re19, re2, re20
+case_648;e3;re5, re17, re16, re6, re15
+case_649;e6;re2, re7
+case_650;e5;re14, re1
+case_651;e2;re16, re19, re15, re13, re9
+case_652;e4;re12, re18, re10, re3, re20
+case_653;e1;re7, re16, re11, re2, re19
+case_654;e3;re10, re6, re16, re17
+case_655;e1;re10, re3, re4, re11
+case_656;e6;re10, re16, re19, re13
+case_657;e3;re11, re10
+case_658;e2;re10, re4, re2
+case_659;e1;re3, re13
+case_660;e6;re11, re5, re18, re6, re13
+case_661;e3;re2, re9, re8
+case_662;e5;re3, re20
+case_663;e3;re3, re19, re9, re15
+case_664;e1;re12, re4
+case_665;e5;re10, re8, re3, re4
+case_666;e7;re6, re9
+case_667;e5;re18, re15
+case_668;e9;re4, re7, re8, re14
+case_669;e9;re20, re2, re4, re15, re9
+case_670;e6;re16, re4
+case_671;e3;re12, re9, re16, re11, re4
+case_672;e2;re13, re9, re17, re4
+case_673;e6;re13, re12
+case_674;e2;re13, re10
+case_675;e8;re17, re6
+case_676;e3;re7, re11, re6, re13, re14
+case_677;e7;re19, re15
+case_678;e2;re4, re16, re8, re5, re10
+case_679;e9;re8, re1, re20
+case_680;e1;re15, re20, re5, re16, re8
+case_681;e8;re2, re10, re5, re13, re8
+case_682;e3;re6, re17
+case_683;e3;re19, re3, re16, re15
+case_684;e1;re20, re11, re16, re1
+case_685;e9;re2, re9, re12, re17
+case_686;e9;re6, re9
+case_687;e9;re9, re19, re8, re18
+case_688;e9;re14, re15, re11, re20, re17
+case_689;e6;re4, re3, re2
+case_690;e7;re13, re1, re2, re18
+case_691;e9;re15, re14, re18, re6, re4
+case_692;e8;re1, re19, re13, re9, re8
+case_693;e1;re11, re13, re3
+case_694;e7;re4, re8, re12, re9
+case_695;e2;re10, re7, re19, re1
+case_696;e8;re17, re2
+case_697;e5;re20, re5, re7, re6
+case_698;e4;re20, re3, re4, re14
+case_699;e1;re13, re8
+case_700;e3;re14, re19, re7, re11
+case_701;e7;re12, re4, re14, re5, re13
+case_702;e7;re18, re17
+case_703;e9;re16, re17, re10, re8
+case_704;e5;re15, re10, re7
+case_705;e8;re20, re2, re3, re11, re10
+case_706;e9;re6, re20, re15, re12
+case_707;e8;re20, re10, re2, re14
+case_708;e7;re12, re5, re3
+case_709;e8;re2, re16, re12, re11, re17
+case_710;e4;re5, re4
+case_711;e4;re16, re7, re10, re3
+case_712;e7;re16, re12, re1, re10
+case_713;e6;re19, re16, re10, re4, re18
+case_714;e7;re9, re14, re6, re8
+case_715;e5;re17, re7
+case_716;e4;re7, re2, re5
+case_717;e7;re4, re9, re16, re12, re15
+case_718;e6;re11, re14, re16, re13, re15
+case_719;e1;re13, re12, re16, re4
+case_720;e2;re10, re14
+case_721;e7;re9, re11, re18, re8
+case_722;e9;re4, re7, re2, re13
+case_723;e4;re18, re13
+case_724;e3;re17, re18, re8
+case_725;e6;re10, re2, re12, re15
+case_726;e1;re7, re6, re16, re17, re18
+case_727;e1;re17, re20, re10, re19, re5
+case_728;e2;re10, re16, re15
+case_729;e9;re15, re9, re4
+case_730;e7;re7, re1
+case_731;e5;re14, re12, re7
+case_732;e9;re19, re10
+case_733;e8;re15, re18, re16, re19
+case_734;e8;re4, re11
+case_735;e9;re11, re7
+case_736;e1;re19, re14, re12
+case_737;e6;re6, re12, re20
+case_738;e2;re15, re2
+case_739;e8;re3, re14
+case_740;e4;re3, re20, re1, re7, re8
+case_741;e4;re11, re7, re13, re16, re12
+case_742;e4;re8, re14, re17, re3, re11
+case_743;e4;re12, re16, re18
+case_744;e3;re17, re14
+case_745;e5;re8, re16, re2
+case_746;e8;re20, re7, re2
+case_747;e3;re13, re16, re11, re9, re14
+case_748;e9;re16, re4, re10, re1, re3
+case_749;e3;re8, re20, re17, re19, re18
+case_750;e5;re3, re1, re6
+case_751;e2;re3, re16
+case_752;e3;re8, re16
+case_753;e7;re2, re7, re6, re3
+case_754;e7;re2, re6
+case_755;e8;re3, re18, re4, re1
+case_756;e1;re14, re13
+case_757;e6;re8, re9, re4, re7
+case_758;e8;re14, re6, re3, re4, re16
+case_759;e2;re12, re11, re8, re17
+case_760;e8;re9, re19, re2, re7
+case_761;e6;re15, re4
+case_762;e7;re18, re4, re8, re11, re15
+case_763;e5;re7, re19, re11
+case_764;e8;re16, re9, re11, re10
+case_765;e3;re17, re2
+case_766;e6;re1, re6, re5
+case_767;e4;re16, re11, re15
+case_768;e6;re16, re13, re8, re3
+case_769;e1;re19, re16
+case_770;e5;re9, re8, re7
+case_771;e6;re9, re17, re2, re18, re20
+case_772;e6;re14, re10, re16
+case_773;e9;re2, re4, re13, re9, re16
+case_774;e9;re8, re18, re6, re2, re13
+case_775;e1;re8, re14, re18
+case_776;e3;re10, re4, re16
+case_777;e2;re10, re4
+case_778;e7;re6, re7, re17, re14, re10
+case_779;e4;re13, re19, re6, re10
+case_780;e6;re3, re19, re8
+case_781;e2;re1, re16, re18
+case_782;e2;re10, re6, re9, re20, re12
+case_783;e9;re20, re9
+case_784;e8;re10, re4
+case_785;e9;re1, re6, re19, re7
+case_786;e8;re12, re16, re8, re15
+case_787;e6;re12, re17, re15, re9
+case_788;e1;re6, re13, re19
+case_789;e9;re13, re1
+case_790;e8;re3, re8, re17
+case_791;e7;re12, re9, re8, re20
+case_792;e8;re14, re4, re3, re15, re20
+case_793;e8;re13, re19
+case_794;e4;re19, re14, re11
+case_795;e6;re2, re19, re7, re13
+case_796;e7;re17, re11
+case_797;e8;re4, re3, re9
+case_798;e1;re18, re2
+case_799;e5;re5, re18, re3
+case_800;e6;re19, re8, re15, re1
+case_801;e2;re19, re16, re9, re8
+case_802;e4;re12, re19
+case_803;e3;re13, re2, re8, re12, re20
+case_804;e1;re16, re17, re11, re18, re1
+case_805;e1;re11, re20
+case_806;e9;re17, re4
+case_807;e7;re4, re15, re1
+case_808;e8;re1, re5, re14, re20, re19
+case_809;e8;re3, re14, re20, re9, re19
+case_810;e8;re6, re14
+case_811;e9;re13, re12, re6, re7
+case_812;e5;re14, re19
+case_813;e1;re16, re7, re2, re1
+case_814;e5;re8, re13, re16, re15
+case_815;e6;re17, re3, re11
+case_816;e8;re13, re2, re20
+case_817;e2;re19, re15, re11, re2, re14
+case_818;e3;re13, re7, re10, re8, re12
+case_819;e2;re15, re20
+case_820;e7;re13, re14
+case_821;e4;re19, re12, re13, re17
+case_822;e1;re18, re13, re7, re3, re17
+case_823;e6;re16, re17, re4
+case_824;e7;re19, re16
+case_825;e7;re4, re14, re9
+case_826;e7;re16, re12, re9, re18
+case_827;e5;re19, re11, re15, re1, re6
+case_828;e5;re1, re13, re11, re17
+case_829;e7;re13, re11
+case_830;e9;re19, re15
+case_831;e9;re3, re13
+case_832;e3;re20, re2, re15, re7, re6
+case_833;e3;re1, re2, re20
+case_834;e3;re6, re8, re13, re11
+case_835;e9;re10, re15, re3, re7, re11
+case_836;e9;re12, re1, re4, re15, re10
+case_837;e2;re19, re12, re5, re3, re1
+case_838;e4;re9, re13, re10, re17
+case_839;e3;re19, re2, re1
+case_840;e2;re14, re13, re6, re7
+case_841;e1;re2, re4, re1, re9, re20
+case_842;e4;re12, re14, re15, re20, re6
+case_843;e3;re1, re3, re5, re8
+case_844;e1;re8, re18
+case_845;e3;re9, re13, re5, re18
+case_846;e2;re11, re3
+case_847;e2;re3, re11, re13, re6
+case_848;e7;re2, re3, re5, re6, re20
+case_849;e3;re15, re7, re20, re19
+case_850;e9;re20, re16, re11, re18, re14
+case_851;e8;re9, re1, re16
+case_852;e6;re3, re2
+case_853;e2;re9, re18, re11, re15
+case_854;e7;re13, re16, re2
+case_855;e8;re14, re4, re1
+case_856;e7;re8, re12, re1, re13
+case_857;e9;re19, re15, re5
+case_858;e8;re10, re13, re17
+case_859;e1;re6, re2, re5, re3
+case_860;e5;re15, re2, re6, re13
+case_861;e7;re16, re6, re11
+case_862;e4;re11, re14, re12, re18
+case_863;e9;re12, re5, re4, re19, re7
+case_864;e2;re7, re8
+case_865;e5;re8, re12
+case_866;e1;re7, re14
+case_867;e7;re18, re1, re7
+case_868;e9;re18, re4, re20
+case_869;e4;re19, re3, re6, re16, re13
+case_870;e3;re5, re15, re6
+case_871;e2;re17, re19, re3
+case_872;e6;re10, re19, re7
+case_873;e9;re2, re15, re1
+case_874;e1;re9, re16
+case_875;e4;re20, re4
+case_876;e6;re10, re2, re18, re5
+case_877;e9;re10, re15, re11, re1, re12
+case_878;e8;re11, re15, re14, re20
+case_879;e6;re6, re4, re3, re11, re9
+case_880;e7;re6, re11, re10, re15, re1
+case_881;e8;re5, re10, re9, re18
+case_882;e2;re13, re17, re18, re10, re11
+case_883;e6;re17, re3, re15, re18
+case_884;e5;re4, re5, re3, re15, re14
+case_885;e9;re5, re17, re18
+case_886;e2;re15, re13, re6, re17, re1
+case_887;e9;re17, re3, re14, re12
+case_888;e2;re14, re12, re9
+case_889;e2;re6, re16, re7
+case_890;e8;re17, re18
+case_891;e5;re9, re4, re11
+case_892;e9;re10, re4, re20, re17
+case_893;e5;re14, re8, re18, re3
+case_894;e1;re2, re16
+case_895;e6;re20, re2, re4
+case_896;e7;re11, re3, re18
+case_897;e5;re3, re19
+case_898;e4;re5, re17, re6
+case_899;e1;re7, re9, re16, re3
+case_900;e2;re20, re2, re4, re11
+case_901;e6;re12, re15, re11, re1
+case_902;e2;re8, re15
+case_903;e6;re7, re15, re5, re20, re6
+case_904;e9;re5, re14, re6, re17
+case_905;e4;re19, re15, re11, re18, re4
+case_906;e2;re7, re13, re4, re20, re9
+case_907;e5;re19, re13, re7, re20
+case_908;e3;re19, re4, re8, re9
+case_909;e3;re15, re4
+case_910;e3;re3, re9, re8
+case_911;e4;re20, re19, re15, re1
+case_912;e4;re3, re19, re12
+case_913;e5;re4, re2, re1
+case_914;e1;re14, re12
+case_915;e6;re20, re10
+case_916;e3;re1, re7, re9, re6
+case_917;e6;re7, re17, re3, re14
+case_918;e3;re17, re12, re18, re8
+case_919;e9;re1, re4, re16
+case_920;e1;re3, re9, re5
+case_921;e1;re14, re6, re13, re18, re15
+case_922;e6;re8, re3, re12
+case_923;e1;re5, re3, re4, re10
+case_924;e7;re6, re18, re15, re19
+case_925;e4;re7, re9
+case_926;e3;re14, re17, re20
+case_927;e8;re10, re14
+case_928;e3;re16, re12, re18
+case_929;e5;re13, re11, re2, re4
+case_930;e1;re16, re1, re6, re17, re19
+case_931;e6;re20, re13
+case_932;e8;re19, re6, re14, re16, re13
+case_933;e1;re5, re10, re20
+case_934;e3;re16, re17, re1
+case_935;e5;re17, re18
+case_936;e5;re2, re14, re9
+case_937;e4;re5, re8, re1
+case_938;e8;re8, re2
+case_939;e5;re12, re17
+case_940;e5;re15, re9, re7
+case_941;e5;re12, re14, re5
+case_942;e5;re13, re10, re4, re11, re1
+case_943;e3;re7, re15, re16, re5, re3
+case_944;e9;re14, re5, re16
+case_945;e3;re17, re18
+case_946;e9;re9, re5, re20
+case_947;e1;re5, re17, re20
+case_948;e3;re1, re2
+case_949;e1;re3, re5, re18, re14, re12
+case_950;e7;re20, re15, re14
+case_951;e2;re5, re7, re12, re4, re16
+case_952;e7;re8, re7, re9
+case_953;e8;re18, re10, re12, re14, re17
+case_954;e3;re6, re3, re8, re10
+case_955;e6;re11, re8, re10, re3
+case_956;e4;re7, re8, re13
+case_957;e2;re9, re18, re11, re5
+case_958;e3;re12, re2, re16, re11
+case_959;e2;re20, re10, re11, re8
+case_960;e4;re13, re17
+case_961;e4;re9, re6, re3, re10, re1
+case_962;e5;re8, re10, re17
+case_963;e8;re13, re19, re10
+case_964;e7;re19, re1, re5
+case_965;e2;re9, re5, re4, re6, re3
+case_966;e2;re2, re12, re9, re3
+case_967;e1;re3, re14
+case_968;e7;re6, re17, re4, re10
+case_969;e3;re11, re10, re13
+case_970;e9;re8, re9, re4, re6, re2
+case_971;e2;re7, re16, re17, re9
+case_972;e2;re1, re18
+case_973;e2;re17, re7, re2, re8, re5
+case_974;e5;re9, re2, re5, re19
+case_975;e2;re3, re19
+case_976;e5;re4, re10, re15, re11
+case_977;e9;re16, re6
+case_978;e1;re14, re5, re11
+case_979;e9;re16, re18, re1, re11, re5
+case_980;e4;re16, re19, re5, re20, re15
+case_981;e7;re8, re7, re13
+case_982;e3;re4, re14
+case_983;e8;re15, re1, re11, re10
+case_984;e8;re17, re5, re2
+case_985;e8;re8, re2, re1
+case_986;e1;re1, re18, re8, re19
+case_987;e7;re1, re11
+case_988;e5;re3, re17
+case_989;e9;re9, re5, re2
+case_990;e2;re7, re9
+case_991;e8;re7, re4, re18, re14, re15
+case_992;e5;re1, re4, re19, re17
+case_993;e2;re4, re1, re17, re18, re13
+case_994;e7;re20, re8, re9, re4, re16
+case_995;e4;re20, re4
+case_996;e2;re6, re9, re13, re20
+case_997;e8;re15, re18, re9
+case_998;e5;re6, re13
+case_999;e3;re17, re5, re14, re7
