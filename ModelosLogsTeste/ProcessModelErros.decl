@@ -1,0 +1,74 @@
+activity Manutencao de funcionalidade
+activity Atualizacao de requisitos funcionais
+activity Construcao de funcionalidade
+activity Documentacao de requisitos funcionais
+activity Contagem de ponto de funcao
+activity Gestao da demanda
+activity Planejamento de entrega
+activity Review da entrega
+activity Publicar solucao
+activity Elaborar caso de teste
+activity Executar teste
+activity Corrigir erro
+activity Error
+activity Testing
+Existence[Contagem de ponto de funcao] | |
+Existence[Gestao da demanda] | |
+Existence[Planejamento de entrega] | |
+Existence[Publicar solucao] | |
+Response[Planejamento de entrega, Review da entrega] | | |
+Response[Construcao de funcionalidade, Publicar solucao] | | |
+Response[Manutencao de funcionalidade, Publicar solucao] | | |
+Existence[Elaborar caso de teste] | |
+Existence[Executar teste] | |
+Response[Elaborar caso de teste, Executar teste] | | |
+Response[Documentacao de requisitos funcionais, Elaborar caso de teste] | | |
+Response[Atualizacao de requisitos funcionais, Elaborar caso de teste] | | |
+Precedence[Documentacao de requisitos funcionais, Elaborar caso de teste] | | |
+Precedence[Atualizacao de requisitos funcionais, Elaborar caso de teste] | | |
+Choice[Error, Testing] | | |
+Init[Executar teste] | |
+End[Publicar solucao] | |
+Init[Error] | |
+End[Testing] | |
+Existence[Error] | |
+Existence[Testing] | |
+ChainResponse[Manutencao de funcionalidade, Publicar solucao] | | |
+RespondedExistence[Review da entrega, Publicar solucao] | | |
+Absense2[Contagem de ponto de funcao] | |
+AlternatePrecedence[Manutencao de funcionalidade, Publicar solucao] | | |
+ChainPrecedence[Corrigir erro, Executar teste] | | |
+NotResponse[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |
+NotRespondedExistence[Manutencao de funcionalidade, Publicar solucao] | | |
+NotPrecedence[Corrigir erro, Executar teste] | | |
+NotChainResponse[Manutencao de funcionalidade, Planejamento de entrega] | | |
+NotChainPrecedence[Contagem de ponto de funcao, Manutencao de funcionalidade] | | |
+ExclusiveChoice[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |
+Exactly3[Contagem de ponto de funcao] | |
+ExclusiveChoice[Manutencao de funcionalidade, Publicar solucao] | | |
+ChainPrecedence[Corrigir erro, Manutencao de funcionalidade] | | |
+Exactly3[Error] | |
+Exactly3[Testing] | |
+Exactly1[Corrigir Erro] | |
+Exactly1[Gestao da demanda] | |
+Exactly5[Review da entrega] | |
+ExclusiveChoice[Review da entrega, Publicar solucao] | | |
+ExclusiveChoice[Gestao da demanda, Publicar solucao] | | |
+ExclusiveChoice[Corrigir erro, Publicar solucao] | | |
+ExclusiveChoice[Gestao da demanda, Executar teste] | | |
+ExclusiveChoice[Review da entrega, Executar teste] | | |
+Response[Testing, Construcao de funcionalidade] | | |
+Response[Error, Corrigir erro] | | |
+Precedence[Testing, Planejamento de entrega] | | |
+Precedence[Error, Gestao da demanda] | | |
+ChainResponse[Testing, Executar teste] | | |
+ChainResponse[Error, Corrigir erro] | | |
+ChainPrecedence[Testing, Elaborar caso de teste] | | |
+ChainPrecedence[Error, Corrigir erro] | | |
+RespondedExistence[Testing, Review da entrega] | | |
+RespondedExistence[Error, Executar teste] | | |
+AlternateResponse[Testing, Executar teste] | | |
+AlternateResponse[Error, Corrigir erro] | | |
+NotResponse[Construcao de funcionalidade, Testing] | | |
+NotPrecedence[Testing, Planejamento de entrega] | | |
+Absence[Gestao da demanda] | |

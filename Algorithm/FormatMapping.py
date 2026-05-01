@@ -198,6 +198,7 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     }
     report['activityDistribution'] = activities_stats
     report['violations'] = patterns
-    with open(f"report{cases}.txt", "a", encoding="utf-8") as f:
-        f.write('\n' + str(duration))    
+    with open(f"report{cases}Acesso.txt", "a", encoding="utf-8") as f:
+        f.write(f'\n {duration} {num_violations} {log_size}')
+        #f.write(str(report))
     return report

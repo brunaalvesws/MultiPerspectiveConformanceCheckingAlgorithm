@@ -36,29 +36,30 @@ def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/Syntheti
                                                                                                               accessmodelPATH)
   processed_access_model = convert_model_to_rules(access_model, process_model)
   complete_log = convert_logs(process_log, access_log)
-  process_conformance = check_process_conformance(process_model, process_log, consider_vacuity)
+  process_conformance,plog_size = check_process_conformance(process_model, process_log, consider_vacuity)
   activities_stats = activities_distribution(process_log)
-  access_conformance, log_size = check_access_conformance(processed_access_model, complete_log)
+  access_conformance, alog_size = check_access_conformance(processed_access_model, complete_log)
   resource_conformance, activity_conformance, access_violations = check_resource_activities_conformance(process_log, access_log, allowed_activities, resource_model, access_conformance)
+  log_size = plog_size + alog_size
   return non_conformance_patterns_mapping(process_conformance, 
                                           access_violations, 
                                           resource_conformance, 
                                           activity_conformance, 
                                           activities_stats, 
                                           log_size, begin, cases)
-for i in range(30):
+for i in range(20):
     MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogTenCasesNoErrors.xes',
-                                            '../ModelosLogsTeste/SyntheticDataAccessLogTenCasesNoErrors.xes',
+                                            '../ModelosLogsTeste/SyntheticDataAccessLogTenCasesNoErrorsAcesso.xes',
                                             '../ModelosLogsTeste/OrganizationalModelTenCases.csv',
                                             '../ModelosLogsTeste/ProcessModel.decl',
                                             '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 10)
     MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogHundredCases.xes',
-                                            '../ModelosLogsTeste/SyntheticDataAccessLogHundredCases.xes',
+                                            '../ModelosLogsTeste/SyntheticDataAccessLogHundredCasesAcesso.xes',
                                             '../ModelosLogsTeste/OrganizationalModelHundredCases.csv',
                                             '../ModelosLogsTeste/ProcessModel.decl',
                                             '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 100)
     MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogThousandCases.xes',
-                                            '../ModelosLogsTeste/SyntheticDataAccessLogThousandCases.xes',
+                                            '../ModelosLogsTeste/SyntheticDataAccessLogThousandCasesAcesso.xes',
                                             '../ModelosLogsTeste/OrganizationalModelThousandCases.csv',
                                             '../ModelosLogsTeste/ProcessModel.decl',
                                             '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 1000)

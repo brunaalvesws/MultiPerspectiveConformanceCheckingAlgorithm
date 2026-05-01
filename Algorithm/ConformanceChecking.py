@@ -13,7 +13,8 @@ def check_process_conformance(process_model, process_log, consider_vacuity):
     basic_checker = MPDeclareAnalyzer(log=process_log, declare_model=process_model, consider_vacuity=consider_vacuity, track_violations="concept:instance")
     conf_check_res: MPDeclareResultsBrowser = basic_checker.run()
     violations = format_violations(conf_check_res.get_metric(metric="events_violated"))
-    return violations
+    size = sum(len(trace) for trace in process_log.get_log())
+    return violations, size
 
 def check_access_conformance(process_model, log):
     '''
