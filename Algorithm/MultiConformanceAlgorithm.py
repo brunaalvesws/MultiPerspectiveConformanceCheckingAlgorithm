@@ -47,7 +47,9 @@ def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/Syntheti
                                           activity_conformance, 
                                           activities_stats, 
                                           log_size, begin, cases)
-for i in range(20):
+
+if __name__ == "__main__":
+  for i in range(20):
     MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogTenCasesNoErrors.xes',
                                             '../ModelosLogsTeste/SyntheticDataAccessLogTenCasesNoErrorsAcesso.xes',
                                             '../ModelosLogsTeste/OrganizationalModelTenCases.csv',
