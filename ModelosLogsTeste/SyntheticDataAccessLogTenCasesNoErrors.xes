@@ -44,7 +44,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Codigo" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-03-12T18:18:52.113299095+00:00" />
 			<string key="concept:resource" value="re6" />
 			<int key="concept:instance" value="1" />
@@ -53,7 +53,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Codigo" />
-			<string key="concept:operation" value="d" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-03-12T17:51:34.980793659+00:00" />
 			<string key="concept:resource" value="re6" />
 			<int key="concept:instance" value="1" />

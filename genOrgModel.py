@@ -1,6 +1,6 @@
 import random
 
-def gerar_dataset(qtd_cases=1000, arquivo_saida="OrganizationalModelThousandCases.csv"):
+def gerar_dataset(qtd_cases=1000, arquivo_saida="OrganizationalModelTenThousandCases.csv"):
     # possíveis valores
     teams = [f"e{i}" for i in range(1, 10)]        # e1 até e9
     resources = [f"re{i}" for i in range(1, 21)]  # re1 até re20
@@ -27,4 +27,4 @@ def gerar_dataset(qtd_cases=1000, arquivo_saida="OrganizationalModelThousandCase
 
 
 # executar
-gerar_dataset(1000)
+gerar_dataset(10000)
