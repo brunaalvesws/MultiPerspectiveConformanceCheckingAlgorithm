@@ -49,19 +49,11 @@ def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/Syntheti
                                           log_size, begin, cases)
 
 if __name__ == "__main__":
-  for i in range(20):
-    MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogTenCasesNoErrors.xes',
-                                            '../ModelosLogsTeste/SyntheticDataAccessLogTenCasesNoErrorsAcesso.xes',
-                                            '../ModelosLogsTeste/OrganizationalModelTenCases.csv',
-                                            '../ModelosLogsTeste/ProcessModel.decl',
-                                            '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 10)
-    MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogHundredCases.xes',
-                                            '../ModelosLogsTeste/SyntheticDataAccessLogHundredCasesAcesso.xes',
-                                            '../ModelosLogsTeste/OrganizationalModelHundredCases.csv',
-                                            '../ModelosLogsTeste/ProcessModel.decl',
-                                            '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 100)
-    MultiperspectiveConformanceAlgorithm('../ModelosLogsTeste/SyntheticProcessLogThousandCases.xes',
-                                            '../ModelosLogsTeste/SyntheticDataAccessLogThousandCasesAcesso.xes',
-                                            '../ModelosLogsTeste/OrganizationalModelThousandCases.csv',
-                                            '../ModelosLogsTeste/ProcessModel.decl',
-                                            '../ModelosLogsTeste/DataAccessRestrictionModel.csv', True, 1000)
+    for cases in [1, 10, 100, 1000, 10000]:
+        for amount in [10,30]:
+            for i in range(20):
+                MultiperspectiveConformanceAlgorithm('../ExperimentLogsAndModels/SyntheticProcessLogOneCase.xes',
+                                                    '../ExperimentLogsAndModels/SyntheticDataAccessLogOneCase.xes',
+                                                    '../ExperimentLogsAndModels/OrganizationalModelOneCase.csv',
+                                                    f'../ExperimentLogsAndModels/ProcessModelActivityViolations{amount}.decl',
+                                                    '../ExperimentLogsAndModels/DataAccessRestrictionModel.csv', True, cases)

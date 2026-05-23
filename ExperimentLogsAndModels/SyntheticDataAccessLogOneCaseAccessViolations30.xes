@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="case_0" />
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T08:39:21.657597+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T02:55:51.111914+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T05:38:43.794274+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T07:54:03.203536+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T10:24:39.663369+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T08:24:42.502073+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T09:28:59.717244+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="1" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T04:08:49.926615+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="2" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T03:26:28.808856+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="2" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T04:20:10.611023+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="2" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T03:42:16.258051+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="2" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T04:07:06.147044+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="2" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T05:21:37.386531+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="3" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T04:41:21.160395+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="3" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T06:56:18.321076+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="3" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T04:43:55.051914+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="3" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:01:10.337478+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="3" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T08:51:54.927218+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T08:14:05.003427+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T05:29:27.252219+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:07:04.421280+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T08:37:29.943937+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T05:20:31.917760+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T08:36:23.419084+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="4" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T07:42:00.592430+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="5" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T07:55:49.500352+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="5" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T06:55:45.543125+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="5" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T08:40:19.040576+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="5" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:26:31.558926+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="5" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T07:41:24.541337+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:13:27.680693+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T07:54:27.543000+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T07:48:54.941638+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:16:47.614757+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:34:49.753311+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T07:57:57.484741+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T08:35:32.592484+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T07:52:32.103098+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="6" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T08:29:17.922211+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="7" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T09:38:17.565987+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="7" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T09:59:01.814127+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="7" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T08:50:52.201775+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="7" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T08:21:51.655842+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="7" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T11:48:28.662181+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T13:25:53.009257+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T12:20:20.992830+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T10:55:30.564476+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T11:06:56.697942+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T11:38:35.167796+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T12:37:06.687776+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="8" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T13:56:14.115117+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="9" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T10:16:13.404934+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="9" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T11:42:34.581569+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="9" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T10:44:32.018376+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="9" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T19:09:11.200787+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="9" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T13:05:03.612126+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="10" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T12:56:42.180841+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="10" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T11:26:49.695386+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="10" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T12:39:03.596370+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="10" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T11:27:51.343800+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="10" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T15:00:34.736651+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="11" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T16:40:52.777034+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="11" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T15:41:59.153299+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="11" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T15:09:26.261923+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="11" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T13:23:59.755375+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="11" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T18:50:21.625045+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="12" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T17:19:59.834077+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="12" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T15:30:59.420368+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="12" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T17:21:03.392310+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="12" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T16:10:33.846430+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="12" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T14:49:41.600198+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T15:20:59.776134+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T15:19:33.923778+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T15:08:50.502634+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T14:43:33.055342+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T15:19:52.978268+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T14:36:10.951466+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="13" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T17:09:36.269242+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="14" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T15:51:45.081777+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="14" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T19:25:04.572402+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="14" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T16:32:11.980075+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="14" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T15:47:56.121611+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="14" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T15:33:31.278510+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="14" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T16:18:06.277139+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="15" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T16:23:53.008346+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="15" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T19:36:27.276420+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="15" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T20:37:13.765691+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="15" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T19:02:34.064614+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="15" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T20:54:59.567479+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="15" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T17:16:09.654277+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="16" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T17:02:10.422131+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="16" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T16:50:31.425766+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="16" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T17:47:46.147412+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="16" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T17:37:36.975797+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="16" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="PF" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T17:24:05.726664+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="16" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T18:16:58.266838+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="17" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T18:25:09.298944+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="17" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T20:58:54.753999+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="17" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="PF" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T23:33:35.320292+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="17" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="PF" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T21:36:49.802245+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="17" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="PF" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T23:24:43.041343+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="17" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T19:05:43.409969+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="18" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T19:12:18.391411+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="18" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T21:25:11.127058+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="19" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T20:58:49.208500+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="19" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T21:50:01.656290+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="20" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-23T22:25:42.649249+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="20" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-23T22:06:52.828771+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="21" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T00:44:20.224627+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="21" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T23:01:45.550810+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="21" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T00:00:12.528262+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="22" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-23T23:52:18.334940+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="22" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-23T23:39:54.195772+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="22" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T01:29:57.905124+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="23" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T01:10:06.679063+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="23" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T02:52:07.397786+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="24" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T02:10:57.929804+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="24" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T02:05:19.314010+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="25" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T02:34:22.338844+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="25" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T04:06:30.885594+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="26" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T04:44:21.546247+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="27" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T05:22:21.037266+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="27" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T05:27:56.187089+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="27" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T08:09:58.809917+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T05:24:51.192000+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T06:56:37.043213+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T06:25:29.332927+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T07:10:12.419559+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T05:36:00.862075+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T06:22:40.398693+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="28" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T06:39:26.149386+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="29" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T10:46:20.416172+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="29" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T06:12:11.027263+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="29" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T09:05:55.827237+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="29" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T13:04:48.218861+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="29" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T09:09:17.249665+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="30" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T13:49:56.467783+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="30" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T07:43:04.949904+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="30" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T10:54:25.619369+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="30" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T10:33:46.329225+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="30" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T08:59:34.727587+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="31" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T11:14:16.501767+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="31" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T09:52:00.846888+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="31" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T09:19:57.079285+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="31" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T10:45:30.674363+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="31" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T10:46:54.265433+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="31" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T09:49:26.212788+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T11:45:26.508157+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T09:42:40.394643+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T10:40:05.277043+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T09:53:22.810839+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T11:46:25.917340+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T08:55:30.046970+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="32" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T11:09:19.550482+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="33" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T12:37:06.137676+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="33" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T10:49:17.222590+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="33" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T11:53:16.895659+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="33" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T10:53:53.582241+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="33" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T11:28:27.215182+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="34" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T11:04:41.192676+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="34" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T10:58:26.928161+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="34" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T12:31:36.235082+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="35" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T13:49:14.792989+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="35" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T13:01:51.305243+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="35" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T12:19:59.318719+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="35" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T14:49:29.584210+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="35" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T14:43:19.987874+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="36" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T15:46:58.111398+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="36" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T16:26:14.606071+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="36" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T16:17:33.766525+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="36" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T14:20:38.439995+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="36" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T15:27:36.671073+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="36" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T17:31:50.820067+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="37" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T14:58:37.409818+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="37" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T14:09:53.619493+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="37" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T18:14:40.135411+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="37" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T18:49:16.681527+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="37" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T18:59:30.492714+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="38" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T19:31:04.859204+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="38" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T19:55:11.797336+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="38" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T16:23:24.262131+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="38" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Teste" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T19:20:49.597848+00:00" />
+			<string key="concept:resource" value="re10" />
+			<int key="concept:instance" value="38" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T17:13:27.996283+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T16:31:57.346812+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T17:03:56.411799+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Gestao" />
+			<string key="concept:operation" value="d" />
+			<date key="time:timestamp" value="2026-05-24T17:26:31.338693+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="c" />
+			<date key="time:timestamp" value="2026-05-24T16:47:32.801921+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T17:24:47.525486+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Codigo" />
+			<string key="concept:operation" value="u" />
+			<date key="time:timestamp" value="2026-05-24T17:20:06.005662+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+		<event>
+			<string key="concept:name" value="Requisito" />
+			<string key="concept:operation" value="r" />
+			<date key="time:timestamp" value="2026-05-24T17:26:47.479526+00:00" />
+			<string key="concept:resource" value="re7" />
+			<int key="concept:instance" value="39" />
+			<string key="lifecycle:transition" value="begin" />
+			<int key="@@case_index" value="0" />
+		</event>
+	</trace>
+</log>
