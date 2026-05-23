@@ -37,3 +37,6 @@ pytest, então nada é poluído no workspace.
 Para testar com novos arquivos de entrada, basta adicionar uma nova
 fixture em `conftest.py` reaproveitando `_run_algorithm` e escrever um
 novo módulo `test_*.py` com asserções sobre o `report` retornado.
+
+## Casos de teste pré experimento
+Algorithm\venv\Scripts\python.exe -m pytest ConceptualTests/test_experiment_scenario_isolation.py --run-slow --tb=short -q

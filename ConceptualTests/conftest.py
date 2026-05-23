@@ -17,6 +17,33 @@ from pathlib import Path
 
 import pytest
 
+
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers",
+        "slow: marks tests as slow (≥1 000 cases); pass --run-slow to include",
+    )
+
+
+def pytest_addoption(parser):
+    parser.addoption(
+        "--run-slow",
+        action="store_true",
+        default=False,
+        help="Include slow tests (ThousandCases / TenThousandCases scenarios).",
+    )
+
+
+def pytest_collection_modifyitems(config, items):
+    if not config.getoption("--run-slow"):
+        skip_slow = pytest.mark.skip(
+            reason="slow scenario (≥1 000 cases): pass --run-slow to include"
+        )
+        for item in items:
+            if item.get_closest_marker("slow"):
+                item.add_marker(skip_slow)
+
+
 # Workspace and algorithm paths
 TEST_DIR = Path(__file__).resolve().parent
 REPO_ROOT = TEST_DIR.parent

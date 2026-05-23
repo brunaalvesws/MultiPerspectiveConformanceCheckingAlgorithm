@@ -139,7 +139,7 @@ def format_inconformances(process_conformance, access_conformance, resource_conf
 
     return report
 
-def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, begin, cases):
+def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, begin, cases, report_label='SemViolacao'):
     patterns = {}
     patterns['Prohibited activity'] = [] 
     patterns['Unexpected activity'] = [] 
@@ -198,7 +198,7 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     }
     report['activityDistribution'] = activities_stats
     report['violations'] = patterns
-    with open(f"report{cases}Acesso.txt", "a", encoding="utf-8") as f:
+    with open(f"report{cases}{report_label}.txt", "a", encoding="utf-8") as f:
         f.write(f'\n {duration} {num_violations} {log_size}')
         #f.write(str(report))
     return report

@@ -24,7 +24,7 @@ def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/Syntheti
                                          resourcePATH='../ModelosLogsTeste/OrganizationalModel.csv',
                                          declarePATH='../ModelosLogsTeste/ProcessModel.decl',
                                          accessmodelPATH='../ModelosLogsTeste/DataAccessRestrictionModel.csv',
-                                         consider_vacuity=True, cases=1):
+                                         consider_vacuity=True, cases=1, report_label='SemViolacao'):
   '''
   The algorithm accepts: a process log, a data access log, a resource model, a process DECLARE model, and a data access model.
   '''
@@ -46,14 +46,64 @@ def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/Syntheti
                                           resource_conformance, 
                                           activity_conformance, 
                                           activities_stats, 
-                                          log_size, begin, cases)
+                                          log_size, begin, cases, report_label)
 
 if __name__ == "__main__":
-    for cases in [1, 10, 100, 1000, 10000]:
-        for amount in [10,30]:
-            for i in range(20):
-                MultiperspectiveConformanceAlgorithm('../ExperimentLogsAndModels/SyntheticProcessLogOneCase.xes',
-                                                    '../ExperimentLogsAndModels/SyntheticDataAccessLogOneCase.xes',
-                                                    '../ExperimentLogsAndModels/OrganizationalModelOneCase.csv',
-                                                    f'../ExperimentLogsAndModels/ProcessModelActivityViolations{amount}.decl',
-                                                    '../ExperimentLogsAndModels/DataAccessRestrictionModel.csv', True, cases)
+    # For the full experiment protocol (pilot study, warm-up, sample sizing)
+    # use runExperiment.py instead.
+    LOGS = '../ExperimentLogsAndModels'
+    CASE_SUFFIX = {
+        1:    'OneCase',
+        10:    'TenCases',
+        100:   'HundredCases',
+        1000:  'ThousandCases',
+        #10000: 'TenThousandCases',
+    }
+    for n_cases, cs in CASE_SUFFIX.items():
+        label = f'SemViolacao'
+        MultiperspectiveConformanceAlgorithm(
+            f'{LOGS}/SyntheticProcessLog{cs}.xes',
+            f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+            f'{LOGS}/OrganizationalModel{cs}.csv',
+            f'{LOGS}/ProcessModel.decl',
+            f'{LOGS}/DataAccessRestrictionModel.csv',
+            True, n_cases, label
+        )
+        for amount in [10, 30]:
+            label = f'Processo{amount}'
+            #for i in range(20):
+            MultiperspectiveConformanceAlgorithm(
+                f'{LOGS}/SyntheticProcessLog{cs}.xes',
+                f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+                f'{LOGS}/OrganizationalModel{cs}.csv',
+                f'{LOGS}/ProcessModelActivityViolations{amount}.decl',
+                f'{LOGS}/DataAccessRestrictionModel.csv',
+                True, n_cases, label
+            )
+            label = f'Acesso{amount}'
+            MultiperspectiveConformanceAlgorithm(
+                f'{LOGS}/SyntheticProcessLog{cs}.xes',
+                f'{LOGS}/SyntheticDataAccessLog{cs}AccessViolations{amount}.xes',
+                f'{LOGS}/OrganizationalModel{cs}.csv',
+                f'{LOGS}/ProcessModel.decl',
+                f'{LOGS}/DataAccessRestrictionModel.csv',
+                True, n_cases, label
+            )
+            label = f'Inesperada{amount}'
+            MultiperspectiveConformanceAlgorithm(
+                f'{LOGS}/SyntheticProcessLog{cs}UnexpectedViolations{amount}.xes',
+                f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+                f'{LOGS}/OrganizationalModel{cs}.csv',
+                f'{LOGS}/ProcessModelUnexpectedViolations.decl',
+                f'{LOGS}/DataAccessRestrictionModel.csv',
+                True, n_cases, label
+            )
+            label = f'Recurso{amount}'
+            MultiperspectiveConformanceAlgorithm(
+                f'{LOGS}/SyntheticProcessLog{cs}ResourceViolations{amount}.xes',
+                f'{LOGS}/SyntheticDataAccessLog{cs}ResourceViolations{amount}.xes',
+                f'{LOGS}/OrganizationalModel{cs}.csv',
+                f'{LOGS}/ProcessModel.decl',
+                f'{LOGS}/DataAccessRestrictionModel.csv',
+                True, n_cases, label
+            )
