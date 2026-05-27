@@ -1,3 +1,6 @@
 pm4py==2.7.19.8
 pandas
 git+https://github.com/brunaalvesws/Declare4Py.git@main
+scipy
+statsmodels
+scikit-posthocs

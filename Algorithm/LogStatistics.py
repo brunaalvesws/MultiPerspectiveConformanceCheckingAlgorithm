@@ -5,8 +5,23 @@ def activities_distribution(log):
 
 
 def total_number_of_violations(violations):
-     return sum(len(lista) for lista in violations.values())
- 
+    total = 0
+    
+    for pattern, itens in violations.items():
+        for item in itens:
+            instance = item.get("instance")
+            
+            if isinstance(instance, str):
+                instance = instance.strip()
+                if instance:
+                    # separa por vírgula
+                    total += len([x for x in instance.split(",") if x.strip()])
+                else:
+                    total += 1
+            else:
+                total += 1
+
+    return total
 
 def success_rate(num_eventos, violations):
     return (num_eventos - violations) * 100 / num_eventos

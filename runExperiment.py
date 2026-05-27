@@ -22,7 +22,7 @@ Protocol
 
 Scenario matrix
 ---------------
-Case sizes  : 10, 100, 1 000, 10 000
+Case sizes  : 1, 10, 100, 1 000, 10 000
 Labels      : SemViolacao | Processo10 | Processo30
               Acesso10    | Acesso30
               Recurso10   | Recurso30
@@ -58,13 +58,14 @@ PILOT_RUNS  = 15
 Z_ALPHA_2   = 1.96
 E_RELATIVE  = 0.02        # 2 % of the pilot mean
 
-CASE_SIZES = [10, 100, 1000, 10000]
+CASE_SIZES = [1, 10, 100, 1000] #10000
 
 CASE_SUFFIX = {
+    1:     'OneCase',
     10:    'TenCases',
     100:   'HundredCases',
     1000:  'ThousandCases',
-    10000: 'TenThousandCases',
+    #10000: 'TenThousandCases',
 }
 
 ACCESS_MODEL = os.path.join(LOGS_DIR, 'DataAccessRestrictionModel.csv')
@@ -87,7 +88,7 @@ SCENARIOS = [
 
 # Worst-case scenario for the pilot study (Access violations, 30 %, 10 000 cases)
 PILOT_SCENARIO = ('Acesso30', '', 'AccessViolations30', 'ProcessModel')
-PILOT_CASES    = 10000
+PILOT_CASES    = 1000
 
 
 # ── path helpers ──────────────────────────────────────────────────────────────
