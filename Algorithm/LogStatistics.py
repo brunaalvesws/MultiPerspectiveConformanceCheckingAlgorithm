@@ -14,7 +14,6 @@ def total_number_of_violations(violations):
             if isinstance(instance, str):
                 instance = instance.strip()
                 if instance:
-                    # separa por vírgula
                     total += len([x for x in instance.split(",") if x.strip()])
                 else:
                     total += 1
