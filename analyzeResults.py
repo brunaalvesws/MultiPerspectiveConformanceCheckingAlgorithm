@@ -61,7 +61,7 @@ DATA_DIR    = os.path.join(ROOT_DIR, 'ExperimentTestData')
 
 ALPHA = 0.05
 
-CASE_SIZES = [10, 100, 1000, 10000]
+CASE_SIZES = [1, 10, 100, 1000] #10000
 
 SCENARIO_LABELS = [
     'SemViolacao',

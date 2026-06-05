@@ -54,7 +54,7 @@ from MultiConformanceAlgorithm import MultiperspectiveConformanceAlgorithm  # no
 
 # ── constants ─────────────────────────────────────────────────────────────────
 WARMUP_RUNS = 5
-PILOT_RUNS  = 15
+PILOT_RUNS  = 30
 Z_ALPHA_2   = 1.96
 E_RELATIVE  = 0.02        # 2 % of the pilot mean
 
@@ -86,8 +86,8 @@ SCENARIOS = [
     ('Inesperada30',   'UnexpectedViolations30', '',                'ProcessModelUnexpectedViolations'),
 ]
 
-# Worst-case scenario for the pilot study (Access violations, 30 %, 10 000 cases)
-PILOT_SCENARIO = ('Acesso30', '', 'AccessViolations30', 'ProcessModel')
+# Worst-case scenario for the pilot study (Resource violations, 30 %, 1000 cases)
+PILOT_SCENARIO = ('Recurso30', 'ResourceViolations30', 'ResourceViolations30', 'ProcessModel')
 PILOT_CASES    = 1000
 
 
@@ -257,11 +257,6 @@ def run_full_experiment(n: int,
             print(f"  {n_cases:>6} cases / {label}   "
                   f"(existing={existing}, running={needed})")
 
-            if existing == 0:
-                print(f"\n  --- Warm-up ({WARMUP_RUNS} runs, discarded) ---")
-                run_scenario(n_cases, label, proc_v, acc_v, declare,
-                             WARMUP_RUNS, warmup=True)
-
             print(f"\n  --- Measured ({needed} run(s)) ---")
             run_scenario(n_cases, label, proc_v, acc_v, declare,
                          needed, warmup=False)
@@ -295,4 +290,4 @@ if __name__ == '__main__':
             print("No pilot study found – running pilot first ...\n")
             n = run_pilot()
 
-        run_full_experiment(n, filter_cases=args.cases, filter_label=args.label)
+        run_full_experiment(30, filter_cases=args.cases, filter_label=args.label)
