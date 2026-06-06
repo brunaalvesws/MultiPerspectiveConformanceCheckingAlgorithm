@@ -137,7 +137,7 @@
 		<event>
 			<date key="time:timestamp" value="2026-05-23T09:52:49.145709+00:00" />
 			<string key="lifecycle:transition" value="begin" />
-			<string key="concept:name" value="Construcao de funcionalidade" />
+			<string key="concept:name" value="Inesperada" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="9" />
 			<int key="@@case_index" value="0" />
@@ -145,7 +145,7 @@
 		<event>
 			<date key="time:timestamp" value="2026-05-23T20:52:49.145709+00:00" />
 			<string key="lifecycle:transition" value="complete" />
-			<string key="concept:name" value="Construcao de funcionalidade" />
+			<string key="concept:name" value="Inesperada" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="9" />
 			<int key="@@case_index" value="0" />

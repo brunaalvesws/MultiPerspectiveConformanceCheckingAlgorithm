@@ -26,7 +26,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="c" />
+			<string key="concept:operation" value="u" />
 			<date key="time:timestamp" value="2026-05-23T05:38:43.794274+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="1" />
@@ -53,7 +53,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Codigo" />
-			<string key="concept:operation" value="c" />
+			<string key="concept:operation" value="u" />
 			<date key="time:timestamp" value="2026-05-23T08:24:42.502073+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="1" />
@@ -61,7 +61,7 @@
 			<int key="@@case_index" value="0" />
 		</event>
 		<event>
-			<string key="concept:name" value="PF" />
+			<string key="concept:name" value="Requisito" />
 			<string key="concept:operation" value="r" />
 			<date key="time:timestamp" value="2026-05-23T09:28:59.717244+00:00" />
 			<string key="concept:resource" value="re7" />

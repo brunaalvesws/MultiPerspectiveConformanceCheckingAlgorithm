@@ -621,7 +621,7 @@
 			<date key="time:timestamp" value="2026-03-28T05:03:17.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="8" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -629,7 +629,7 @@
 			<date key="time:timestamp" value="2026-03-28T06:03:17.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="8" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -637,7 +637,7 @@
 			<date key="time:timestamp" value="2026-03-28T05:31:27.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="9" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -645,7 +645,7 @@
 			<date key="time:timestamp" value="2026-03-28T06:31:27.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="9" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -653,7 +653,7 @@
 			<date key="time:timestamp" value="2026-03-28T06:34:56.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="10" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -661,7 +661,7 @@
 			<date key="time:timestamp" value="2026-03-28T07:34:56.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="10" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -717,7 +717,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:45:59.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -725,7 +725,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:45:59.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -733,7 +733,7 @@
 			<date key="time:timestamp" value="2026-03-28T12:00:04.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="15" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -741,7 +741,7 @@
 			<date key="time:timestamp" value="2026-03-28T13:00:04.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="15" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -781,7 +781,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:59:23.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -789,7 +789,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:59:23.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -845,7 +845,7 @@
 			<date key="time:timestamp" value="2026-03-28T18:54:48.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -853,7 +853,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:54:48.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -909,7 +909,7 @@
 			<date key="time:timestamp" value="2026-03-28T23:09:36.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -917,7 +917,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:09:36.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -957,7 +957,7 @@
 			<date key="time:timestamp" value="2026-03-29T01:30:39.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -965,7 +965,7 @@
 			<date key="time:timestamp" value="2026-03-29T02:30:39.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -989,7 +989,7 @@
 			<date key="time:timestamp" value="2026-03-29T03:44:48.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="31" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -997,7 +997,7 @@
 			<date key="time:timestamp" value="2026-03-29T04:44:48.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="31" />
 			<int key="@@case_index" value="1" />
 		</event>
@@ -1878,7 +1878,7 @@
 			<date key="time:timestamp" value="2026-03-27T21:34:25.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="1" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -1886,7 +1886,7 @@
 			<date key="time:timestamp" value="2026-03-27T22:34:25.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="1" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -1910,7 +1910,7 @@
 			<date key="time:timestamp" value="2026-03-28T00:05:18.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -1918,7 +1918,7 @@
 			<date key="time:timestamp" value="2026-03-28T01:05:18.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2054,7 +2054,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:55:27.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2062,7 +2062,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:55:27.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2070,7 +2070,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:19:02.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="13" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2078,7 +2078,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:19:02.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="13" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2214,7 +2214,7 @@
 			<date key="time:timestamp" value="2026-03-28T18:49:28.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2222,7 +2222,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:49:28.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2278,7 +2278,7 @@
 			<date key="time:timestamp" value="2026-03-28T23:13:39.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2286,7 +2286,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:13:39.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2406,7 +2406,7 @@
 			<date key="time:timestamp" value="2026-03-29T07:17:26.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="34" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2414,7 +2414,7 @@
 			<date key="time:timestamp" value="2026-03-29T08:17:26.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="34" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2422,7 +2422,7 @@
 			<date key="time:timestamp" value="2026-03-29T07:31:53.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="35" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2430,7 +2430,7 @@
 			<date key="time:timestamp" value="2026-03-29T08:31:53.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="35" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2470,7 +2470,7 @@
 			<date key="time:timestamp" value="2026-03-29T10:55:49.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="38" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2478,7 +2478,7 @@
 			<date key="time:timestamp" value="2026-03-29T11:55:49.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="38" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2486,7 +2486,7 @@
 			<date key="time:timestamp" value="2026-03-29T11:46:30.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="39" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2494,7 +2494,7 @@
 			<date key="time:timestamp" value="2026-03-29T12:46:30.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="39" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2502,7 +2502,7 @@
 			<date key="time:timestamp" value="2026-03-29T12:36:46.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="40" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2510,7 +2510,7 @@
 			<date key="time:timestamp" value="2026-03-29T13:36:46.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="40" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2598,7 +2598,7 @@
 			<date key="time:timestamp" value="2026-03-29T19:16:15.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="46" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2606,7 +2606,7 @@
 			<date key="time:timestamp" value="2026-03-29T20:16:15.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="46" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2646,7 +2646,7 @@
 			<date key="time:timestamp" value="2026-03-29T22:16:46.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="49" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2654,7 +2654,7 @@
 			<date key="time:timestamp" value="2026-03-29T23:16:46.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="49" />
 			<int key="@@case_index" value="4" />
 		</event>
@@ -2745,7 +2745,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:08:46.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2753,7 +2753,7 @@
 			<date key="time:timestamp" value="2026-03-28T04:08:46.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2761,7 +2761,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:59:04.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="7" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2769,7 +2769,7 @@
 			<date key="time:timestamp" value="2026-03-28T04:59:04.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="7" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2809,7 +2809,7 @@
 			<date key="time:timestamp" value="2026-03-28T06:50:46.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="10" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2817,7 +2817,7 @@
 			<date key="time:timestamp" value="2026-03-28T07:50:46.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="10" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2841,7 +2841,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:18:33.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2849,7 +2849,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:18:33.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2873,7 +2873,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:53:03.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2881,7 +2881,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:53:03.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2937,7 +2937,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:39:12.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2945,7 +2945,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:39:12.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2969,7 +2969,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:24:16.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -2977,7 +2977,7 @@
 			<date key="time:timestamp" value="2026-03-28T17:24:16.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3161,7 +3161,7 @@
 			<date key="time:timestamp" value="2026-03-29T04:55:44.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="32" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3169,7 +3169,7 @@
 			<date key="time:timestamp" value="2026-03-29T05:55:44.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="32" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3193,7 +3193,7 @@
 			<date key="time:timestamp" value="2026-03-29T07:05:40.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="34" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3201,7 +3201,7 @@
 			<date key="time:timestamp" value="2026-03-29T08:05:40.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="34" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3241,7 +3241,7 @@
 			<date key="time:timestamp" value="2026-03-29T10:10:25.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="37" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3249,7 +3249,7 @@
 			<date key="time:timestamp" value="2026-03-29T11:10:25.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="37" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3257,7 +3257,7 @@
 			<date key="time:timestamp" value="2026-03-29T10:35:41.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="38" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3265,7 +3265,7 @@
 			<date key="time:timestamp" value="2026-03-29T11:35:41.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="38" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3289,7 +3289,7 @@
 			<date key="time:timestamp" value="2026-03-29T12:32:12.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="40" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3297,7 +3297,7 @@
 			<date key="time:timestamp" value="2026-03-29T13:32:12.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="40" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3305,7 +3305,7 @@
 			<date key="time:timestamp" value="2026-03-29T13:51:25.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="41" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3313,7 +3313,7 @@
 			<date key="time:timestamp" value="2026-03-29T14:51:25.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="41" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3337,7 +3337,7 @@
 			<date key="time:timestamp" value="2026-03-29T16:05:39.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="43" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3345,7 +3345,7 @@
 			<date key="time:timestamp" value="2026-03-29T17:05:39.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="43" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3385,7 +3385,7 @@
 			<date key="time:timestamp" value="2026-03-29T19:03:34.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="46" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3393,7 +3393,7 @@
 			<date key="time:timestamp" value="2026-03-29T20:03:34.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="46" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3433,7 +3433,7 @@
 			<date key="time:timestamp" value="2026-03-29T21:53:59.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="49" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -3441,7 +3441,7 @@
 			<date key="time:timestamp" value="2026-03-29T22:53:59.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="49" />
 			<int key="@@case_index" value="5" />
 		</event>
@@ -7822,7 +7822,7 @@
 			<date key="time:timestamp" value="2026-03-27T23:27:31.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -7830,7 +7830,7 @@
 			<date key="time:timestamp" value="2026-03-28T00:27:31.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -7854,7 +7854,7 @@
 			<date key="time:timestamp" value="2026-03-28T02:09:28.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="5" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -7862,7 +7862,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:09:28.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="5" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -7966,7 +7966,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:59:18.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -7974,7 +7974,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:59:18.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8046,7 +8046,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:20:49.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="17" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8054,7 +8054,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:20:49.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="17" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8158,7 +8158,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:26:27.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8166,7 +8166,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:26:27.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8190,7 +8190,7 @@
 			<date key="time:timestamp" value="2026-03-28T22:29:11.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8198,7 +8198,7 @@
 			<date key="time:timestamp" value="2026-03-28T23:29:11.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8238,7 +8238,7 @@
 			<date key="time:timestamp" value="2026-03-29T01:37:29.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8246,7 +8246,7 @@
 			<date key="time:timestamp" value="2026-03-29T02:37:29.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="12" />
 		</event>
@@ -8289,7 +8289,7 @@
 			<date key="time:timestamp" value="2026-03-27T21:41:13.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="1" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8297,7 +8297,7 @@
 			<date key="time:timestamp" value="2026-03-27T22:41:13.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="1" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8353,7 +8353,7 @@
 			<date key="time:timestamp" value="2026-03-28T01:38:32.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="5" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8361,7 +8361,7 @@
 			<date key="time:timestamp" value="2026-03-28T02:38:32.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="5" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8369,7 +8369,7 @@
 			<date key="time:timestamp" value="2026-03-28T02:36:04.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8377,7 +8377,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:36:04.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8433,7 +8433,7 @@
 			<date key="time:timestamp" value="2026-03-28T06:53:19.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="10" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8441,7 +8441,7 @@
 			<date key="time:timestamp" value="2026-03-28T07:53:19.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="10" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8449,7 +8449,7 @@
 			<date key="time:timestamp" value="2026-03-28T07:41:59.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="11" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8457,7 +8457,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:41:59.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="11" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8497,7 +8497,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:53:38.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8505,7 +8505,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:53:38.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8513,7 +8513,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:36:04.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="15" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8521,7 +8521,7 @@
 			<date key="time:timestamp" value="2026-03-28T12:36:04.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="15" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8609,7 +8609,7 @@
 			<date key="time:timestamp" value="2026-03-28T17:57:29.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="21" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8617,7 +8617,7 @@
 			<date key="time:timestamp" value="2026-03-28T18:57:29.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="21" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8641,7 +8641,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:45:11.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8649,7 +8649,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:45:11.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8689,7 +8689,7 @@
 			<date key="time:timestamp" value="2026-03-28T23:11:25.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8697,7 +8697,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:11:25.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="26" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8721,7 +8721,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:25:20.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="28" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8729,7 +8729,7 @@
 			<date key="time:timestamp" value="2026-03-29T01:25:20.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="28" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8737,7 +8737,7 @@
 			<date key="time:timestamp" value="2026-03-29T01:33:30.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8745,7 +8745,7 @@
 			<date key="time:timestamp" value="2026-03-29T02:33:30.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8801,7 +8801,7 @@
 			<date key="time:timestamp" value="2026-03-29T06:15:04.390435+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="33" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -8809,7 +8809,7 @@
 			<date key="time:timestamp" value="2026-03-29T07:15:04.390435+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="33" />
 			<int key="@@case_index" value="13" />
 		</event>
@@ -14089,7 +14089,7 @@
 			<date key="time:timestamp" value="2026-03-28T00:20:16.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14097,7 +14097,7 @@
 			<date key="time:timestamp" value="2026-03-28T01:20:16.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14169,7 +14169,7 @@
 			<date key="time:timestamp" value="2026-03-28T04:51:54.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="8" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14177,7 +14177,7 @@
 			<date key="time:timestamp" value="2026-03-28T05:51:54.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="8" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14217,7 +14217,7 @@
 			<date key="time:timestamp" value="2026-03-28T07:29:38.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="11" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14225,7 +14225,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:29:38.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="11" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14233,7 +14233,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:23:49.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14241,7 +14241,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:23:49.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14249,7 +14249,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:41:41.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="13" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14257,7 +14257,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:41:41.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="13" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14265,7 +14265,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:58:13.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14273,7 +14273,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:58:13.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="14" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14281,7 +14281,7 @@
 			<date key="time:timestamp" value="2026-03-28T11:22:03.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="15" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14289,7 +14289,7 @@
 			<date key="time:timestamp" value="2026-03-28T12:22:03.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="15" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14297,7 +14297,7 @@
 			<date key="time:timestamp" value="2026-03-28T13:20:09.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="16" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14305,7 +14305,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:20:09.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="16" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14393,7 +14393,7 @@
 			<date key="time:timestamp" value="2026-03-28T18:32:55.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14401,7 +14401,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:32:55.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14473,7 +14473,7 @@
 			<date key="time:timestamp" value="2026-03-28T23:27:56.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="27" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14481,7 +14481,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:27:56.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="27" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14505,7 +14505,7 @@
 			<date key="time:timestamp" value="2026-03-29T01:33:21.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14513,7 +14513,7 @@
 			<date key="time:timestamp" value="2026-03-29T02:33:21.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="29" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14521,7 +14521,7 @@
 			<date key="time:timestamp" value="2026-03-29T02:43:19.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="30" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14529,7 +14529,7 @@
 			<date key="time:timestamp" value="2026-03-29T03:43:19.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="30" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14537,7 +14537,7 @@
 			<date key="time:timestamp" value="2026-03-29T04:19:39.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="31" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14545,7 +14545,7 @@
 			<date key="time:timestamp" value="2026-03-29T05:19:39.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="31" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14713,7 +14713,7 @@
 			<date key="time:timestamp" value="2026-03-29T15:19:11.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="42" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14721,7 +14721,7 @@
 			<date key="time:timestamp" value="2026-03-29T16:19:11.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="42" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14745,7 +14745,7 @@
 			<date key="time:timestamp" value="2026-03-29T17:05:57.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="44" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -14753,7 +14753,7 @@
 			<date key="time:timestamp" value="2026-03-29T18:05:57.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="44" />
 			<int key="@@case_index" value="21" />
 		</event>
@@ -17592,7 +17592,7 @@
 			<date key="time:timestamp" value="2026-03-27T22:55:53.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="2" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17600,7 +17600,7 @@
 			<date key="time:timestamp" value="2026-03-27T23:55:53.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="2" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17608,7 +17608,7 @@
 			<date key="time:timestamp" value="2026-03-28T00:02:00.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17616,7 +17616,7 @@
 			<date key="time:timestamp" value="2026-03-28T01:02:00.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="3" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17640,7 +17640,7 @@
 			<date key="time:timestamp" value="2026-03-28T01:42:24.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="5" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17648,7 +17648,7 @@
 			<date key="time:timestamp" value="2026-03-28T02:42:24.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="5" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17656,7 +17656,7 @@
 			<date key="time:timestamp" value="2026-03-28T02:45:19.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17664,7 +17664,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:45:19.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17672,7 +17672,7 @@
 			<date key="time:timestamp" value="2026-03-28T04:14:12.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="7" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17680,7 +17680,7 @@
 			<date key="time:timestamp" value="2026-03-28T05:14:12.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="7" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17704,7 +17704,7 @@
 			<date key="time:timestamp" value="2026-03-28T05:31:24.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="9" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17712,7 +17712,7 @@
 			<date key="time:timestamp" value="2026-03-28T06:31:24.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="9" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17752,7 +17752,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:42:29.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17760,7 +17760,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:42:29.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17768,7 +17768,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:25:01.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="13" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17776,7 +17776,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:25:01.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="13" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17832,7 +17832,7 @@
 			<date key="time:timestamp" value="2026-03-28T13:44:26.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="17" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17840,7 +17840,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:44:26.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="17" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17848,7 +17848,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:05:36.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17856,7 +17856,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:05:36.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17864,7 +17864,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:43:16.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="19" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17872,7 +17872,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:43:16.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="19" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17880,7 +17880,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:38:08.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17888,7 +17888,7 @@
 			<date key="time:timestamp" value="2026-03-28T17:38:08.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17912,7 +17912,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:09:36.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17920,7 +17920,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:09:36.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="22" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17928,7 +17928,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:14:15.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17936,7 +17936,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:14:15.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17944,7 +17944,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:43:59.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17952,7 +17952,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:43:59.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -17992,7 +17992,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:05:05.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="27" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18000,7 +18000,7 @@
 			<date key="time:timestamp" value="2026-03-29T01:05:05.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="27" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18040,7 +18040,7 @@
 			<date key="time:timestamp" value="2026-03-29T02:52:41.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="30" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18048,7 +18048,7 @@
 			<date key="time:timestamp" value="2026-03-29T03:52:41.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="30" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18072,7 +18072,7 @@
 			<date key="time:timestamp" value="2026-03-29T05:17:36.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="32" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18080,7 +18080,7 @@
 			<date key="time:timestamp" value="2026-03-29T06:17:36.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="32" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18088,7 +18088,7 @@
 			<date key="time:timestamp" value="2026-03-29T05:34:34.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="33" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18096,7 +18096,7 @@
 			<date key="time:timestamp" value="2026-03-29T06:34:34.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="33" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18120,7 +18120,7 @@
 			<date key="time:timestamp" value="2026-03-29T07:35:41.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="35" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18128,7 +18128,7 @@
 			<date key="time:timestamp" value="2026-03-29T08:35:41.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="35" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18136,7 +18136,7 @@
 			<date key="time:timestamp" value="2026-03-29T09:18:42.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="36" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18144,7 +18144,7 @@
 			<date key="time:timestamp" value="2026-03-29T10:18:42.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="36" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18152,7 +18152,7 @@
 			<date key="time:timestamp" value="2026-03-29T09:58:12.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="37" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18160,7 +18160,7 @@
 			<date key="time:timestamp" value="2026-03-29T10:58:12.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="37" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18168,7 +18168,7 @@
 			<date key="time:timestamp" value="2026-03-29T10:31:29.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="38" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18176,7 +18176,7 @@
 			<date key="time:timestamp" value="2026-03-29T11:31:29.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="38" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18184,7 +18184,7 @@
 			<date key="time:timestamp" value="2026-03-29T11:48:14.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="39" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18192,7 +18192,7 @@
 			<date key="time:timestamp" value="2026-03-29T12:48:14.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="39" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18200,7 +18200,7 @@
 			<date key="time:timestamp" value="2026-03-29T13:06:42.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="40" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18208,7 +18208,7 @@
 			<date key="time:timestamp" value="2026-03-29T14:06:42.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="40" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18280,7 +18280,7 @@
 			<date key="time:timestamp" value="2026-03-29T17:51:20.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="45" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18288,7 +18288,7 @@
 			<date key="time:timestamp" value="2026-03-29T18:51:20.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="45" />
 			<int key="@@case_index" value="26" />
 		</event>
@@ -18878,7 +18878,7 @@
 			<date key="time:timestamp" value="2026-03-27T21:52:49.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="1" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -18886,7 +18886,7 @@
 			<date key="time:timestamp" value="2026-03-27T22:52:49.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Manutencao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="1" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19038,7 +19038,7 @@
 			<date key="time:timestamp" value="2026-03-28T07:44:10.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="11" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19046,7 +19046,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:44:10.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Documentacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="11" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19150,7 +19150,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:17:24.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19158,7 +19158,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:17:24.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19246,7 +19246,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:27:18.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19254,7 +19254,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:27:18.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19262,7 +19262,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:57:00.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="25" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19270,7 +19270,7 @@
 			<date key="time:timestamp" value="2026-03-28T22:57:00.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="25" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19374,7 +19374,7 @@
 			<date key="time:timestamp" value="2026-03-29T04:51:08.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="32" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19382,7 +19382,7 @@
 			<date key="time:timestamp" value="2026-03-29T05:51:08.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="32" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19390,7 +19390,7 @@
 			<date key="time:timestamp" value="2026-03-29T05:31:42.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="33" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19398,7 +19398,7 @@
 			<date key="time:timestamp" value="2026-03-29T06:31:42.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="33" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19406,7 +19406,7 @@
 			<date key="time:timestamp" value="2026-03-29T07:10:07.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="34" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -19414,7 +19414,7 @@
 			<date key="time:timestamp" value="2026-03-29T08:10:07.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Corrigir erro" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="34" />
 			<int key="@@case_index" value="28" />
 		</event>
@@ -23865,7 +23865,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:05:39.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -23873,7 +23873,7 @@
 			<date key="time:timestamp" value="2026-03-28T10:05:39.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -23929,7 +23929,7 @@
 			<date key="time:timestamp" value="2026-03-28T12:55:35.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="16" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -23937,7 +23937,7 @@
 			<date key="time:timestamp" value="2026-03-28T13:55:35.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Publicar solucao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="16" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -23993,7 +23993,7 @@
 			<date key="time:timestamp" value="2026-03-28T17:06:20.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -24001,7 +24001,7 @@
 			<date key="time:timestamp" value="2026-03-28T18:06:20.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -24041,7 +24041,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:12:43.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -24049,7 +24049,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:12:43.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Executar teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="37" />
 		</event>
@@ -29501,7 +29501,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:55:24.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="7" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29509,7 +29509,7 @@
 			<date key="time:timestamp" value="2026-03-28T04:55:24.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="7" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29581,7 +29581,7 @@
 			<date key="time:timestamp" value="2026-03-28T08:31:30.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29589,7 +29589,7 @@
 			<date key="time:timestamp" value="2026-03-28T09:31:30.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Construcao de funcionalidade" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="12" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29645,7 +29645,7 @@
 			<date key="time:timestamp" value="2026-03-28T13:16:42.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="16" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29653,7 +29653,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:16:42.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Contagem de ponto de funcao" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="16" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29677,7 +29677,7 @@
 			<date key="time:timestamp" value="2026-03-28T14:54:24.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29685,7 +29685,7 @@
 			<date key="time:timestamp" value="2026-03-28T15:54:24.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="18" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29693,7 +29693,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:13:37.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="19" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29701,7 +29701,7 @@
 			<date key="time:timestamp" value="2026-03-28T17:13:37.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="19" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29709,7 +29709,7 @@
 			<date key="time:timestamp" value="2026-03-28T16:35:14.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29717,7 +29717,7 @@
 			<date key="time:timestamp" value="2026-03-28T17:35:14.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Gestao da demanda" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="20" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29725,7 +29725,7 @@
 			<date key="time:timestamp" value="2026-03-28T18:04:56.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="21" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29733,7 +29733,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:04:56.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Planejamento de entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="21" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29757,7 +29757,7 @@
 			<date key="time:timestamp" value="2026-03-28T19:53:15.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29765,7 +29765,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:53:15.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="23" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29773,7 +29773,7 @@
 			<date key="time:timestamp" value="2026-03-28T20:28:48.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29781,7 +29781,7 @@
 			<date key="time:timestamp" value="2026-03-28T21:28:48.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Review da entrega" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="24" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29821,7 +29821,7 @@
 			<date key="time:timestamp" value="2026-03-28T23:53:07.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="27" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29829,7 +29829,7 @@
 			<date key="time:timestamp" value="2026-03-29T00:53:07.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="27" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29869,7 +29869,7 @@
 			<date key="time:timestamp" value="2026-03-29T03:18:00.391961+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="30" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -29877,7 +29877,7 @@
 			<date key="time:timestamp" value="2026-03-29T04:18:00.391961+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Elaborar caso de teste" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="30" />
 			<int key="@@case_index" value="49" />
 		</event>
@@ -34162,7 +34162,7 @@
 			<date key="time:timestamp" value="2026-03-28T02:25:55.374623+00:00" />
 			<string key="lifecycle:transition" value="begin" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="56" />
 		</event>
@@ -34170,7 +34170,7 @@
 			<date key="time:timestamp" value="2026-03-28T03:25:55.374623+00:00" />
 			<string key="lifecycle:transition" value="complete" />
 			<string key="concept:name" value="Atualizacao de requisitos funcionais" />
-			<string key="concept:resource" value="re" />
+			<string key="concept:resource" value="re2" />
 			<int key="concept:instance" value="6" />
 			<int key="@@case_index" value="56" />
 		</event>

@@ -26,7 +26,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T05:38:43.794274+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="1" />
@@ -80,7 +80,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T03:26:28.808856+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="2" />
@@ -116,7 +116,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T05:21:37.386531+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="3" />
@@ -170,7 +170,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T08:14:05.003427+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="4" />
@@ -233,7 +233,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T07:55:49.500352+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="5" />
@@ -287,7 +287,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T07:54:27.543000+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="6" />
@@ -359,7 +359,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T09:38:17.565987+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="7" />
@@ -404,7 +404,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T13:25:53.009257+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="8" />
@@ -467,7 +467,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T10:16:13.404934+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="9" />
@@ -521,7 +521,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T11:26:49.695386+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="10" />
@@ -557,7 +557,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T16:40:52.777034+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="11" />
@@ -593,7 +593,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T18:50:21.625045+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="12" />
@@ -656,7 +656,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T15:19:33.923778+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="13" />
@@ -710,7 +710,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T15:51:45.081777+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="14" />
@@ -755,7 +755,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T16:18:06.277139+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="15" />
@@ -818,7 +818,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T17:02:10.422131+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="16" />
@@ -863,7 +863,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T18:16:58.266838+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="17" />
@@ -926,7 +926,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T19:12:18.391411+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="18" />
@@ -944,7 +944,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T20:58:49.208500+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="19" />
@@ -953,7 +953,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T21:50:01.656290+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="20" />
@@ -980,7 +980,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T00:44:20.224627+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="21" />
@@ -1007,7 +1007,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T23:52:18.334940+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="22" />
@@ -1034,7 +1034,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T01:10:06.679063+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="23" />
@@ -1043,7 +1043,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T02:52:07.397786+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="24" />
@@ -1070,7 +1070,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T02:34:22.338844+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="25" />
@@ -1079,7 +1079,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T04:06:30.885594+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="26" />
@@ -1097,7 +1097,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T05:22:21.037266+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="27" />
@@ -1124,7 +1124,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T05:24:51.192000+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="28" />
@@ -1187,7 +1187,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T10:46:20.416172+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="29" />
@@ -1223,7 +1223,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T09:09:17.249665+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="30" />
@@ -1277,7 +1277,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T11:14:16.501767+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="31" />
@@ -1340,7 +1340,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T09:42:40.394643+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="32" />
@@ -1394,7 +1394,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T12:37:06.137676+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="33" />
@@ -1430,7 +1430,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T11:28:27.215182+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="34" />
@@ -1475,7 +1475,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T13:01:51.305243+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="35" />
@@ -1520,7 +1520,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T16:26:14.606071+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="36" />
@@ -1574,7 +1574,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T14:09:53.619493+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="37" />
@@ -1601,7 +1601,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T18:59:30.492714+00:00" />
 			<string key="concept:resource" value="re10" />
 			<int key="concept:instance" value="38" />
@@ -1664,7 +1664,7 @@
 		</event>
 		<event>
 			<string key="concept:name" value="Gestao" />
-			<string key="concept:operation" value="u" />
+			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-24T17:03:56.411799+00:00" />
 			<string key="concept:resource" value="re7" />
 			<int key="concept:instance" value="39" />

@@ -33,20 +33,12 @@ Init[Error] | |
 End[Testing] | |
 Existence[Error] | |
 Existence[Testing] | |
-ChainResponse[Manutencao de funcionalidade, Publicar solucao] | | |
 RespondedExistence[Review da entrega, Publicar solucao] | | |
 Absense2[Contagem de ponto de funcao] | |
-AlternatePrecedence[Manutencao de funcionalidade, Publicar solucao] | | |
 ChainPrecedence[Corrigir erro, Executar teste] | | |
 NotResponse[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |
-NotRespondedExistence[Manutencao de funcionalidade, Publicar solucao] | | |
 NotPrecedence[Corrigir erro, Executar teste] | | |
-NotChainResponse[Manutencao de funcionalidade, Planejamento de entrega] | | |
-NotChainPrecedence[Contagem de ponto de funcao, Manutencao de funcionalidade] | | |
-ExclusiveChoice[Atualizacao de requisitos funcionais, Manutencao de funcionalidade] | | |
 Exactly3[Contagem de ponto de funcao] | |
-ExclusiveChoice[Manutencao de funcionalidade, Publicar solucao] | | |
-ChainPrecedence[Corrigir erro, Manutencao de funcionalidade] | | |
 Exactly3[Error] | |
 Exactly3[Testing] | |
 Exactly1[Corrigir Erro] | |
@@ -63,7 +55,6 @@ Precedence[Testing, Planejamento de entrega] | | |
 Precedence[Error, Gestao da demanda] | | |
 ChainResponse[Testing, Executar teste] | | |
 ChainResponse[Error, Corrigir erro] | | |
-ChainPrecedence[Testing, Elaborar caso de teste] | | |
 ChainPrecedence[Error, Corrigir erro] | | |
 RespondedExistence[Testing, Review da entrega] | | |
 RespondedExistence[Error, Executar teste] | | |

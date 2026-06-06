@@ -54,7 +54,7 @@ from MultiConformanceAlgorithm import MultiperspectiveConformanceAlgorithm  # no
 
 # ── constants ─────────────────────────────────────────────────────────────────
 WARMUP_RUNS = 5
-PILOT_RUNS  = 30
+PILOT_RUNS  = 15
 Z_ALPHA_2   = 1.96
 E_RELATIVE  = 0.02        # 2 % of the pilot mean
 

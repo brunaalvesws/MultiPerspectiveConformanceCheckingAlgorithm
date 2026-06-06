@@ -60,50 +60,41 @@ if __name__ == "__main__":
         #10000: 'TenThousandCases',
     }
     for n_cases, cs in CASE_SUFFIX.items():
-        label = f'Nada'
-        MultiperspectiveConformanceAlgorithm(
-            f'{LOGS}/SyntheticProcessLog{cs}.xes',
-            f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
-            f'{LOGS}/OrganizationalModel{cs}.csv',
-            f'{LOGS}/ProcessModel.decl',
-            f'{LOGS}/DataAccessRestrictionModel.csv',
-            True, n_cases, label
-        )
         for amount in [10,30]:
-            #for i in range(20):
-            label = f'Acesso{amount}'
-            MultiperspectiveConformanceAlgorithm(
-                f'{LOGS}/SyntheticProcessLog{cs}.xes',
-                f'{LOGS}/SyntheticDataAccessLog{cs}AccessViolations{amount}.xes',
-                f'{LOGS}/OrganizationalModel{cs}.csv',
-                f'{LOGS}/ProcessModel.decl',
-                f'{LOGS}/DataAccessRestrictionModel.csv',
-                True, n_cases, label
-            )
-            label = f'Processo{amount}'
-            MultiperspectiveConformanceAlgorithm(
-                f'{LOGS}/SyntheticProcessLog{cs}.xes',
-                f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
-                f'{LOGS}/OrganizationalModel{cs}.csv',
-                f'{LOGS}/ProcessModelActivityViolations{amount}.decl',
-                f'{LOGS}/DataAccessRestrictionModel.csv',
-                True, n_cases, label
-            )
-            label = f'Inesperada{amount}'
-            MultiperspectiveConformanceAlgorithm(
-                f'{LOGS}/SyntheticProcessLog{cs}UnexpectedViolations{amount}.xes',
-                f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
-                f'{LOGS}/OrganizationalModel{cs}.csv',
-                f'{LOGS}/ProcessModelUnexpectedViolations.decl',
-                f'{LOGS}/DataAccessRestrictionModel.csv',
-                True, n_cases, label
-            )
-            label = f'Recurso{amount}'
-            MultiperspectiveConformanceAlgorithm(
-                f'{LOGS}/SyntheticProcessLog{cs}ResourceViolations{amount}.xes',
-                f'{LOGS}/SyntheticDataAccessLog{cs}ResourceViolations{amount}.xes',
-                f'{LOGS}/OrganizationalModel{cs}.csv',
-                f'{LOGS}/ProcessModel.decl',
-                f'{LOGS}/DataAccessRestrictionModel.csv',
-                True, n_cases, label
-            )
+            for i in range(20):
+                label = f'Acesso{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}AccessViolations{amount}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModel.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
+                label = f'Processo{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModelActivityViolations{amount}.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
+                label = f'Inesperada{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}UnexpectedViolations{amount}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModelUnexpectedViolations.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
+                label = f'Recurso{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}ResourceViolations{amount}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}ResourceViolations{amount}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModel.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
