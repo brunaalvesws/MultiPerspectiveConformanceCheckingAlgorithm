@@ -523,7 +523,7 @@
 			<string key="concept:name" value="Gestao" />
 			<string key="concept:operation" value="u" />
 			<date key="time:timestamp" value="2026-05-23T11:26:49.695386+00:00" />
-			<string key="concept:resource" value="re7" />
+			<string key="concept:resource" value="re" />
 			<int key="concept:instance" value="10" />
 			<string key="lifecycle:transition" value="begin" />
 			<int key="@@case_index" value="0" />
@@ -532,7 +532,7 @@
 			<string key="concept:name" value="Codigo" />
 			<string key="concept:operation" value="c" />
 			<date key="time:timestamp" value="2026-05-23T12:39:03.596370+00:00" />
-			<string key="concept:resource" value="re7" />
+			<string key="concept:resource" value="re" />
 			<int key="concept:instance" value="10" />
 			<string key="lifecycle:transition" value="begin" />
 			<int key="@@case_index" value="0" />

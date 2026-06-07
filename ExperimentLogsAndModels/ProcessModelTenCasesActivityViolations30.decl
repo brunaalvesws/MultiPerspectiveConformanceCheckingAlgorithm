@@ -63,3 +63,18 @@ AlternateResponse[Error, Corrigir erro] | | |
 NotResponse[Construcao de funcionalidade, Testing] | | |
 NotPrecedence[Testing, Planejamento de entrega] | | |
 Absence[Gestao da demanda] | |
+Exactly1[Atualizacao de requisitos funcionais] | |
+Exactly1[Elaborar caso de teste] | |
+NotRespondedExistence[Construcao de funcionalidade, Elaborar caso de teste] | | |
+NotRespondedExistence[Construcao de funcionalidade, Executar teste] | | |
+NotRespondedExistence[Gestao da demanda, Elaborar caso de teste] | | |
+NotRespondedExistence[Planejamento de entrega, Elaborar caso de teste] | | |
+NotRespondedExistence[Corrigir erro, Elaborar caso de teste] | | |
+AlternatePrecedence[Testing, Manutencao de funcionalidade] | | |
+AlternatePrecedence[Error, Atualizacao de requisitos funcionais] | | |
+AlternatePrecedence[Testing, Atualizacao de requisitos funcionais] | | |
+AlternatePrecedence[Error, Documentacao de requisitos funcionais] | | |
+AlternatePrecedence[Testing, Elaborar caso de teste] | | |
+AlternatePrecedence[Error, Elaborar caso de teste] | | |
+ChainPrecedence[Error, Elaborar caso de teste] | | |
+ChainPrecedence[Error, Construcao de funcionalidade] | | |
