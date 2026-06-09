@@ -10,9 +10,7 @@ activity Publicar solucao
 activity Elaborar caso de teste
 activity Executar teste
 activity Corrigir erro
-Existence[Contagem de ponto de funcao] | |
 Existence[Gestao da demanda] | |
-Existence[Review da entrega] | |
 Existence[Elaborar caso de teste] | |
-Existence[Executar teste] | |
-Response[Elaborar caso de teste, Executar teste] | | |
+Existence[Publicar solucao] | |
+Existence[Review da entrega] | |

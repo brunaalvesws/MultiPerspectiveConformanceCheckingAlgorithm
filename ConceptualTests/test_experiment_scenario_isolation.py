@@ -99,7 +99,27 @@ def _org(case_suffix: str) -> Path:
     return LOGS_DIR / f"OrganizationalModel{case_suffix}.csv"
 
 
-def _decl(stem: str) -> Path:
+def _decl(case_suffix: str, stem: str) -> Path:
+    """Resolve declare model path, inserting case_suffix for activity-specific models.
+    
+    Examples:
+    - _decl("OneCase", "ProcessModelActivityViolations10")
+      → "ProcessModelOneCaseActivityViolations10.decl"
+    - _decl("HundredCases", "ProcessModelActivityViolations30")
+      → "ProcessModelHundredCasesActivityViolations30.decl"
+    - _decl("OneCase", "ProcessModelUnexpectedViolations")
+      → "ProcessModelUnexpectedViolations.decl" (unchanged)
+    - _decl("OneCase", "ProcessModel")
+      → "ProcessModel.decl" (unchanged)
+    """
+    # Insert case_suffix for activity violation models
+    if "ActivityViolations" in stem and case_suffix:
+        # stem is like "ProcessModelActivityViolations{10|30}"
+        # should become "ProcessModel{CaseSuffix}ActivityViolations{10|30}"
+        base = "ProcessModel"
+        rest = stem[len(base):]  # "ActivityViolations10" or "ActivityViolations30"
+        stem = f"{base}{case_suffix}{rest}"
+    
     return LOGS_DIR / f"{stem}.decl"
 
 
@@ -178,7 +198,7 @@ def experiment_scenario(request, tmp_path_factory):
     proc  = _proc(case_suffix, proc_v)
     acc   = _acc(case_suffix, acc_v)
     org   = _org(case_suffix)
-    decl  = _decl(declare)
+    decl  = _decl(case_suffix, declare)  # Pass case_suffix for activity models
 
     missing = [str(p) for p in [proc, acc, org, decl, _ACCESS_MODEL] if not p.exists()]
     if missing:

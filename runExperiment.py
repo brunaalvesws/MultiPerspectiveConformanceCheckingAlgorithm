@@ -104,7 +104,27 @@ def acc_path(case_suffix: str, variant: str = '') -> str:
 def org_path(case_suffix: str) -> str:
     return os.path.join(LOGS_DIR, f"OrganizationalModel{case_suffix}.csv")
 
-def decl_path(stem: str) -> str:
+def decl_path(stem: str, case_suffix: str = '') -> str:
+    """Resolve declare model path, inserting case_suffix for activity-specific models.
+    
+    Examples:
+    - decl_path("ProcessModelActivityViolations10", "OneCase")
+      → "ProcessModelOneCaseActivityViolations10.decl"
+    - decl_path("ProcessModelActivityViolations30", "HundredCases")
+      → "ProcessModelHundredCasesActivityViolations30.decl"
+    - decl_path("ProcessModelUnexpectedViolations", "OneCase")
+      → "ProcessModelUnexpectedViolations.decl" (unchanged)
+    - decl_path("ProcessModel", "OneCase")
+      → "ProcessModel.decl" (unchanged)
+    """
+    # Insert case_suffix for activity violation models
+    if "ActivityViolations" in stem and case_suffix:
+        # stem is like "ProcessModelActivityViolations{10|30}"
+        # should become "ProcessModel{CaseSuffix}ActivityViolations{10|30}"
+        base = "ProcessModel"
+        rest = stem[len(base):]  # "ActivityViolations10" or "ActivityViolations30"
+        stem = f"{base}{case_suffix}{rest}"
+    
     return os.path.join(LOGS_DIR, f"{stem}.decl")
 
 def report_path(n_cases: int, label: str) -> str:
@@ -133,7 +153,7 @@ def _execute_runs(n_cases: int, label: str, proc_v: str, acc_v: str,
     event_path_   = proc_path(cs, proc_v)
     access_path_  = acc_path(cs, acc_v)
     resource_path = org_path(cs)
-    declare_path_ = decl_path(declare)
+    declare_path_ = decl_path(declare, cs)  # Pass case_suffix for activity models
 
     prev_dir = os.getcwd()
     os.chdir(write_dir)
