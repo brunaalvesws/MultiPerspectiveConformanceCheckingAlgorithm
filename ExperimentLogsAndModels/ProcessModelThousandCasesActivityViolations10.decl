@@ -31,7 +31,6 @@ Absense2[Contagem de ponto de funcao] | |
 ChainPrecedence[Corrigir erro, Executar teste] | | |
 NotResponse[Documentacao de requisitos funcionais, Construcao de funcionalidade] | | |
 NotPrecedence[Corrigir erro, Executar teste] | | |
-Exactly1[Corrigir Erro] | |
 Exactly1[Gestao da demanda] | |
 Exactly5[Review da entrega] | |
 ExclusiveChoice[Review da entrega, Publicar solucao] | | |
@@ -39,7 +38,6 @@ ExclusiveChoice[Gestao da demanda, Publicar solucao] | | |
 ExclusiveChoice[Corrigir erro, Publicar solucao] | | |
 ExclusiveChoice[Gestao da demanda, Executar teste] | | |
 ExclusiveChoice[Review da entrega, Executar teste] | | |
-Response[Testing, Construcao de funcionalidade] | | |
 Response[Error, Corrigir erro] | | |
 Precedence[Testing, Planejamento de entrega] | | |
 Precedence[Error, Gestao da demanda] | | |

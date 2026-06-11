@@ -36,6 +36,7 @@ Exactly3[Testing] | |
 Exactly1[Corrigir Erro] | |
 Exactly1[Gestao da demanda] | |
 Exactly5[Review da entrega] | |
+Existence[Testing] | |
 ExclusiveChoice[Review da entrega, Publicar solucao] | | |
 ExclusiveChoice[Gestao da demanda, Publicar solucao] | | |
 ExclusiveChoice[Corrigir erro, Publicar solucao] | | |

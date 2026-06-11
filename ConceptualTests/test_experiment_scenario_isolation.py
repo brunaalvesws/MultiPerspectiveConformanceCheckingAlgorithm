@@ -29,7 +29,9 @@ OneCase naming quirks
 
 from __future__ import annotations
 
+import json
 import os
+import shutil
 import sys
 from pathlib import Path
 from typing import FrozenSet, Tuple
@@ -44,10 +46,39 @@ TEST_DIR      = Path(__file__).resolve().parent
 REPO_ROOT     = TEST_DIR.parent
 ALGORITHM_DIR = REPO_ROOT / "Algorithm"
 LOGS_DIR      = REPO_ROOT / "ExperimentLogsAndModels"
+REPORT_DIR     = TEST_DIR / "report_outputs"
+RESULTS_FILE   = TEST_DIR / "test_experiment_scenario_isolation_results.jsonl"
 
 sys.path.insert(0, str(ALGORITHM_DIR))
 
 _ACCESS_MODEL = LOGS_DIR / "DataAccessRestrictionModel.csv"
+
+
+@pytest.fixture(scope="session", autouse=True)
+def _reset_test_output_dirs() -> None:
+    """Prepare the test output folders used by this scenario test."""
+    if REPORT_DIR.exists():
+        shutil.rmtree(REPORT_DIR)
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+
+    try:
+        RESULTS_FILE.unlink()
+    except FileNotFoundError:
+        pass
+
+
+def _append_scenario_result(n_cases: int, label: str, report: dict, report_path: Path) -> None:
+    """Append one scenario's report into the ConceptualTests JSON results file."""
+    record = {
+        "n_cases": n_cases,
+        "label": label,
+        "report_path": str(report_path),
+        "overview": report.get("overview", {}),
+        "violations": report.get("violations", {}),
+    }
+    with RESULTS_FILE.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
 
 # ---------------------------------------------------------------------------
 # Violation-category groupings
@@ -187,7 +218,7 @@ _ALL_PARAMS, _PARAM_IDS = _build_params()
 # ---------------------------------------------------------------------------
 
 @pytest.fixture(scope="session", params=_ALL_PARAMS, ids=_PARAM_IDS)
-def experiment_scenario(request, tmp_path_factory):
+def experiment_scenario(request):
     """Run the algorithm for one (n_cases, scenario) combination and return
     a dict ``{'n_cases': int, 'label': str, 'report': dict}``.
 
@@ -206,9 +237,11 @@ def experiment_scenario(request, tmp_path_factory):
 
     from MultiConformanceAlgorithm import MultiperspectiveConformanceAlgorithm  # noqa: PLC0415
 
-    tmp_dir = tmp_path_factory.mktemp(f"exp_{n_cases}_{label}")
+    run_dir = REPORT_DIR / f"exp_{n_cases}_{label}"
+    run_dir.mkdir(parents=True, exist_ok=True)
+
     prev_cwd = os.getcwd()
-    os.chdir(str(tmp_dir))
+    os.chdir(str(run_dir))
     try:
         report = MultiperspectiveConformanceAlgorithm(
             eventPATH=str(proc),
@@ -222,6 +255,10 @@ def experiment_scenario(request, tmp_path_factory):
         )
     finally:
         os.chdir(prev_cwd)
+
+    report_filename = f"report{n_cases}{label}.txt"
+    report_path = run_dir / report_filename
+    _append_scenario_result(n_cases, label, report, report_path)
 
     return {"n_cases": n_cases, "label": label, "report": report}
 
