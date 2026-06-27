@@ -1,0 +1,332 @@
+
+============================================================
+Case size: 1
+============================================================
+
+1. Descriptive statistics
+   SemViolacao       n=30  mean=1.622s  median=1.591s  std=0.1043s  IQR=0.0804  outliers=2
+   Processo10        n=30  mean=1.568s  median=1.563s  std=0.0341s  IQR=0.0640  outliers=0
+   Processo30        n=30  mean=1.578s  median=1.570s  std=0.0428s  IQR=0.0468  outliers=2
+   Acesso10          n=30  mean=1.598s  median=1.587s  std=0.0479s  IQR=0.0660  outliers=0
+   Acesso30          n=30  mean=1.540s  median=1.540s  std=0.0425s  IQR=0.0698  outliers=0
+   Recurso10         n=30  mean=1.626s  median=1.625s  std=0.0411s  IQR=0.0587  outliers=0
+   Recurso30         n=30  mean=1.658s  median=1.654s  std=0.0348s  IQR=0.0451  outliers=1
+   Inesperada10      n=30  mean=1.460s  median=1.457s  std=0.0453s  IQR=0.0622  outliers=1
+   Inesperada30      n=30  mean=1.149s  median=1.137s  std=0.0445s  IQR=0.0619  outliers=1
+
+2. Shapiro-Wilk normality test (α = 0.05)
+   SemViolacao       W=0.6817  p=0.0000  → NOT normal
+   Processo10        W=0.9337  p=0.0617  → normal
+   Processo30        W=0.9114  p=0.0161  → NOT normal
+   Acesso10          W=0.9674  p=0.4705  → normal
+   Acesso30          W=0.9470  p=0.1408  → normal
+   Recurso10         W=0.9630  p=0.3697  → normal
+   Recurso30         W=0.9697  p=0.5318  → normal
+   Inesperada10      W=0.9379  p=0.0800  → normal
+   Inesperada30      W=0.9015  p=0.0091  → NOT normal
+
+   Route: NON-PARAMETRIC
+
+3. Omnibus test
+   Kruskal-Wallis:  H = 189.6143,  p = 9.816e-37  ***
+
+4. Post-hoc (non-parametric)
+                  Acesso10      Acesso30  Inesperada10  Inesperada30    Processo10    Processo30     Recurso10     Recurso30   SemViolacao
+Acesso10      1.000000e+00  5.165609e-02  3.273583e-07  1.560140e-12  1.000000e+00  1.000000e+00  1.000000e+00  5.224984e-02  1.000000e+00
+Acesso30      5.165609e-02  1.000000e+00  3.775908e-01  4.617912e-04  1.000000e+00  1.000000e+00  4.772397e-05  6.726865e-09  2.027413e-02
+Inesperada10  3.273583e-07  3.775908e-01  1.000000e+00  1.000000e+00  2.997264e-03  1.829108e-04  5.084706e-12  1.518994e-17  6.759729e-08
+Inesperada30  1.560140e-12  4.617912e-04  1.000000e+00  1.000000e+00  3.437416e-07  7.023189e-09  1.301956e-18  2.515380e-25  2.029812e-13
+Processo10    1.000000e+00  1.000000e+00  2.997264e-03  3.437416e-07  1.000000e+00  1.000000e+00  1.942239e-02  2.104566e-05  1.000000e+00
+Processo30    1.000000e+00  1.000000e+00  1.829108e-04  7.023189e-09  1.000000e+00  1.000000e+00  1.656267e-01  4.480260e-04  1.000000e+00
+Recurso10     1.000000e+00  4.772397e-05  5.084706e-12  1.301956e-18  1.942239e-02  1.656267e-01  1.000000e+00  1.000000e+00  1.000000e+00
+Recurso30     5.224984e-02  6.726865e-09  1.518994e-17  2.515380e-25  2.104566e-05  4.480260e-04  1.000000e+00  1.000000e+00  1.247984e-01
+SemViolacao   1.000000e+00  2.027413e-02  6.759729e-08  2.029812e-13  1.000000e+00  1.000000e+00  1.000000e+00  1.247984e-01  1.000000e+00
+
+5. Effect size (non-parametric)
+   ε² = 0.6958  (grande)
+   Pairwise Cliff's Δ / A₁₂:
+     SemViolacao vs Processo10:  Δ = 0.4156  A₁₂ = 0.7078  (médio)
+     SemViolacao vs Processo30:  Δ = 0.2911  A₁₂ = 0.6456  (pequeno)
+     SemViolacao vs Acesso10:  Δ = 0.0444  A₁₂ = 0.5222  (negligível)
+     SemViolacao vs Acesso30:  Δ = 0.6311  A₁₂ = 0.8156  (grande)
+     SemViolacao vs Recurso10:  Δ = -0.2933  A₁₂ = 0.3533  (pequeno)
+     SemViolacao vs Recurso30:  Δ = -0.5533  A₁₂ = 0.2233  (grande)
+     SemViolacao vs Inesperada10:  Δ = 0.9644  A₁₂ = 0.9822  (grande)
+     SemViolacao vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Processo30:  Δ = -0.1244  A₁₂ = 0.4378  (negligível)
+     Processo10 vs Acesso10:  Δ = -0.3911  A₁₂ = 0.3044  (médio)
+     Processo10 vs Acesso30:  Δ = 0.3556  A₁₂ = 0.6778  (médio)
+     Processo10 vs Recurso10:  Δ = -0.7133  A₁₂ = 0.1433  (grande)
+     Processo10 vs Recurso30:  Δ = -0.9400  A₁₂ = 0.0300  (grande)
+     Processo10 vs Inesperada10:  Δ = 0.9422  A₁₂ = 0.9711  (grande)
+     Processo10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Acesso10:  Δ = -0.2378  A₁₂ = 0.3811  (pequeno)
+     Processo30 vs Acesso30:  Δ = 0.4556  A₁₂ = 0.7278  (médio)
+     Processo30 vs Recurso10:  Δ = -0.6156  A₁₂ = 0.1922  (grande)
+     Processo30 vs Recurso30:  Δ = -0.8222  A₁₂ = 0.0889  (grande)
+     Processo30 vs Inesperada10:  Δ = 0.9422  A₁₂ = 0.9711  (grande)
+     Processo30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Acesso30:  Δ = 0.6267  A₁₂ = 0.8133  (grande)
+     Acesso10 vs Recurso10:  Δ = -0.3489  A₁₂ = 0.3256  (médio)
+     Acesso10 vs Recurso30:  Δ = -0.6733  A₁₂ = 0.1633  (grande)
+     Acesso10 vs Inesperada10:  Δ = 0.9600  A₁₂ = 0.9800  (grande)
+     Acesso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Recurso10:  Δ = -0.8844  A₁₂ = 0.0578  (grande)
+     Acesso30 vs Recurso30:  Δ = -0.9800  A₁₂ = 0.0100  (grande)
+     Acesso30 vs Inesperada10:  Δ = 0.7978  A₁₂ = 0.8989  (grande)
+     Acesso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Recurso30:  Δ = -0.4644  A₁₂ = 0.2678  (médio)
+     Recurso10 vs Inesperada10:  Δ = 0.9733  A₁₂ = 0.9867  (grande)
+     Recurso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada10:  Δ = 0.9956  A₁₂ = 0.9978  (grande)
+     Recurso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Inesperada10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+
+============================================================
+Case size: 10
+============================================================
+
+1. Descriptive statistics
+   SemViolacao       n=30  mean=17.060s  median=17.036s  std=0.2497s  IQR=0.2815  outliers=1
+   Processo10        n=30  mean=17.045s  median=16.960s  std=0.2157s  IQR=0.2061  outliers=3
+   Processo30        n=30  mean=17.141s  median=17.122s  std=0.2363s  IQR=0.3645  outliers=0
+   Acesso10          n=30  mean=17.343s  median=17.266s  std=0.2880s  IQR=0.2936  outliers=1
+   Acesso30          n=30  mean=17.619s  median=17.576s  std=0.2073s  IQR=0.2302  outliers=1
+   Recurso10         n=30  mean=18.945s  median=18.963s  std=0.4256s  IQR=0.3529  outliers=3
+   Recurso30         n=30  mean=19.058s  median=18.909s  std=0.4603s  IQR=0.3324  outliers=2
+   Inesperada10      n=30  mean=15.250s  median=15.188s  std=0.2529s  IQR=0.2687  outliers=1
+   Inesperada30      n=30  mean=11.833s  median=11.783s  std=0.1694s  IQR=0.2384  outliers=0
+
+2. Shapiro-Wilk normality test (α = 0.05)
+   SemViolacao       W=0.9379  p=0.0797  → normal
+   Processo10        W=0.8802  p=0.0029  → NOT normal
+   Processo30        W=0.9370  p=0.0757  → normal
+   Acesso10          W=0.9224  p=0.0310  → NOT normal
+   Acesso30          W=0.9394  p=0.0875  → normal
+   Recurso10         W=0.8842  p=0.0035  → NOT normal
+   Recurso30         W=0.6328  p=0.0000  → NOT normal
+   Inesperada10      W=0.9435  p=0.1133  → normal
+   Inesperada30      W=0.9301  p=0.0493  → NOT normal
+
+   Route: NON-PARAMETRIC
+
+3. Omnibus test
+   Kruskal-Wallis:  H = 239.6215,  p = 2.723e-47  ***
+
+4. Post-hoc (non-parametric)
+                  Acesso10      Acesso30  Inesperada10  Inesperada30    Processo10    Processo30     Recurso10     Recurso30   SemViolacao
+Acesso10      1.000000e+00  1.000000e+00  5.908580e-06  6.368314e-10  1.000000e+00  1.000000e+00  3.431860e-04  3.620728e-04  1.000000e+00
+Acesso30      1.000000e+00  1.000000e+00  1.456795e-10  1.315427e-15  4.388979e-03  7.961861e-02  2.294428e-01  2.376206e-01  6.943673e-03
+Inesperada10  5.908580e-06  1.456795e-10  1.000000e+00  1.000000e+00  7.125944e-02  3.833658e-03  1.551682e-20  1.737213e-20  4.822224e-02
+Inesperada30  6.368314e-10  1.315427e-15  1.000000e+00  1.000000e+00  1.663853e-04  2.942303e-06  2.536831e-27  2.889047e-27  9.582010e-05
+Processo10    1.000000e+00  4.388979e-03  7.125944e-02  1.663853e-04  1.000000e+00  1.000000e+00  1.809333e-09  1.955444e-09  1.000000e+00
+Processo30    1.000000e+00  7.961861e-02  3.833658e-03  2.942303e-06  1.000000e+00  1.000000e+00  2.561807e-07  2.744308e-07  1.000000e+00
+Recurso10     3.431860e-04  2.294428e-01  1.551682e-20  2.536831e-27  1.809333e-09  2.561807e-07  1.000000e+00  1.000000e+00  3.867964e-09
+Recurso30     3.620728e-04  2.376206e-01  1.737213e-20  2.889047e-27  1.955444e-09  2.744308e-07  1.000000e+00  1.000000e+00  4.174917e-09
+SemViolacao   1.000000e+00  6.943673e-03  4.822224e-02  9.582010e-05  1.000000e+00  1.000000e+00  3.867964e-09  4.174917e-09  1.000000e+00
+
+5. Effect size (non-parametric)
+   ε² = 0.8874  (grande)
+   Pairwise Cliff's Δ / A₁₂:
+     SemViolacao vs Processo10:  Δ = 0.0156  A₁₂ = 0.5078  (negligível)
+     SemViolacao vs Processo30:  Δ = -0.2267  A₁₂ = 0.3867  (pequeno)
+     SemViolacao vs Acesso10:  Δ = -0.5756  A₁₂ = 0.2122  (grande)
+     SemViolacao vs Acesso30:  Δ = -0.9044  A₁₂ = 0.0478  (grande)
+     SemViolacao vs Recurso10:  Δ = -0.9978  A₁₂ = 0.0011  (grande)
+     SemViolacao vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     SemViolacao vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Processo30:  Δ = -0.2556  A₁₂ = 0.3722  (pequeno)
+     Processo10 vs Acesso10:  Δ = -0.6378  A₁₂ = 0.1811  (grande)
+     Processo10 vs Acesso30:  Δ = -0.9333  A₁₂ = 0.0333  (grande)
+     Processo10 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Acesso10:  Δ = -0.4133  A₁₂ = 0.2933  (médio)
+     Processo30 vs Acesso30:  Δ = -0.8600  A₁₂ = 0.0700  (grande)
+     Processo30 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Acesso30:  Δ = -0.6022  A₁₂ = 0.1989  (grande)
+     Acesso10 vs Recurso10:  Δ = -0.9867  A₁₂ = 0.0067  (grande)
+     Acesso10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Recurso10:  Δ = -0.9778  A₁₂ = 0.0111  (grande)
+     Acesso30 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Recurso30:  Δ = 0.0267  A₁₂ = 0.5133  (negligível)
+     Recurso10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Inesperada10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+
+============================================================
+Case size: 100
+============================================================
+
+1. Descriptive statistics
+   SemViolacao       n=30  mean=139.614s  median=139.645s  std=1.2167s  IQR=1.1133  outliers=2
+   Processo10        n=30  mean=140.270s  median=140.322s  std=1.0727s  IQR=2.0029  outliers=0
+   Processo30        n=30  mean=140.103s  median=140.002s  std=1.1535s  IQR=1.7096  outliers=0
+   Acesso10          n=30  mean=150.735s  median=150.559s  std=0.7495s  IQR=1.1661  outliers=0
+   Acesso30          n=30  mean=244.553s  median=243.967s  std=2.8331s  IQR=1.1313  outliers=1
+   Recurso10         n=30  mean=208.172s  median=208.302s  std=1.0207s  IQR=1.6508  outliers=0
+   Recurso30         n=30  mean=290.166s  median=290.298s  std=0.9708s  IQR=0.8251  outliers=2
+   Inesperada10      n=30  mean=124.234s  median=124.116s  std=1.1052s  IQR=1.9294  outliers=0
+   Inesperada30      n=30  mean=94.015s  median=93.678s  std=0.9439s  IQR=1.6392  outliers=0
+
+2. Shapiro-Wilk normality test (α = 0.05)
+   SemViolacao       W=0.9295  p=0.0477  → NOT normal
+   Processo10        W=0.9251  p=0.0365  → NOT normal
+   Processo30        W=0.9527  p=0.1999  → normal
+   Acesso10          W=0.9541  p=0.2172  → normal
+   Acesso30          W=0.4273  p=0.0000  → NOT normal
+   Recurso10         W=0.9604  p=0.3165  → normal
+   Recurso30         W=0.7880  p=0.0000  → NOT normal
+   Inesperada10      W=0.9325  p=0.0571  → normal
+   Inesperada30      W=0.8913  p=0.0052  → NOT normal
+
+   Route: NON-PARAMETRIC
+
+3. Omnibus test
+   Kruskal-Wallis:  H = 257.3959,  p = 4.655e-51  ***
+
+4. Post-hoc (non-parametric)
+                  Acesso10      Acesso30  Inesperada10  Inesperada30    Processo10    Processo30     Recurso10     Recurso30   SemViolacao
+Acesso10      1.000000e+00  1.051606e-01  9.545424e-08  3.630293e-12  2.730158e-01  1.524204e-01  1.000000e+00  2.897630e-04  2.448107e-02
+Acesso30      1.051606e-01  1.000000e+00  1.565078e-17  7.567763e-24  5.912816e-07  1.923656e-07  1.000000e+00  1.000000e+00  6.654714e-09
+Inesperada10  9.545424e-08  1.565078e-17  1.000000e+00  1.000000e+00  3.713594e-02  7.165748e-02  3.630293e-12  7.567763e-24  3.830129e-01
+Inesperada30  3.630293e-12  7.567763e-24  1.000000e+00  1.000000e+00  6.640850e-05  1.677059e-04  1.565078e-17  4.077048e-31  1.905552e-03
+Processo10    2.730158e-01  5.912816e-07  3.713594e-02  6.640850e-05  1.000000e+00  1.000000e+00  1.155670e-03  3.511367e-11  1.000000e+00
+Processo30    1.524204e-01  1.923656e-07  7.165748e-02  1.677059e-04  1.000000e+00  1.000000e+00  4.942533e-04  8.660515e-12  1.000000e+00
+Recurso10     1.000000e+00  1.000000e+00  3.630293e-12  1.565078e-17  1.155670e-03  4.942533e-04  1.000000e+00  1.051606e-01  3.714651e-05
+Recurso30     2.897630e-04  1.000000e+00  7.567763e-24  4.077048e-31  3.511367e-11  8.660515e-12  1.051606e-01  1.000000e+00  1.367688e-13
+SemViolacao   2.448107e-02  6.654714e-09  3.830129e-01  1.905552e-03  1.000000e+00  1.000000e+00  3.714651e-05  1.367688e-13  1.000000e+00
+
+5. Effect size (non-parametric)
+   ε² = 0.9555  (grande)
+   Pairwise Cliff's Δ / A₁₂:
+     SemViolacao vs Processo10:  Δ = -0.3244  A₁₂ = 0.3378  (pequeno)
+     SemViolacao vs Processo30:  Δ = -0.2422  A₁₂ = 0.3789  (pequeno)
+     SemViolacao vs Acesso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     SemViolacao vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Processo30:  Δ = 0.0867  A₁₂ = 0.5433  (negligível)
+     Processo10 vs Acesso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Acesso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Recurso10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Recurso10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Inesperada10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+
+============================================================
+Case size: 1000
+============================================================
+
+1. Descriptive statistics
+   SemViolacao       n=30  mean=1415.709s  median=1415.127s  std=4.6249s  IQR=6.2996  outliers=0
+   Processo10        n=30  mean=1378.861s  median=1353.410s  std=54.7857s  IQR=108.5655  outliers=0
+   Processo30        n=30  mean=1324.584s  median=1324.515s  std=3.4480s  IQR=5.4621  outliers=0
+   Acesso10          n=30  mean=2158.761s  median=2158.756s  std=3.8500s  IQR=4.6749  outliers=1
+   Acesso30          n=30  mean=10466.662s  median=10461.222s  std=18.7205s  IQR=22.6477  outliers=1
+   Recurso10         n=30  mean=6530.875s  median=6531.659s  std=12.7977s  IQR=11.8425  outliers=2
+   Recurso30         n=30  mean=14723.803s  median=14587.943s  std=325.7703s  IQR=533.7225  outliers=0
+   Inesperada10      n=30  mean=1174.173s  median=1173.644s  std=2.8005s  IQR=2.5961  outliers=2
+   Inesperada30      n=30  mean=875.430s  median=875.001s  std=3.1895s  IQR=2.0450  outliers=1
+
+2. Shapiro-Wilk normality test (α = 0.05)
+   SemViolacao       W=0.9674  p=0.4712  → normal
+   Processo10        W=0.7155  p=0.0000  → NOT normal
+   Processo30        W=0.9524  p=0.1961  → normal
+   Acesso10          W=0.9332  p=0.0596  → normal
+   Acesso30          W=0.9636  p=0.3812  → normal
+   Recurso10         W=0.8514  p=0.0007  → NOT normal
+   Recurso30         W=0.8266  p=0.0002  → NOT normal
+   Inesperada10      W=0.9443  p=0.1189  → normal
+   Inesperada30      W=0.6707  p=0.0000  → NOT normal
+
+   Route: NON-PARAMETRIC
+
+3. Omnibus test
+   Kruskal-Wallis:  H = 261.3625,  p = 6.704e-52  ***
+
+4. Post-hoc (non-parametric)
+                  Acesso10      Acesso30  Inesperada10  Inesperada30    Processo10    Processo30     Recurso10     Recurso30   SemViolacao
+Acesso10      1.000000e+00  1.051606e-01  9.545424e-08  3.630293e-12  3.775908e-01  1.021527e-03  1.000000e+00  2.897630e-04  1.000000e+00
+Acesso30      1.051606e-01  1.000000e+00  1.565078e-17  7.567763e-24  1.119095e-06  2.861407e-11  1.000000e+00  1.000000e+00  8.973286e-06
+Inesperada10  9.545424e-08  1.565078e-17  1.000000e+00  1.000000e+00  2.492861e-02  1.000000e+00  3.630293e-12  7.567763e-24  5.888785e-03
+Inesperada30  3.630293e-12  7.567763e-24  1.000000e+00  1.000000e+00  3.809310e-05  4.101277e-02  1.565078e-17  4.077048e-31  5.258245e-06
+Processo10    3.775908e-01  1.119095e-06  2.492861e-02  3.809310e-05  1.000000e+00  1.000000e+00  1.865635e-03  7.808225e-11  1.000000e+00
+Processo30    1.021527e-03  2.861407e-11  1.000000e+00  4.101277e-02  1.000000e+00  1.000000e+00  5.019582e-07  1.853948e-16  1.000000e+00
+Recurso10     1.000000e+00  1.000000e+00  3.630293e-12  1.565078e-17  1.865635e-03  5.019582e-07  1.000000e+00  1.051606e-01  8.721609e-03
+Recurso30     2.897630e-04  1.000000e+00  7.567763e-24  4.077048e-31  7.808225e-11  1.853948e-16  1.051606e-01  1.000000e+00  1.082598e-09
+SemViolacao   1.000000e+00  8.973286e-06  5.888785e-03  5.258245e-06  1.000000e+00  1.000000e+00  8.721609e-03  1.082598e-09  1.000000e+00
+
+5. Effect size (non-parametric)
+   ε² = 0.9707  (grande)
+   Pairwise Cliff's Δ / A₁₂:
+     SemViolacao vs Processo10:  Δ = 0.0667  A₁₂ = 0.5333  (negligível)
+     SemViolacao vs Processo30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     SemViolacao vs Acesso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     SemViolacao vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     SemViolacao vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Processo30:  Δ = 0.6267  A₁₂ = 0.8133  (grande)
+     Processo10 vs Acesso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Acesso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Processo30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Processo30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Acesso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Recurso10:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Recurso10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Acesso30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Acesso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Recurso30:  Δ = -1.0000  A₁₂ = 0.0000  (grande)
+     Recurso10 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada10:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Recurso30 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
+     Inesperada10 vs Inesperada30:  Δ = 1.0000  A₁₂ = 1.0000  (grande)
