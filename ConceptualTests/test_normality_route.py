@@ -3,7 +3,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-import analyzeResults
+import ExperimentAnalysis.analyzeResults as analyzeResults
 
 
 def test_route_is_non_parametric_when_no_valid_clean_group_exists(monkeypatch):
