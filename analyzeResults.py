@@ -34,8 +34,11 @@ import math
 import os
 import sys
 import warnings
+from contextlib import contextmanager
 from itertools import combinations
 from typing import Optional
+import matplotlib.pyplot as plt
+from matplotlib.colors import LogNorm
 
 import numpy as np
 from scipy import stats
@@ -57,7 +60,7 @@ except ImportError:
 
 # ── configuration ─────────────────────────────────────────────────────────────
 ROOT_DIR    = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR    = os.path.join(ROOT_DIR, 'ExperimentTestData')
+DATA_DIR    = os.path.join(ROOT_DIR, 'ExperimentOfficialData')
 
 ALPHA = 0.05
 
@@ -274,6 +277,22 @@ def _sig(p: float) -> str:
     return 'ns'
 
 
+@contextmanager
+def redirect_stdout_to_file(path: str):
+    """Temporarily redirect stdout to a text file."""
+    directory = os.path.dirname(path)
+    if directory:
+        os.makedirs(directory, exist_ok=True)
+
+    old_stdout = sys.stdout
+    with open(path, 'w', encoding='utf-8') as fh:
+        sys.stdout = fh
+        try:
+            yield
+        finally:
+            sys.stdout = old_stdout
+
+
 # ── main analysis ─────────────────────────────────────────────────────────────
 
 def analyse_case_size(n_cases: int) -> dict:
@@ -304,43 +323,52 @@ def analyse_case_size(n_cases: int) -> dict:
               f"IQR={d['iqr']:.4f}  outliers={d['outliers']}")
     results['descriptive'] = desc
 
-    # Use clean samples (outliers removed) for inference
-    clean = {lbl: d['clean'] for lbl, d in desc.items() if d.get('clean')}
-
     # 2 ─ Shapiro-Wilk
     print("\n2. Shapiro-Wilk normality test (α = 0.05)")
     normal = {}
-    for lbl, vals in clean.items():
+    for lbl, vals in available.items():
         w, p = shapiro_wilk(vals)
-        is_normal = p >= ALPHA
-        normal[lbl] = {'W': w, 'p': p, 'normal': is_normal}
+        is_normal = bool(np.isfinite(p) and p >= ALPHA)
         flag = 'normal' if is_normal else 'NOT normal'
+        normal[lbl] = {'W': w, 'p': p, 'normal': is_normal}
         print(f"   {lbl:<16}  W={w:.4f}  p={p:.4f}  → {flag}")
     results['normality'] = normal
 
-    all_normal = all(v['normal'] for v in normal.values())
-    route = 'parametric' if all_normal else 'non-parametric'
+    if not normal:
+        route = 'non-parametric'
+    else:
+        all_normal = all(v['normal'] for v in normal.values())
+        route = 'parametric' if all_normal else 'non-parametric'
     results['route'] = route
     print(f"\n   Route: {route.upper()}")
 
-    groups = [clean[lbl] for lbl in clean]
-    labels = list(clean.keys())
+    valid_labels = list(available.keys())
+    groups = [available[lbl] for lbl in valid_labels]
+    labels = valid_labels
+
+    if len(groups) < 2:
+        print("\n3. Omnibus test skipped (need at least two valid groups)")
+        results['omnibus'] = {}
+        results['posthoc'] = None
+        results['effect_global'] = {}
+        results['effect_pairwise'] = {}
+        return results
 
     # 3 ─ Omnibus test
     print(f"\n3. Omnibus test")
     if route == 'parametric':
         f_stat, p_omni = anova(*groups)
         results['omnibus'] = {'test': 'ANOVA', 'stat': f_stat, 'p': p_omni}
-        print(f"   One-Way ANOVA:  F = {f_stat:.4f},  p = {p_omni:.6f}  {_sig(p_omni)}")
+        print(f"   One-Way ANOVA:  F = {f_stat:.4f},  p = {p_omni:.3e}  {_sig(p_omni)}")
     else:
         h_stat, p_omni = kruskal_wallis(*groups)
         results['omnibus'] = {'test': 'Kruskal-Wallis', 'stat': h_stat, 'p': p_omni}
-        print(f"   Kruskal-Wallis:  H = {h_stat:.4f},  p = {p_omni:.6f}  {_sig(p_omni)}")
+        print(f"   Kruskal-Wallis:  H = {h_stat:.4f},  p = {p_omni:.3e}  {_sig(p_omni)}")
 
     # 4 ─ Post-hoc
     if p_omni < ALPHA:
         print(f"\n4. Post-hoc ({route})")
-        ph_data = {lbl: clean[lbl] for lbl in labels}
+        ph_data = {lbl: available[lbl] for lbl in labels}
         if route == 'parametric':
             ph = tukey_hsd_result(ph_data)
             results['posthoc'] = {'method': 'Tukey HSD', 'result': ph}
@@ -351,6 +379,11 @@ def analyse_case_size(n_cases: int) -> dict:
             results['posthoc'] = {'method': 'Dunn-Bonferroni', 'result': ph}
             if ph is not None:
                 print(ph.to_string())
+                plot_dunn_heatmap(
+                    ph,
+                    n_cases,
+                    save_path=f"dunn_heatmap{n_cases}.png"
+                )
     else:
         print(f"\n4. Post-hoc skipped (omnibus p ≥ {ALPHA})")
 
@@ -366,7 +399,7 @@ def analyse_case_size(n_cases: int) -> dict:
         print("   Pairwise Cohen's d:")
         pairwise = {}
         for lbl_a, lbl_b in combinations(labels, 2):
-            d = cohens_d(clean[lbl_a], clean[lbl_b])
+            d = cohens_d(available[lbl_a], available[lbl_b])
             interp = _threshold_label(d, COHENS_D_THRESHOLDS)
             pairwise[(lbl_a, lbl_b)] = {'d': d, 'interp': interp}
             print(f"     {lbl_a} vs {lbl_b}:  d = {d:.4f}  ({interp})")
@@ -384,13 +417,14 @@ def analyse_case_size(n_cases: int) -> dict:
         print("   Pairwise Cliff's Δ / A₁₂:")
         pairwise = {}
         for lbl_a, lbl_b in combinations(labels, 2):
-            cd   = cliffs_delta(clean[lbl_a], clean[lbl_b])
-            a12  = vargha_delaney_a12(clean[lbl_a], clean[lbl_b])
+            cd   = cliffs_delta(available[lbl_a], available[lbl_b])
+            a12  = vargha_delaney_a12(available[lbl_a], available[lbl_b])
             interp = _threshold_label(cd, CLIFFS_D_THRESHOLDS)
             pairwise[(lbl_a, lbl_b)] = {'cliff': cd, 'a12': a12,
                                         'interp': interp}
             print(f"     {lbl_a} vs {lbl_b}:  Δ = {cd:.4f}  A₁₂ = {a12:.4f}  ({interp})")
         results['effect_pairwise'] = pairwise
+        plot_cliffs_delta_heatmap(pairwise, n_cases, save_path=f"cliffs_delta_heatmap{n_cases}.png")
 
     return results
 
@@ -578,26 +612,561 @@ def main():
                         help='Skip LaTeX table generation.')
     parser.add_argument('--out', type=str, default=None,
                         help='Output LaTeX file path (default: stdout).')
+    parser.add_argument('--log-file', type=str, default='analysis_output.txt',
+                        help='File where the analysis prints will be written.')
     args = parser.parse_args()
 
     sizes = [args.cases] if args.cases else CASE_SIZES
+    log_path = os.path.abspath(args.log_file)
     all_results = []
-    for n in sizes:
-        res = analyse_case_size(n)
-        if res:
-            all_results.append(res)
 
-    if not args.no_latex and all_results:
-        print(f"\n{'='*60}")
-        print("Generating LaTeX tables …")
-        latex = build_latex_document(all_results)
-        if args.out:
-            with open(args.out, 'w', encoding='utf-8') as fh:
-                fh.write(latex)
-            print(f"LaTeX saved to {args.out}")
-        else:
-            print("\n" + latex)
+    with redirect_stdout_to_file(log_path):
+        for n in sizes:
+            res = analyse_case_size(n)
+            if res:
+                all_results.append(res)
 
+        if not args.no_latex and all_results:
+            print(f"\n{'='*60}")
+            print("Generating LaTeX tables …")
+            latex = build_latex_document(all_results)
+            if args.out:
+                with open(args.out, 'w', encoding='utf-8') as fh:
+                    fh.write(latex)
+                print(f"LaTeX saved to {args.out}")
+            else:
+                print("\n" + latex)
+    boxplot()
+    plot_execution_scalability_5curves()
+    plot_density_slope()
+    print(f"Analysis output saved to {log_path}")
+
+# ── plot ────────────────────────────────────────────────────────────────────────
+
+def boxplot():
+
+    CASE_SIZES = [1, 10, 100, 1000]
+
+    labels = [
+        'SemViolacao',
+        'Processo10',
+        'Processo30',
+        'Acesso10',
+        'Acesso30',
+        'Recurso10',
+        'Recurso30',
+        'Inesperada10',
+        'Inesperada30'
+    ]
+
+    display = [
+        'Sem\nViol.',
+        'Fluxo\n10%',
+        'Fluxo\n30%',
+        'Acesso\n10%',
+        'Acesso\n30%',
+        'Recurso\n10%',
+        'Recurso\n30%',
+        'Inesp.\n10%',
+        'Inesp.\n30%'
+    ]
+
+    colors = [
+        "#CFCFCF",      # Sem violação
+
+        "#6FA8DC",      # Fluxo
+        "#6FA8DC",
+
+        "#93C47D",      # Acesso
+        "#93C47D",
+
+        "#F6B26B",      # Recurso
+        "#F6B26B",
+
+        "#E06666",      # Inesperada
+        "#E06666"
+    ]
+
+    fig, axs = plt.subplots(2, 2, figsize=(18, 10))
+
+    axs = axs.flatten()
+
+    for ax, n_cases in zip(axs, CASE_SIZES):
+
+        raw = load_all(n_cases)
+
+        values = []
+        names = []
+        box_colors = []
+
+        for lbl, disp, cor in zip(labels, display, colors):
+            if len(raw[lbl]) > 0:
+                values.append(raw[lbl])
+                names.append(disp)
+                box_colors.append(cor)
+
+        bp = ax.boxplot(
+            values,
+            patch_artist=True,
+            showmeans=True,
+            widths=0.6,
+            medianprops=dict(color='black', linewidth=2),
+            meanprops=dict(
+                marker='D',
+                markerfacecolor='red',
+                markeredgecolor='red',
+                markersize=5
+            ),
+            flierprops=dict(
+                marker='o',
+                markersize=4,
+                alpha=0.6
+            )
+        )
+
+        for patch, color in zip(bp['boxes'], box_colors):
+            patch.set_facecolor(color)
+
+        ax.set_title(f"{n_cases} cases", fontsize=13, weight="bold")
+        ax.set_ylabel("Tempo (s)")
+        ax.set_xticklabels(names)
+        ax.grid(axis='y', alpha=0.3)
+
+    fig.suptitle(
+        "Distribuição dos tempos de execução por cenário experimental",
+        fontsize=16,
+        weight="bold"
+    )
+
+    plt.tight_layout(rect=[0, 0, 1, 0.96])
+
+    plt.savefig(
+        "boxplots_tempo_execucao.png",
+        dpi=300,
+        bbox_inches="tight"
+    )
+
+    # plt.show()
+
+
+
+def plot_dunn_heatmap(
+        dunn_df,
+        n,
+        alpha=0.05,
+        save_path=None
+):
+    """
+    Gera um heatmap dos p-valores ajustados do teste de Dunn-Bonferroni.
+
+    Parameters
+    ----------
+    dunn_df : pandas.DataFrame
+        Resultado retornado por scikit_posthocs.posthoc_dunn()
+    """
+
+    labels = list(dunn_df.columns)
+    p = dunn_df.to_numpy(dtype=float)
+
+    # Máscara para esconder a diagonal
+    mask = np.eye(len(labels), dtype=bool)
+
+    # Evita problemas no LogNorm
+    plot_data = p.copy()
+    plot_data[plot_data < 1e-300] = 1e-300
+
+    plot_data = np.ma.masked_where(mask, plot_data)
+
+    fig, ax = plt.subplots(figsize=(9,8))
+
+    cmap = plt.cm.RdYlGn
+    cmap.set_bad(color="white")
+
+    im = ax.imshow(
+        plot_data,
+        cmap=cmap.reversed(),
+        norm=LogNorm(vmin=1e-50, vmax=1)
+    )
+
+    # ticks
+    ax.set_xticks(np.arange(len(labels)))
+    ax.set_yticks(np.arange(len(labels)))
+
+    ax.set_xticklabels(labels, rotation=45, ha="right")
+    ax.set_yticklabels(labels)
+
+    # linhas da grade
+    ax.set_xticks(np.arange(-.5, len(labels), 1), minor=True)
+    ax.set_yticks(np.arange(-.5, len(labels), 1), minor=True)
+
+    ax.grid(which="minor", color="gray", linewidth=0.5)
+
+    ax.tick_params(which="minor", bottom=False, left=False)
+
+    # escreve os p-valores
+    for i in range(len(labels)):
+        for j in range(len(labels)):
+
+            if i == j:
+                continue
+
+            value = p[i, j]
+
+            if value < 0.001:
+                text = "<0.001"
+            elif value > 0.999:
+                text = "1.000"
+            else:
+                text = f"{value:.3f}"
+
+            color = "white" if value < 0.01 else "black"
+
+            ax.text(
+                j,
+                i,
+                text,
+                ha="center",
+                va="center",
+                fontsize=8,
+                color=color
+            )
+
+    cbar = fig.colorbar(im)
+
+    cbar.set_label("p-valor ajustado (escala logarítmica)")
+    title=f"Teste post-hoc de Dunn-Bonferroni - {n} Cases"
+    ax.set_title(title, fontsize=14)
+
+    plt.tight_layout()
+
+    if save_path is not None:
+        plt.savefig(save_path, dpi=300, bbox_inches="tight")
+
+    # plt.show()
+    
+
+def plot_cliffs_delta_heatmap(
+        pairwise_results,
+        n_cases,
+        save_path=None
+):
+    """
+    pairwise_results:
+        dicionário produzido pelo código:
+        {
+            ('A','B'): {'cliff': ..., ...},
+            ...
+        }
+    """
+    
+    labels = [
+        'SemViolacao',
+        'Processo10',
+        'Processo30',
+        'Acesso10',
+        'Acesso30',
+        'Recurso10',
+        'Recurso30',
+        'Inesperada10',
+        'Inesperada30'
+    ]
+
+    n = len(labels)
+
+    matrix = np.zeros((n, n))
+
+    index = {g: i for i, g in enumerate(labels)}
+
+    # diagonal
+    np.fill_diagonal(matrix, 0)
+
+    # preenche matriz
+    for (a, b), res in pairwise_results.items():
+
+        d = res["cliff"]
+
+        i = index[a]
+        j = index[b]
+
+        matrix[i, j] = d
+        matrix[j, i] = -d
+
+    fig, ax = plt.subplots(figsize=(9,8))
+
+    im = ax.imshow(
+        matrix,
+        cmap="RdBu_r",
+        vmin=-1,
+        vmax=1
+    )
+
+    ax.set_xticks(np.arange(n))
+    ax.set_yticks(np.arange(n))
+
+    ax.set_xticklabels(labels, rotation=45, ha="right")
+    ax.set_yticklabels(labels)
+
+    # grade
+    ax.set_xticks(np.arange(-.5, n, 1), minor=True)
+    ax.set_yticks(np.arange(-.5, n, 1), minor=True)
+
+    ax.grid(which="minor", color="gray", linewidth=0.5)
+
+    ax.tick_params(which="minor", bottom=False, left=False)
+
+    # escreve os valores
+    for i in range(n):
+        for j in range(n):
+
+            if i == j:
+                txt = "—"
+            else:
+                txt = f"{matrix[i,j]:.2f}"
+
+            cor = "white" if abs(matrix[i,j]) > 0.55 else "black"
+
+            ax.text(
+                j,
+                i,
+                txt,
+                ha="center",
+                va="center",
+                fontsize=8,
+                color=cor
+            )
+
+    cbar = plt.colorbar(im)
+
+    cbar.set_label("Cliff's Delta (Δ)")
+
+    cbar.set_ticks([-1,-0.5,0,0.5,1])
+    
+    title=f"Cliff's Delta (Tamanho do efeito) - {n_cases} Cases"
+
+    ax.set_title(title, fontsize=14)
+
+    plt.tight_layout()
+
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches="tight")
+
+    # plt.show()
+
+def plot_execution_scalability_5curves():
+
+    CASE_SIZES = [1, 10, 100, 1000]
+
+    groups = {
+        "Sem violação": ["SemViolacao"],
+        "Fluxo": ["Processo10", "Processo30"],
+        "Acesso": ["Acesso10", "Acesso30"],
+        "Recurso": ["Recurso10", "Recurso30"],
+        "Inesperada": ["Inesperada10", "Inesperada30"]
+    }
+
+    colors = {
+        "Sem violação": "black",
+        "Fluxo": "#1f77b4",
+        "Acesso": "#2ca02c",
+        "Recurso": "#ff7f0e",
+        "Inesperada": "#d62728"
+    }
+
+    markers = {
+        "Sem violação": "o",
+        "Fluxo": "s",
+        "Acesso": "^",
+        "Recurso": "D",
+        "Inesperada": "X"
+    }
+
+    plt.figure(figsize=(10,6))
+
+    for group_name, scenarios in groups.items():
+
+        means = []
+        ci95 = []
+
+        for cases in CASE_SIZES:
+
+            values = []
+
+            for scenario in scenarios:
+                values.extend(load_all(cases)[scenario])
+
+            values = np.array(values)
+
+            mean = np.mean(values)
+
+            std = np.std(values, ddof=1)
+
+            sem = std / np.sqrt(len(values))
+
+            ci = 1.96 * sem
+
+            means.append(mean)
+            ci95.append(ci)
+
+        plt.errorbar(
+            CASE_SIZES,
+            means,
+            yerr=ci95,
+            color=colors[group_name],
+            marker=markers[group_name],
+            linewidth=2.5,
+            markersize=8,
+            capsize=4,
+            label=group_name
+        )
+
+    plt.xscale("log")
+
+    # Eu também colocaria o eixo Y em log
+    plt.yscale("log")
+
+    plt.xticks(CASE_SIZES, CASE_SIZES)
+
+    plt.xlabel("Número de cases", fontsize=12)
+    plt.ylabel("Tempo médio de execução (s)", fontsize=12)
+
+    plt.title(
+        "Escalabilidade do algoritmo por tipo de violação",
+        fontsize=15,
+        weight="bold"
+    )
+
+    plt.grid(True, which="both", linestyle="--", alpha=0.35)
+
+    plt.legend(
+        title="Tipo de cenário",
+        fontsize=11,
+        title_fontsize=11
+    )
+
+    plt.tight_layout()
+
+    plt.savefig(
+        "escalabilidade_5_curvas.png",
+        dpi=300,
+        bbox_inches="tight"
+    )
+
+    # plt.show()
+    
+
+def plot_density_slope():
+
+    CASE_SIZES = [1, 10, 100, 1000]
+
+    scenarios = {
+        "Fluxo": ("Processo10", "Processo30"),
+        "Acesso": ("Acesso10", "Acesso30"),
+        "Recurso": ("Recurso10", "Recurso30"),
+        "Inesperada": ("Inesperada10", "Inesperada30")
+    }
+
+    colors = {
+        "Fluxo": "#1f77b4",
+        "Acesso": "#2ca02c",
+        "Recurso": "#ff7f0e",
+        "Inesperada": "#d62728"
+    }
+
+    markers = {
+        "Fluxo": "s",
+        "Acesso": "^",
+        "Recurso": "D",
+        "Inesperada": "o"
+    }
+
+    fig, axs = plt.subplots(2, 2, figsize=(11,8))
+
+    axs = axs.flatten()
+
+    for ax, cases in zip(axs, CASE_SIZES):
+
+        data = load_all(cases)
+
+        for nome, (g10, g30) in scenarios.items():
+
+            m10 = np.mean(data[g10])
+            m30 = np.mean(data[g30])
+
+            ci10 = 1.96*np.std(data[g10],ddof=1)/np.sqrt(len(data[g10]))
+            ci30 = 1.96*np.std(data[g30],ddof=1)/np.sqrt(len(data[g30]))
+
+            ax.plot(
+                [0,1],
+                [m10,m30],
+                color=colors[nome],
+                linewidth=2.5,
+                marker=markers[nome],
+                markersize=8,
+                label=nome
+            )
+
+            ax.errorbar(
+                [0,1],
+                [m10,m30],
+                yerr=[ci10,ci30],
+                fmt="none",
+                color=colors[nome],
+                capsize=4,
+                linewidth=1.5
+            )
+
+        ax.set_xticks([0,1])
+        ax.set_xticklabels(["10%","30%"])
+
+        ax.set_title(f"{cases} cases",weight="bold")
+
+        ax.grid(axis="y",linestyle="--",alpha=0.3)
+
+    fig.suptitle(
+        "Impacto da densidade de inconformidades",
+        fontsize=16,
+        weight="bold"
+    )
+
+    fig.text(
+        0.04,
+        0.5,
+        "Tempo médio de execução (s)",
+        va="center",
+        rotation="vertical",
+        fontsize=12
+    )
+
+    handles, labels = axs[0].get_legend_handles_labels()
+
+    fig.text(
+        0.5,
+        0.07,
+        "Densidade de inconformidades",
+        ha="center",
+        fontsize=12
+    )
+
+    leg = fig.legend(
+        handles,
+        labels,
+        loc="lower center",
+        bbox_to_anchor=(0.5, -0.02),
+        ncol=4,
+        frameon=False
+    )
+
+    plt.tight_layout(rect=[0.05, 0.12, 1, 0.93])
+
+    plt.savefig(
+        "slope_density.png",
+        dpi=300,
+        bbox_inches="tight"
+    )
+
+    plt.show()
 
 if __name__ == '__main__':
     main()
+
+
