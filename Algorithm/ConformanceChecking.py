@@ -13,7 +13,8 @@ def check_process_conformance(process_model, process_log, consider_vacuity):
     basic_checker = MPDeclareAnalyzer(log=process_log, declare_model=process_model, consider_vacuity=consider_vacuity, track_violations="concept:instance")
     conf_check_res: MPDeclareResultsBrowser = basic_checker.run()
     violations = format_violations(conf_check_res.get_metric(metric="events_violated"))
-    return violations
+    size = sum(len(trace) for trace in process_log.get_log())
+    return violations, size
 
 def check_access_conformance(process_model, log):
     '''
@@ -66,17 +67,17 @@ def check_resource_activities_conformance(process_log, access_log, allowed_activ
             activity_name = activity['concept:name']
             
             if activity_resource not in resources:
-                violations["IllegalTeamActivity"].append([activity_name, activity['@@case_index'], activity_resource, activity['concept:instance']])
+                violations["IllegalTeamActivity"].append([activity_name, activity['@@case_index'], activity_resource, str(activity['concept:instance'])])
                 
             if activity_name not in allowed_activities_set:
                 unexpected = True
-                activity_conformance['UnexpectedActivity'].append([activity_name, activity['@@case_index'], activity['concept:instance'], activity_resource])
+                activity_conformance['UnexpectedActivity'].append([activity_name, activity['@@case_index'], str(activity['concept:instance']), activity_resource])
                 
             instance_in_mandatory = [item for item in mandatory_access if activity['concept:instance'] in item[2] and item[0] == activity['@@case_index']]
             activity_access = accesses[accesses['concept:instance']== activity['concept:instance']]
             for _, acc in activity_access.iterrows():
                 if unexpected:
-                    activity_conformance['UnexpectedDataAccess'].append([acc['concept:name'], acc['concept:operation'], activity['@@case_index'], acc['concept:instance'], acc['concept:resource'], activity_name])
+                    activity_conformance['UnexpectedDataAccess'].append([acc['concept:name'], acc['concept:operation'], activity['@@case_index'], str(acc['concept:instance']), acc['concept:resource'], activity_name])
 
                 verified_violations = []
                 for violation in instance_in_mandatory:

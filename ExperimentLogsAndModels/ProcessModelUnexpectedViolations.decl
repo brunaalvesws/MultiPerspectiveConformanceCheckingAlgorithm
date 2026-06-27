@@ -1,0 +1,15 @@
+activity Manutencao de funcionalidade
+activity Atualizacao de requisitos funcionais
+activity Construcao de funcionalidade
+activity Documentacao de requisitos funcionais
+activity Contagem de ponto de funcao
+activity Gestao da demanda
+activity Planejamento de entrega
+activity Review da entrega
+activity Publicar solucao
+activity Elaborar caso de teste
+activity Executar teste
+activity Corrigir erro
+Existence[Gestao da demanda] | |
+Existence[Elaborar caso de teste] | |
+Existence[Publicar solucao] | |

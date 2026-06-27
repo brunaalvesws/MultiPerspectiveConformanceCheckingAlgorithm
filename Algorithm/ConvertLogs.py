@@ -62,7 +62,7 @@ def convert_model_to_rules(access_model, process_model):
             new_model = check_letters(value, new_model, access_model.iloc[index,0], col)
 
     declare_model = DeclareModel().parse_from_string(new_model)
-    declare_model.to_file('ModeloConjuntoTeste.decl')
+    #declare_model.to_file('ModeloConjuntoTeste.decl')
     return declare_model
 
 def convert_logs(process_log, access_log):
@@ -78,5 +78,5 @@ def convert_logs(process_log, access_log):
     df_merged = pd.concat([process_log_df, access_log], ignore_index=True)
     
     df_merged = df_merged.sort_values(['case:concept:name', 'concept:instance','time:timestamp'])
-    df_merged.to_csv('LogConjuntoTeste.csv')
+    #df_merged.to_csv('LogConjuntoTeste.csv')
     return pm4py.convert_to_event_log(df_merged)

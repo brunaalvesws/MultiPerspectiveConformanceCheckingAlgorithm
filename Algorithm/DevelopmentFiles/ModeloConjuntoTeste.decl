@@ -1,0 +1,653 @@
+activity Manutencao de funcionalidade
+activity Atualizacao de requisitos funcionais
+activity Construcao de funcionalidade
+activity Documentacao de requisitos funcionais
+activity Contagem de ponto de funcao
+activity Gestao da demanda
+activity Planejamento de entrega
+activity Review da entrega
+activity Publicar solucao
+activity Elaborar caso de teste
+activity Executar teste
+activity Corrigir erro
+activity Gestao
+activity Codigo
+activity Requisito
+activity PF
+activity Teste
+Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Codigo, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Manutencao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Codigo, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Manutencao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Codigo, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Manutencao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Codigo, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Requisito, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Manutencao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Manutencao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Manutencao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Manutencao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Manutencao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Codigo, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Atualizacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Codigo, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Atualizacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Requisito, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Atualizacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Requisito, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Atualizacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Requisito, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[PF, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Atualizacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Atualizacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Atualizacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Atualizacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Construcao de funcionalidade, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Not Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Not Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Codigo, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Construcao de funcionalidade, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Requisito, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Construcao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Construcao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Construcao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Construcao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Construcao de funcionalidade] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Construcao de funcionalidade, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Codigo, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Documentacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Codigo, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Not Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Requisito, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[PF, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Documentacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Documentacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Documentacao de requisitos funcionais] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Documentacao de requisitos funcionais, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Contagem de ponto de funcao, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Codigo, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Contagem de ponto de funcao, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Contagem de ponto de funcao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Codigo, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Contagem de ponto de funcao, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Contagem de ponto de funcao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Not Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Not Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[PF, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Contagem de ponto de funcao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Teste, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Contagem de ponto de funcao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Contagem de ponto de funcao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Gestao da demanda, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Gestao da demanda] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Gestao da demanda, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Planejamento de entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Planejamento de entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Planejamento de entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[PF, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Planejamento de entrega, PF] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[PF, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Planejamento de entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[PF, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Planejamento de entrega, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Planejamento de entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Planejamento de entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Planejamento de entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Review da entrega, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Review da entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Review da entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Review da entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Review da entrega] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Review da entrega, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Review da entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Review da entrega] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Review da entrega, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Publicar solucao, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Publicar solucao] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Publicar solucao, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Elaborar caso de teste, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Codigo, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Elaborar caso de teste, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Elaborar caso de teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Codigo, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Elaborar caso de teste, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Elaborar caso de teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Elaborar caso de teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Not Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Not Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Teste, Elaborar caso de teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Elaborar caso de teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Executar teste, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Codigo, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Codigo, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Executar teste, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Executar teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Codigo, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Codigo, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Executar teste, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Executar teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Executar teste, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Executar teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Teste, Executar teste] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Executar teste, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Not Precedence[Teste, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Not Response[Executar teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND different concept:resource |
+Not Precedence[Teste, Executar teste] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Executar teste, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Gestao, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Corrigir erro, Gestao] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is c |
+Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is c |
+Not Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Not Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND different concept:resource |
+Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is u |
+Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is u |
+Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is d |
+Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is d |
+Not Precedence[Codigo, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Response[Corrigir erro, Codigo] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND different concept:resource |
+Not Precedence[Requisito, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Requisito, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Corrigir erro, Requisito] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Requisito, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Corrigir erro, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Requisito, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Requisito, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, Requisito] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[PF, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, PF] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is c AND (same concept:resource OR different concept:resource) |
+Precedence[Teste, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance and same concept:resource AND T.concept:operation is r |
+Response[Corrigir erro, Teste] |A.lifecycle:transition is begin |same concept:instance and same concept:resource AND T.concept:operation is r |
+Not Precedence[Teste, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Response[Corrigir erro, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is r AND different concept:resource |
+Not Precedence[Teste, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is u AND (same concept:resource OR different concept:resource) |
+Not Precedence[Teste, Corrigir erro] |A.lifecycle:transition is complete |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |
+Not Response[Corrigir erro, Teste] |A.lifecycle:transition is begin |same concept:instance AND T.concept:operation is d AND (same concept:resource OR different concept:resource) |

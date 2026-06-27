@@ -1,6 +1,8 @@
+import time
+
 from LogStatistics import total_number_of_violations, success_rate
 from collections import defaultdict
-
+import json
 import re
 
 def parse_constraint(rule: str):
@@ -24,8 +26,11 @@ def format_violations(df_violations):
     violations = []
     for index, row in df_violations.iterrows():
         for column in df_violations.columns:
-            if row[column] != None:
-                violations.append([index, column, list(set([str(n) for n in row[column]]))])
+            try:
+                if row[column] != None:
+                    violations.append([index, column, list(set([str(n) for n in row[column]]))])
+            except Exception as e:
+                print(f"Error processing row {index}, column {column}: {row[column]}")
     return violations
 
 
@@ -73,7 +78,7 @@ def format_violations_access(df_violations):
                         violations['Resource'].append([
                             row_index,
                             columns[0],
-                            i
+                            i if isinstance(i, list) else [i]
                         ])
               
             verified_rules.extend(columns) 
@@ -137,7 +142,7 @@ def format_inconformances(process_conformance, access_conformance, resource_conf
 
     return report
 
-def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, duration):
+def non_conformance_patterns_mapping(process_violations, access_violations, resource_violations, unexpected_activities, activities_stats, log_size, begin, cases, report_label='SemViolacao'):
     patterns = {}
     patterns['Prohibited activity'] = [] 
     patterns['Unexpected activity'] = [] 
@@ -155,24 +160,24 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
         patterns['Unexpected data access'].append({'tool': acc[0], 'operation': acc[1], 'case_id': acc[2], 'instance': acc[3], 'resource': acc[4], 'activity': acc[5]})
         
     for act in resource_violations['IllegalTeamActivity']:
-        patterns['Illegal activity'].append({'name': act[0], 'case_id': act[1], 'resource': act[2], 'instance': act[3]})
+        patterns['Illegal activity'].append({'name': act[0], 'case_id': act[1], 'resource': act[2], 'instance': str(act[3])})
         
     for acc in resource_violations['IllegalTeamAccess']:
-        patterns['Illegal data access'].append({'tool': acc[0], 'activity': acc[1], 'case_id': acc[2], 'instance': acc[4], 'resource': acc[3], 'operation': acc[5]})
+        patterns['Illegal data access'].append({'tool': acc[0], 'activity': acc[1], 'case_id': acc[2], 'instance': str(acc[4]), 'resource': acc[3], 'operation': acc[5]})
     
     for violation in access_violations['Resource']:
         activity, tool, operation = parse_constraint(violation[1])
-        patterns['Illegal data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': violation[2], 'resource': violation[3], 'designated_resource': violation[4]})
+        patterns['Illegal data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': ", ".join(map(str, violation[2])), 'resource': violation[3], 'designated_resource': violation[4]})
     
     for violation in access_violations['Mandatory']:
         if 'Precedence' in violation[1]:
             activity, tool, operation = parse_constraint(violation[1])
-            patterns['Ignored mandatory data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': violation[2]})
+            patterns['Ignored mandatory data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': ", ".join(map(str, violation[2]))})
     
     for violation in access_violations['Prohibited']:
         if "Precedence" in violation[1]:
             activity, tool, operation = parse_constraint(violation[1])
-            patterns['Prohibited data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': violation[2]})
+            patterns['Prohibited data access'].append({'case_id': violation[0], 'tool': tool, 'activity': activity, 'operation': operation, 'instance': ", ".join(map(str, violation[2]))})
     
     # Declare4Py does not support Succession (and its variants) and CoExistence (and its variants) yet
     for violation in process_violations:
@@ -187,6 +192,8 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
         
     report = {}
     num_violations = total_number_of_violations(patterns)
+    end = time.time()
+    duration = end - begin
     report['overview'] = {
         'successRate': success_rate(log_size, num_violations),
         'averageDuration': duration,
@@ -194,5 +201,7 @@ def non_conformance_patterns_mapping(process_violations, access_violations, reso
     }
     report['activityDistribution'] = activities_stats
     report['violations'] = patterns
-    print(report)    
+    with open(f"report{cases}{report_label}.txt", "a", encoding="utf-8") as f:
+        f.write(f'\n {duration} {num_violations} {log_size}')
+        #f.write(str(report))
     return report

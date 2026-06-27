@@ -73,7 +73,7 @@ Run the main script:
 python MultiConformanceAlgorithm.py
 ```
 
-You need to have 5 input files for this script to run, you can use the available ones in ModelsLogs folder, just remember to change the name of the files if using other ones.
+You need to have 5 input files for this script to run, you can use the available ones in the folder ExperimentLogsAndModels for each type of violation or in ModelosLogTeste for only one case with all types of violation, just remember to change the name of the files if using other ones.
 
 ---
 
@@ -84,6 +84,7 @@ MultiPerspectiveConformanceCheckingAlgorithm/
 │
 ├── Algorithm/
 │   ├── venv/
+│   ├── DevelopmentFiles/
 │   ├── requirements.txt
 │   ├── ConformanceChecking.py
 │   ├── ConvertLogs.py
@@ -93,8 +94,11 @@ MultiPerspectiveConformanceCheckingAlgorithm/
 │   ├── ParseFiles.py
 │
 ├── AlgorithmVersions/
+├── ConceptualTests/
+├── ExperimentLogsAndModels/
+├── ExperimentTestData/
 ├── InitialModelsLogs/
-├── ModelsLogs/
+├── ModelosLogsTeste/
 └── README.md
 ```
 

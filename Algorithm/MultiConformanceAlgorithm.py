@@ -19,12 +19,12 @@ from ParseFiles import pre_process_data
 from LogStatistics import activities_distribution
 
 
-def MultiperspectiveConformanceAlgorithm(eventPATH=str(Path(__file__).resolve().parent / 'LogSinteticoProcessoOFICIALv4.xes'),
-                                         accessPATH=str(Path(__file__).resolve().parent / 'LogSinteticoAcessoOFICIALv4.xes'),
-                                         resourcePATH=str(Path(__file__).resolve().parent / 'ModeloRecursosOFICIALv4.csv'),
-                                         declarePATH=str(Path(__file__).resolve().parent / 'Modelo_Log_Sintetico_OFICIAL.decl'),
-                                         accessmodelPATH=str(Path(__file__).resolve().parent / 'ModeloAcessoOFICIAL.csv'),
-                                         consider_vacuity=True):
+def MultiperspectiveConformanceAlgorithm(eventPATH='../ModelosLogsTeste/SyntheticProcessLog.xes',
+                                         accessPATH='../ModelosLogsTeste/SyntheticDataAccessLog.xes',
+                                         resourcePATH='../ModelosLogsTeste/OrganizationalModel.csv',
+                                         declarePATH='../ModelosLogsTeste/ProcessModel.decl',
+                                         accessmodelPATH='../ModelosLogsTeste/DataAccessRestrictionModel.csv',
+                                         consider_vacuity=True, cases=1, report_label='SemViolacao'):
   '''
   The algorithm accepts: a process log, a data access log, a resource model, a process DECLARE model, and a data access model.
   '''
@@ -36,18 +36,65 @@ def MultiperspectiveConformanceAlgorithm(eventPATH=str(Path(__file__).resolve().
                                                                                                               accessmodelPATH)
   processed_access_model = convert_model_to_rules(access_model, process_model)
   complete_log = convert_logs(process_log, access_log)
-  process_conformance = check_process_conformance(process_model, process_log, consider_vacuity)
+  process_conformance,plog_size = check_process_conformance(process_model, process_log, consider_vacuity)
   activities_stats = activities_distribution(process_log)
-  access_conformance, log_size = check_access_conformance(processed_access_model, complete_log)
+  access_conformance, alog_size = check_access_conformance(processed_access_model, complete_log)
   resource_conformance, activity_conformance, access_violations = check_resource_activities_conformance(process_log, access_log, allowed_activities, resource_model, access_conformance)
-  end = time.time()
-  duration = end - begin
+  log_size = (plog_size // 2)  + alog_size
   return non_conformance_patterns_mapping(process_conformance, 
                                           access_violations, 
                                           resource_conformance, 
                                           activity_conformance, 
                                           activities_stats, 
-                                          log_size, 
-                                          duration)
+                                          log_size, begin, cases, report_label)
 
-MultiperspectiveConformanceAlgorithm()
+if __name__ == "__main__":
+    # For the full experiment protocol (pilot study, warm-up, sample sizing)
+    # use runExperiment.py instead.
+    LOGS = '../ExperimentLogsAndModels'
+    CASE_SUFFIX = {
+        1:    'OneCase',
+        10:    'TenCases',
+        100:   'HundredCases',
+        1000:  'ThousandCases',
+        #10000: 'TenThousandCases',
+    }
+    for n_cases, cs in CASE_SUFFIX.items():
+        for amount in [10,30]:
+            for i in range(20):
+                label = f'Acesso{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}AccessViolations{amount}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModel.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
+                label = f'Processo{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModelActivityViolations{amount}.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
+                label = f'Inesperada{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}UnexpectedViolations{amount}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModelUnexpectedViolations.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
+                label = f'Recurso{amount}'
+                MultiperspectiveConformanceAlgorithm(
+                    f'{LOGS}/SyntheticProcessLog{cs}ResourceViolations{amount}.xes',
+                    f'{LOGS}/SyntheticDataAccessLog{cs}ResourceViolations{amount}.xes',
+                    f'{LOGS}/OrganizationalModel{cs}.csv',
+                    f'{LOGS}/ProcessModel.decl',
+                    f'{LOGS}/DataAccessRestrictionModel.csv',
+                    True, n_cases, label
+                )
