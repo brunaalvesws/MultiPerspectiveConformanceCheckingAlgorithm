@@ -727,7 +727,7 @@ def boxplot():
         for patch, color in zip(bp['boxes'], box_colors):
             patch.set_facecolor(color)
 
-        ax.set_title(f"{n_cases} instâncias", fontsize=13, weight="bold")
+        ax.set_title(f"{n_cases} cases", fontsize=13, weight="bold")
         ax.set_ylabel("Tempo (s)")
         ax.set_xticklabels(names)
         ax.grid(axis='y', alpha=0.3)
@@ -1026,7 +1026,7 @@ def plot_execution_scalability_5curves():
 
     plt.xticks(CASE_SIZES, CASE_SIZES)
 
-    plt.xlabel("Número de casos", fontsize=12)
+    plt.xlabel("Número de cases", fontsize=12)
     plt.ylabel("Tempo médio de execução (s)", fontsize=12)
 
     plt.title(
@@ -1118,7 +1118,7 @@ def plot_density_slope():
         ax.set_xticks([0,1])
         ax.set_xticklabels(["10%","30%"])
 
-        ax.set_title(f"{cases} casos",weight="bold")
+        ax.set_title(f"{cases} cases",weight="bold")
 
         ax.grid(axis="y",linestyle="--",alpha=0.3)
 
