@@ -50,15 +50,25 @@ def normalize_xes_timestamps_to_tempfile(xes_path: str) -> str:
     return tmp.name
 
 
-def pre_process_data(process_log_path, access_log_path, model_log_path, process_model_path, access_model_path):
+def pre_process_data(process_log_path, access_log_path, resource_model_path, process_model_path, access_model_path):
     temp_xes_path = normalize_xes_timestamps_to_tempfile(access_log_path)
     access_log = pm4py.read_xes(str(temp_xes_path))
     processed_access_log = access_log.sort_values(['case:concept:name', 'concept:instance'])
-    processed_process_model = pd.read_csv(model_log_path, sep=';')
+    processed_resource_model = pd.read_csv(resource_model_path, sep=';')
     processed_access_model = pd.read_csv(access_model_path, sep=';')
     declare_model = DeclareModel().parse_from_file(process_model_path)
     event_log = D4PyEventLog(case_name="case:concept:name")
     temp_xes_path = normalize_xes_timestamps_to_tempfile(process_log_path)
     event_log.parse_xes_log(str(temp_xes_path))
+
+    process_cases = set(pm4py.convert_to_dataframe(event_log.get_log())['case:concept:name'].unique())
+    access_cases = set(processed_access_log['case:concept:name'].unique())
+    resource_cases = set(processed_resource_model['case:concept:name'].unique())
+
+    if process_cases != access_cases or process_cases != resource_cases:
+        raise ValueError(
+            "Mismatch between process log, access log, and resource model cases. The number and name of cases must be the same in all three files."
+        )
+
     allowed_activities = declare_model.activities
-    return event_log, processed_access_log, processed_process_model, declare_model, processed_access_model, allowed_activities
+    return event_log, processed_access_log, processed_resource_model, declare_model, processed_access_model, allowed_activities

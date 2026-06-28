@@ -54,9 +54,9 @@ if __name__ == "__main__":
     LOGS = '../ExperimentLogsAndModels'
     CASE_SUFFIX = {
         1:    'OneCase',
-        10:    'TenCases',
-        100:   'HundredCases',
-        1000:  'ThousandCases',
+        # 10:    'TenCases',
+        # 100:   'HundredCases',
+        # 1000:  'ThousandCases',
         #10000: 'TenThousandCases',
     }
     for n_cases, cs in CASE_SUFFIX.items():
@@ -76,7 +76,7 @@ if __name__ == "__main__":
                     f'{LOGS}/SyntheticProcessLog{cs}.xes',
                     f'{LOGS}/SyntheticDataAccessLog{cs}.xes',
                     f'{LOGS}/OrganizationalModel{cs}.csv',
-                    f'{LOGS}/ProcessModelActivityViolations{amount}.decl',
+                    f'{LOGS}/ProcessModel{cs}ActivityViolations{amount}.decl',
                     f'{LOGS}/DataAccessRestrictionModel.csv',
                     True, n_cases, label
                 )
