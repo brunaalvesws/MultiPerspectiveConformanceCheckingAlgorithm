@@ -48,6 +48,7 @@ This algorithm is capable of identifying Process flow, Data access and Privacy v
 ```bash
 git clone https://github.com/brunaalvesws/MultiPerspectiveConformanceCheckingAlgorithm.git
 cd MultiPerspectiveConformanceCheckingAlgorithm
+cd Algorithm
 ```
 
 ### 2️⃣ Create virtual environment
@@ -84,7 +85,7 @@ MultiPerspectiveConformanceCheckingAlgorithm/
 │
 ├── Algorithm/
 │   ├── venv/
-│   ├── DevelopmentFiles/
+│   ├── DevelopmentFiles/   # logs and models used in the development process
 │   ├── requirements.txt
 │   ├── ConformanceChecking.py
 │   ├── ConvertLogs.py
@@ -93,14 +94,19 @@ MultiPerspectiveConformanceCheckingAlgorithm/
 │   ├── MultiConformanceAlgorithm.py
 │   ├── ParseFiles.py
 │
-├── AlgorithmVersions/
-├── ConceptualTests/
-├── ExperimentLogsAndModels/
-├── ExperimentTestData/
-├── InitialModelsLogs/
-├── ModelosLogsTeste/
+├── AlgorithmVersions/       # earlier algorithm notebooks and development versions
+├── ConceptualTests/         # pytest tests for correctness and rule validation
+├── ExperimentAnalysis/      # scripts and outputs for experiment result analysis
+├── ExperimentLogsAndModels/ # synthetic logs and Declare models used in experiment
+├── ExperimentOfficialData/  # official results of the experiment and script for running
+├── InitialModelsLogs/       # initial models and logs used for generating the synthetic ones
+├── ModelosLogsTeste/        # test logs and models for validation and demo runs
 └── README.md
 ```
+
+### Experiment and Conceptual Tests
+
+If you want to replicated the experiment for the performance evaluation of this algorithm or execute the automated conceptual tests, read ConceptualTests or ExperimentOfficialData folder's README for more details.
 
 ---
 
@@ -139,3 +145,4 @@ This project is licensed under the MIT License.
 
 Bruna Alves  
 GitHub: https://github.com/brunaalvesws
+Gmail: baws@cin.ufpe.br
