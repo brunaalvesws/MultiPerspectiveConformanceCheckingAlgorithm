@@ -59,7 +59,7 @@ except ImportError:
     warnings.warn("scikit-posthocs not installed – Dunn test unavailable.", stacklevel=1)
 
 # ── configuration ─────────────────────────────────────────────────────────────
-ROOT_DIR    = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR    = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR    = os.path.join(ROOT_DIR, 'ExperimentOfficialData')
 
 ALPHA = 0.05
@@ -379,11 +379,11 @@ def analyse_case_size(n_cases: int) -> dict:
             results['posthoc'] = {'method': 'Dunn-Bonferroni', 'result': ph}
             if ph is not None:
                 print(ph.to_string())
-                plot_dunn_heatmap(
-                    ph,
-                    n_cases,
-                    save_path=f"dunn_heatmap{n_cases}.png"
-                )
+                #plot_dunn_heatmap(
+                #    ph,
+                #    n_cases,
+                #    save_path=f"dunn_heatmap{n_cases}.png"
+                #)
     else:
         print(f"\n4. Post-hoc skipped (omnibus p ≥ {ALPHA})")
 
@@ -424,7 +424,7 @@ def analyse_case_size(n_cases: int) -> dict:
                                         'interp': interp}
             print(f"     {lbl_a} vs {lbl_b}:  Δ = {cd:.4f}  A₁₂ = {a12:.4f}  ({interp})")
         results['effect_pairwise'] = pairwise
-        plot_cliffs_delta_heatmap(pairwise, n_cases, save_path=f"cliffs_delta_heatmap{n_cases}.png")
+        #plot_cliffs_delta_heatmap(pairwise, n_cases, save_path=f"cliffs_delta_heatmap{n_cases}.png")
 
     return results
 
@@ -636,9 +636,9 @@ def main():
                 print(f"LaTeX saved to {args.out}")
             else:
                 print("\n" + latex)
-    boxplot()
+    #boxplot()
     plot_execution_scalability_5curves()
-    plot_density_slope()
+    #plot_density_slope()
     print(f"Analysis output saved to {log_path}")
 
 # ── plot ────────────────────────────────────────────────────────────────────────
@@ -727,7 +727,7 @@ def boxplot():
         for patch, color in zip(bp['boxes'], box_colors):
             patch.set_facecolor(color)
 
-        ax.set_title(f"{n_cases} cases", fontsize=13, weight="bold")
+        ax.set_title(f"{n_cases} cases" if n_cases > 1 else f"{n_cases} case", fontsize=13, weight="bold")
         ax.set_ylabel("Tempo (s)")
         ax.set_xticklabels(names)
         ax.grid(axis='y', alpha=0.3)
@@ -765,7 +765,17 @@ def plot_dunn_heatmap(
         Resultado retornado por scikit_posthocs.posthoc_dunn()
     """
 
-    labels = list(dunn_df.columns)
+    labels = [
+        'SemViolacao',
+        'Fluxo10',
+        'Fluxo30',
+        'Acesso10',
+        'Acesso30',
+        'Recurso10',
+        'Recurso30',
+        'Inesperada10',
+        'Inesperada30'
+    ]
     p = dunn_df.to_numpy(dtype=float)
 
     # Máscara para esconder a diagonal
@@ -834,7 +844,7 @@ def plot_dunn_heatmap(
     cbar = fig.colorbar(im)
 
     cbar.set_label("p-valor ajustado (escala logarítmica)")
-    title=f"Teste post-hoc de Dunn-Bonferroni - {n} Cases"
+    title= f"Teste post-hoc de Dunn-Bonferroni - {n} Cases" if n > 1 else f"Teste post-hoc de Dunn-Bonferroni - {n} Case"
     ax.set_title(title, fontsize=14)
 
     plt.tight_layout()
@@ -861,8 +871,8 @@ def plot_cliffs_delta_heatmap(
     
     labels = [
         'SemViolacao',
-        'Processo10',
-        'Processo30',
+        'Fluxo10',
+        'Fluxo30',
         'Acesso10',
         'Acesso30',
         'Recurso10',
@@ -870,6 +880,11 @@ def plot_cliffs_delta_heatmap(
         'Inesperada10',
         'Inesperada30'
     ]
+
+    label_aliases = {
+        'Processo10': 'Fluxo10',
+        'Processo30': 'Fluxo30',
+    }
 
     n = len(labels)
 
@@ -885,8 +900,14 @@ def plot_cliffs_delta_heatmap(
 
         d = res["cliff"]
 
-        i = index[a]
-        j = index[b]
+        a_label = label_aliases.get(a, a)
+        b_label = label_aliases.get(b, b)
+
+        if a_label not in index or b_label not in index:
+            continue
+
+        i = index[a_label]
+        j = index[b_label]
 
         matrix[i, j] = d
         matrix[j, i] = -d
@@ -941,7 +962,7 @@ def plot_cliffs_delta_heatmap(
 
     cbar.set_ticks([-1,-0.5,0,0.5,1])
     
-    title=f"Cliff's Delta (Tamanho do efeito) - {n_cases} Cases"
+    title=f"Cliff's Delta (Tamanho do efeito) - {n_cases} Cases" if n_cases > 1 else f"Cliff's Delta (Tamanho do efeito) - {n_cases} Case"
 
     ax.set_title(title, fontsize=14)
 
@@ -956,28 +977,53 @@ def plot_execution_scalability_5curves():
 
     CASE_SIZES = [1, 10, 100, 1000]
 
+    # groups = {
+    #     "Sem violação": ["SemViolacao"],
+    #     "Fluxo": ["Processo10", "Processo30"],
+    #     "Acesso": ["Acesso10", "Acesso30"],
+    #     "Recurso": ["Recurso10", "Recurso30"],
+    #     "Inesperada": ["Inesperada10", "Inesperada30"]
+    # }
+    
     groups = {
-        "Sem violação": ["SemViolacao"],
-        "Fluxo": ["Processo10", "Processo30"],
-        "Acesso": ["Acesso10", "Acesso30"],
-        "Recurso": ["Recurso10", "Recurso30"],
-        "Inesperada": ["Inesperada10", "Inesperada30"]
+        "No violations": ["SemViolacao"],
+        "Workflow": ["Processo10", "Processo30"],
+        "Data Access": ["Acesso10", "Acesso30"],
+        "Resource": ["Recurso10", "Recurso30"],
+        "Unexpected Activities": ["Inesperada10", "Inesperada30"]
     }
+
+    # Versão com cores:
+    # colors = {
+    #     "Sem violação": "black",
+    #     "Fluxo": "#1f77b4",
+    #     "Acesso": "#2ca02c",
+    #     "Recurso": "#ff7f0e",
+    #     "Inesperada": "#d62728"
+    # }
 
     colors = {
-        "Sem violação": "black",
-        "Fluxo": "#1f77b4",
-        "Acesso": "#2ca02c",
-        "Recurso": "#ff7f0e",
-        "Inesperada": "#d62728"
+        "No violations": "#333333",
+        "Workflow": "#7f7f7f",
+        "Data Access": "#b3b3b3",
+        "Resource": "#d9d9d9",
+        "Unexpected Activities": "#f0f0f0"
     }
 
+    # markers = {
+    #     "Sem violação": "o",
+    #     "Fluxo": "s",
+    #     "Acesso": "^",
+    #     "Recurso": "D",
+    #     "Inesperada": "X"
+    # }
+    
     markers = {
-        "Sem violação": "o",
-        "Fluxo": "s",
-        "Acesso": "^",
-        "Recurso": "D",
-        "Inesperada": "X"
+        "No violations": "o",
+        "Workflow": "s",
+        "Data Access": "^",
+        "Resource": "D",
+        "Unexpected Activities": "X"
     }
 
     plt.figure(figsize=(10,6))
@@ -1021,24 +1067,38 @@ def plot_execution_scalability_5curves():
 
     plt.xscale("log")
 
-    # Eu também colocaria o eixo Y em log
     plt.yscale("log")
 
     plt.xticks(CASE_SIZES, CASE_SIZES)
 
-    plt.xlabel("Número de cases", fontsize=12)
-    plt.ylabel("Tempo médio de execução (s)", fontsize=12)
+    # plt.xlabel("Número de cases", fontsize=12)
+    # plt.ylabel("Tempo médio de execução (s)", fontsize=12)
+
+    # plt.title(
+    #     "Escalabilidade do algoritmo por tipo de violação",
+    #     fontsize=15,
+    #     weight="bold"
+    # )
+    
+    plt.xlabel("Case number", fontsize=12)
+    plt.ylabel("Execution mean time (s)", fontsize=12)
 
     plt.title(
-        "Escalabilidade do algoritmo por tipo de violação",
+        "Algorithm's scalability by violation type",
         fontsize=15,
         weight="bold"
     )
 
     plt.grid(True, which="both", linestyle="--", alpha=0.35)
 
+    # plt.legend(
+    #     title="Tipo de cenário",
+    #     fontsize=11,
+    #     title_fontsize=11
+    # )
+    
     plt.legend(
-        title="Tipo de cenário",
+        title="Violation type",
         fontsize=11,
         title_fontsize=11
     )
@@ -1046,7 +1106,7 @@ def plot_execution_scalability_5curves():
     plt.tight_layout()
 
     plt.savefig(
-        "escalabilidade_5_curvas.png",
+        "escalabilidade_5_curvas_ingles.png",
         dpi=300,
         bbox_inches="tight"
     )
@@ -1118,7 +1178,7 @@ def plot_density_slope():
         ax.set_xticks([0,1])
         ax.set_xticklabels(["10%","30%"])
 
-        ax.set_title(f"{cases} cases",weight="bold")
+        ax.set_title(f"{cases} cases" if cases > 1 else f"{cases} case", weight="bold")
 
         ax.grid(axis="y",linestyle="--",alpha=0.3)
 
