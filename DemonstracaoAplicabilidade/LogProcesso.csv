@@ -1,0 +1,39 @@
+concept:name,lifecycle:transition,time:timestamp,concept:resource,concept:instance,@@index,@@case_index,case:concept:name
+Atualizacao de requisitos funcionais,begin,2026-01-06 06:10:18.751000+00:00,re7,1,2,0,Demanda 0001
+Atualizacao de requisitos funcionais,complete,2026-01-06 14:10:18.751000+00:00,re7,1,15,0,Demanda 0001
+TESTE ERRO,begin,2026-01-05 22:10:25.751000+00:00,re7,2,0,0,Demanda 0001
+TESTE ERRO,complete,2026-01-06 14:10:25.751000+00:00,re7,2,16,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 06:26:06.751000+00:00,re7,3,3,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 14:26:06.751000+00:00,re7,3,17,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 06:42:28.751000+00:00,re7,4,4,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 14:42:28.751000+00:00,re7,4,19,0,Demanda 0001
+Publicar solucao,begin,2026-01-06 12:50:17.751000+00:00,re7,5,11,0,Demanda 0001
+Publicar solucao,complete,2026-01-06 14:50:17.751000+00:00,re7,5,20,0,Demanda 0001
+Gestao da demanda,begin,2026-01-06 13:12:43.751000+00:00,re7,6,12,0,Demanda 0001
+Gestao da demanda,complete,2026-01-06 15:12:43.751000+00:00,re7,6,22,0,Demanda 0001
+Construcao de funcionalidade,begin,2026-01-06 11:21:37.751000+00:00,re7,7,6,0,Demanda 0001
+Construcao de funcionalidade,complete,2026-01-06 15:21:37.751000+00:00,re7,7,23,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 13:25:46.751000+00:00,re7,8,13,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 15:25:46.751000+00:00,re7,8,24,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 14:30:52.751000+00:00,re7,9,18,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 15:30:52.751000+00:00,re7,9,25,0,Demanda 0001
+Manutencao de funcionalidade,begin,2026-01-06 03:40:51.751000+00:00,re7,10,1,0,Demanda 0001
+Manutencao de funcionalidade,complete,2026-01-06 15:40:51.751000+00:00,re7,10,26,0,Demanda 0001
+Planejamento de entrega,begin,2026-01-06 11:42:10.751000+00:00,re7,11,8,0,Demanda 0001
+Planejamento de entrega,complete,2026-01-06 15:42:10.751000+00:00,re7,11,27,0,Demanda 0001
+Publicar solucao,begin,2026-01-06 11:52:13.751000+00:00,re3,12,9,0,Demanda 0001
+Publicar solucao,complete,2026-01-06 15:52:13.751000+00:00,re3,12,28,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 15:04:13.751000+00:00,re7,13,21,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 16:04:13.751000+00:00,re7,13,30,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 08:46:43.751000+00:00,re7,14,5,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 16:46:43.751000+00:00,re7,14,31,0,Demanda 0001
+Elaborar caso de teste,begin,2026-01-06 22:51:05.751000+00:00,re7,16,36,0,Demanda 0001
+Elaborar caso de teste,complete,2026-01-07 06:51:05.751000+00:00,re7,16,37,0,Demanda 0001
+Corrigir erro,begin,2026-01-06 11:37:09.751000+00:00,re7,17,7,0,Demanda 0001
+Corrigir erro,complete,2026-01-06 17:37:09.751000+00:00,re7,17,33,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 16:01:29.751000+00:00,re7,18,29,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 18:01:29.751000+00:00,re7,18,34,0,Demanda 0001
+Contagem de ponto de funcao,begin,2026-01-06 14:04:29.751000+00:00,re7,19,14,0,Demanda 0001
+Contagem de ponto de funcao,complete,2026-01-06 18:04:29.751000+00:00,re7,19,35,0,Demanda 0001
+Executar teste,begin,2026-01-07 18:06:19.751000+00:00,re10,20,38,0,Demanda 0001
+Executar teste,complete,2026-01-07 19:06:19.751000+00:00,re10,20,39,0,Demanda 0001

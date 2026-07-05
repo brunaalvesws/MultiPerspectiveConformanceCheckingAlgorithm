@@ -1,0 +1,724 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 7946
+>>
+stream
+0.5670000000000001 w
+0 G
+BT
+/F2 14 Tf
+16.0999999999999979 TL
+0. g
+34.0157480314960665 799.3703149606299121 Td
+(Conformance Checking Results) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+484.5642519685039247 799.3703149606299121 Td
+(84.66% Success) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0. g
+485.2142519685038451 785.1970866141732586 Td
+(Total Violations: 25) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 776.69314960629913 m
+561.2642519685039133 776.69314960629913 l
+S
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 754.0159842519684616 Td
+(IGNORED MANDATORY ACTIVITY - 8.00% \(2 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 748.346692913385823 m
+561.2642519685039133 748.346692913385823 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 731.3388188976377933 Td
+(Constraint Violated: Existence1[Review da entrega] | |) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 720.0002362204724022 Td
+(In trace number 0, this rule was violated because an expected activity was not found in the log.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 704.4096850393700606 Td
+(Constraint Violated: Response[Planejamento de entrega, Review da entrega] | | |) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 693.0711023622046696 Td
+(In trace number 0, this rule was violated on instance number 11.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 668.9766141732283131 Td
+(IGNORED MANDATORY DATA ACCESS - 8.00% \(2 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 663.3073228346456744 m
+561.2642519685039133 663.3073228346456744 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 646.2994488188976447 Td
+(Data access: u on Gestao in the activity Atualizacao de requisitos funcionais) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 634.9608661417322537 Td
+(In trace number 0, this data access was performed on instance 1.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 619.3703149606299121 Td
+(Data access: u on Requisito in the activity Atualizacao de requisitos funcionais) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 608.0317322834645211 Td
+(In trace number 0, this data access was performed on instance 1.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 583.9372440944881646 Td
+(ILLEGAL ACTIVITY - 4.00% \(1 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 578.2679527559054122 m
+561.2642519685039133 578.2679527559054122 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 561.2600787401574962 Td
+(Activity: Publicar solucao) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 549.9214960629921052 Td
+(In trace number 0, this activity was done by the resource re3 on instance 12.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 525.827007874015635 Td
+(ILLEGAL DATA ACCESS - 40.00% \(10 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 520.1577165354329964 m
+561.2642519685039133 520.1577165354329964 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 503.1498425196849666 Td
+(Data access: r on Gestao in the activity Publicar solucao) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 491.8112598425196325 Td
+(In trace number 0, this data access was performed on instance 12.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 476.2207086614172908 Td
+(Data access: r on Gestao in the activity Publicar solucao) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 464.8821259842518998 Td
+(In trace number 0, this data access was performed on instance 12.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 449.2915748031495582 Td
+(Data access: d on Gestao in the activity Publicar solucao) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 437.952992125984224 Td
+(In trace number 0, this data access was performed on instance 12.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 422.3624409448818255 Td
+(Data access: r on Codigo in the activity Executar teste) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 411.0238582677164914 Td
+(In trace number 0, this data access was performed on instance 20.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 395.4333070866140929 Td
+(Data access: r on Requisito in the activity Executar teste) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 384.0947244094487587 Td
+(In trace number 0, this data access was performed on instance 20.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 368.5041732283464171 Td
+(Data access: r on Teste in the activity Executar teste) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 357.1655905511810261 Td
+(In trace number 0, this data access was performed on instance 20.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 341.5750393700786844 Td
+(Data access: u on Teste in the activity Executar teste) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 330.2364566929132934 Td
+(In trace number 0, this data access was performed on instance 20.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 314.6459055118109518 Td
+(Data access: r on PF in the activity Atualizacao de requisitos funcionais) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 303.3073228346455608 Td
+(In trace number 0, this data access was performed on instance 1.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 287.7167716535432191 Td
+(Data access: u on Gestao in the activity Publicar solucao) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 276.3781889763778281 Td
+(In trace number 0, this data access was performed on instance 12.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 260.7876377952754865 Td
+(Data access: u on Gestao in the activity Executar teste) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 249.4490551181102092 Td
+(In trace number 0, this data access was performed on instance 20.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 225.354566929133739 Td
+(PROHIBITED ACTIVITY - 4.00% \(1 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 219.6852755905511003 m
+561.2642519685039133 219.6852755905511003 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 202.6774015748030706 Td
+(Constraint Violated: Precedence[Documentacao de requisitos funcionais, Elaborar caso de teste] | | |) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 191.3388188976376796 Td
+(In trace number 0, this rule was violated on instance number 16.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 167.2443307086613231 Td
+(PROHIBITED DATA ACCESS - 4.00% \(1 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 161.575039370078656 m
+561.2642519685039133 161.575039370078656 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 144.5671653543306547 Td
+(Data access: r on PF in the activity Atualizacao de requisitos funcionais) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 133.2285826771652637 Td
+(In trace number 0, this data access was performed on instance 1.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 109.1340944881889072 Td
+(UNEXPECTED ACTIVITY - 4.00% \(1 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 103.4648031496061975 m
+561.2642519685039133 103.4648031496061975 l
+S
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 86.4569291338581252 Td
+(Activity: TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 75.1183464566928478 Td
+(In trace number 0, this activity was done by the resource re7 on instance 2.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0. g
+34.0157480314960665 51.0238582677164914 Td
+(UNEXPECTED DATA ACCESS - 28.00% \(7 errors\)) Tj
+ET
+0. G
+0.2834645669291339 w
+34.0157480314960665 45.3545669291337532 m
+561.2642519685039133 45.3545669291337532 l
+S
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 2123
+>>
+stream
+0.2834645669291339 w
+0. G
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 799.3703149606299121 Td
+(Data access: d on Gestao in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 788.0317322834645211 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 772.4411811023621794 Td
+(Data access: u on Requisito in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 761.1025984251967884 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 745.5120472440944468 Td
+(Data access: r on Requisito in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 734.1734645669291695 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 718.5829133858267141 Td
+(Data access: c on Requisito in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 707.2443307086614368 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 691.6537795275589815 Td
+(Data access: r on Codigo in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 680.3151968503937042 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 664.7246456692912489 Td
+(Data access: d on Requisito in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 653.3860629921259715 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+BT
+/F2 8 Tf
+9.1999999999999993 TL
+0. g
+39.6850393700787407 637.7955118110235162 Td
+(Data access: u on Gestao in the activity TESTE ERRO) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0. g
+45.354330708661422 626.4569291338582389 Td
+(In trace number 0, this data access was performed on instance 2.) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R ]
+/Count 2
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+/F4 10 0 R
+/F5 11 0 R
+/F6 12 0 R
+/F7 13 0 R
+/F8 14 0 R
+/F9 15 0 R
+/F10 16 0 R
+/F11 17 0 R
+/F12 18 0 R
+/F13 19 0 R
+/F14 20 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+21 0 obj
+<<
+/Producer (jsPDF 4.1.0)
+/CreationDate (D:20260705075858-03'00')
+>>
+endobj
+22 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 23
+0000000000 65535 f 
+0000010462 00000 n 
+0000012287 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000008150 00000 n 
+0000008287 00000 n 
+0000010525 00000 n 
+0000010650 00000 n 
+0000010780 00000 n 
+0000010913 00000 n 
+0000011051 00000 n 
+0000011175 00000 n 
+0000011304 00000 n 
+0000011436 00000 n 
+0000011572 00000 n 
+0000011700 00000 n 
+0000011827 00000 n 
+0000011956 00000 n 
+0000012089 00000 n 
+0000012191 00000 n 
+0000012537 00000 n 
+0000012623 00000 n 
+trailer
+<<
+/Size 23
+/Root 22 0 R
+/Info 21 0 R
+/ID [ <FCBE83993AE585E120D635CAB3379B58> <FCBE83993AE585E120D635CAB3379B58> ]
+>>
+startxref
+12727
+%%EOF
