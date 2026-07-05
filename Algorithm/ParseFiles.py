@@ -69,6 +69,11 @@ def pre_process_data(process_log_path, access_log_path, resource_model_path, pro
         raise ValueError(
             "Mismatch between process log, access log, and resource model cases. The number and name of cases must be the same in all three files."
         )
+        
+    if any(obj in declare_model.activities for obj in processed_access_model.iloc[:, 0]):
+        raise ValueError(
+            "It is not possible to have the same name as an activity and a data object in the models. Please, rename the data objects in the access model or the activities in the process model."
+        )
 
     allowed_activities = declare_model.activities
     return event_log, processed_access_log, processed_resource_model, declare_model, processed_access_model, allowed_activities
