@@ -166,7 +166,7 @@ def _execute_runs(n_cases: int, label: str, proc_v: str, acc_v: str,
                 resourcePATH=resource_path,
                 declarePATH=declare_path_,
                 accessmodelPATH=ACCESS_MODEL,
-                consider_vacuity=True,
+                consider_vacuity=False,
                 cases=n_cases,
                 report_label=label,
             )

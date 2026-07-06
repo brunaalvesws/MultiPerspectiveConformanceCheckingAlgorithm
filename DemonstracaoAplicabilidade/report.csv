@@ -1,6 +1,8 @@
 Activity,Resource,Data Object,Operation,Category,Instances
 "Review da entrega","","","","Ignored mandatory activity",""
+"Documentacao de requisitos funcionais","","","","Ignored mandatory activity",""
 "Planejamento de entrega","re7","","","Ignored mandatory activity","11"
+"Documentacao de requisitos funcionais","","","","Ignored mandatory activity",""
 "Atualizacao de requisitos funcionais","","Gestao","update","Ignored mandatory data access","1"
 "Atualizacao de requisitos funcionais","","Requisito","update","Ignored mandatory data access","1"
 "Publicar solucao","re3","","","Illegal activity","12"
