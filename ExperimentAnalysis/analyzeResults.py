@@ -39,7 +39,8 @@ from itertools import combinations
 from typing import Optional
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
-
+from matplotlib.colors import ListedColormap
+import pandas as pd
 import numpy as np
 from scipy import stats
 
@@ -241,7 +242,7 @@ def tukey_hsd_result(data: dict[str, list[float]]) -> Optional[object]:
     """Run Tukey HSD via statsmodels. Returns the result object or None."""
     if not HAS_STATSMODELS:
         return None
-    import pandas as pd
+
     rows = [(t, lbl)
             for lbl, times in data.items()
             for t in times]
@@ -254,7 +255,7 @@ def dunn_bonferroni(data: dict[str, list[float]]) -> Optional[object]:
     """Run Dunn test with Bonferroni correction via scikit-posthocs."""
     if not HAS_POSTHOCS:
         return None
-    import pandas as pd
+
     rows = [(t, lbl) for lbl, ts in data.items() for t in ts]
     df = pd.DataFrame(rows, columns=['value', 'group'])
     return sp.posthoc_dunn(df, val_col='value', group_col='group',
@@ -379,11 +380,11 @@ def analyse_case_size(n_cases: int) -> dict:
             results['posthoc'] = {'method': 'Dunn-Bonferroni', 'result': ph}
             if ph is not None:
                 print(ph.to_string())
-                #plot_dunn_heatmap(
-                #    ph,
-                #    n_cases,
-                #    save_path=f"dunn_heatmap{n_cases}.png"
-                #)
+                plot_dunn_heatmap(
+                    ph,
+                    n_cases,
+                    save_path=f"dunn_heatmap{n_cases}.png"
+                )
     else:
         print(f"\n4. Post-hoc skipped (omnibus p ≥ {ALPHA})")
 
@@ -424,7 +425,7 @@ def analyse_case_size(n_cases: int) -> dict:
                                         'interp': interp}
             print(f"     {lbl_a} vs {lbl_b}:  Δ = {cd:.4f}  A₁₂ = {a12:.4f}  ({interp})")
         results['effect_pairwise'] = pairwise
-        #plot_cliffs_delta_heatmap(pairwise, n_cases, save_path=f"cliffs_delta_heatmap{n_cases}.png")
+        plot_cliffs_delta_heatmap(pairwise, n_cases, save_path=f"cliffs_delta_heatmap{n_cases}.png")
 
     return results
 
@@ -636,9 +637,9 @@ def main():
                 print(f"LaTeX saved to {args.out}")
             else:
                 print("\n" + latex)
-    #boxplot()
+    boxplot()
     plot_execution_scalability_5curves()
-    #plot_density_slope()
+    plot_density_slope()
     print(f"Analysis output saved to {log_path}")
 
 # ── plot ────────────────────────────────────────────────────────────────────────
@@ -746,8 +747,7 @@ def boxplot():
         bbox_inches="tight"
     )
 
-    # plt.show()
-
+    plt.show()
 
 
 def plot_dunn_heatmap(
@@ -757,12 +757,9 @@ def plot_dunn_heatmap(
         save_path=None
 ):
     """
-    Gera um heatmap dos p-valores ajustados do teste de Dunn-Bonferroni.
-
-    Parameters
-    ----------
-    dunn_df : pandas.DataFrame
-        Resultado retornado por scikit_posthocs.posthoc_dunn()
+    Gera um heatmap dos resultados do teste de Dunn-Bonferroni.
+    Verde = diferença estatisticamente significativa.
+    Cinza = diferença não significativa.
     """
 
     labels = [
@@ -776,44 +773,45 @@ def plot_dunn_heatmap(
         'Inesperada10',
         'Inesperada30'
     ]
+
     p = dunn_df.to_numpy(dtype=float)
 
-    # Máscara para esconder a diagonal
     mask = np.eye(len(labels), dtype=bool)
 
-    # Evita problemas no LogNorm
-    plot_data = p.copy()
-    plot_data[plot_data < 1e-300] = 1e-300
-
+    # 1 = significativo | 0 = não significativo
+    plot_data = (p < alpha).astype(int)
     plot_data = np.ma.masked_where(mask, plot_data)
 
-    fig, ax = plt.subplots(figsize=(9,8))
+    fig, ax = plt.subplots(figsize=(9, 8))
 
-    cmap = plt.cm.RdYlGn
+    # Cinza = não significativo | Verde = significativo
+    cmap = ListedColormap([
+        "#E6E6E6",   # p >= alpha
+        "#4F81BD"    # p < alpha
+    ])
     cmap.set_bad(color="white")
 
     im = ax.imshow(
         plot_data,
-        cmap=cmap.reversed(),
-        norm=LogNorm(vmin=1e-50, vmax=1)
+        cmap=cmap,
+        vmin=0,
+        vmax=1
     )
 
-    # ticks
     ax.set_xticks(np.arange(len(labels)))
     ax.set_yticks(np.arange(len(labels)))
 
     ax.set_xticklabels(labels, rotation=45, ha="right")
     ax.set_yticklabels(labels)
 
-    # linhas da grade
+
     ax.set_xticks(np.arange(-.5, len(labels), 1), minor=True)
     ax.set_yticks(np.arange(-.5, len(labels), 1), minor=True)
 
     ax.grid(which="minor", color="gray", linewidth=0.5)
-
     ax.tick_params(which="minor", bottom=False, left=False)
 
-    # escreve os p-valores
+
     for i in range(len(labels)):
         for j in range(len(labels)):
 
@@ -829,7 +827,7 @@ def plot_dunn_heatmap(
             else:
                 text = f"{value:.3f}"
 
-            color = "white" if value < 0.01 else "black"
+            color = "white" if value < alpha else "black"
 
             ax.text(
                 j,
@@ -841,10 +839,19 @@ def plot_dunn_heatmap(
                 color=color
             )
 
-    cbar = fig.colorbar(im)
+    cbar = fig.colorbar(im, ticks=[0, 1])
+    cbar.set_ticklabels([
+        f"p ≥ {alpha}",
+        f"p < {alpha}"
+    ])
+    cbar.set_label("Significância estatística")
 
-    cbar.set_label("p-valor ajustado (escala logarítmica)")
-    title= f"Teste post-hoc de Dunn-Bonferroni - {n} Cases" if n > 1 else f"Teste post-hoc de Dunn-Bonferroni - {n} Case"
+    title = (
+        f"Teste post-hoc de Dunn-Bonferroni - {n} Cases"
+        if n > 1
+        else f"Teste post-hoc de Dunn-Bonferroni - {n} Case"
+    )
+
     ax.set_title(title, fontsize=14)
 
     plt.tight_layout()
@@ -852,7 +859,7 @@ def plot_dunn_heatmap(
     if save_path is not None:
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
 
-    # plt.show()
+    plt.show()
     
 
 def plot_cliffs_delta_heatmap(
@@ -892,10 +899,8 @@ def plot_cliffs_delta_heatmap(
 
     index = {g: i for i, g in enumerate(labels)}
 
-    # diagonal
     np.fill_diagonal(matrix, 0)
 
-    # preenche matriz
     for (a, b), res in pairwise_results.items():
 
         d = res["cliff"]
@@ -935,7 +940,6 @@ def plot_cliffs_delta_heatmap(
 
     ax.tick_params(which="minor", bottom=False, left=False)
 
-    # escreve os valores
     for i in range(n):
         for j in range(n):
 
@@ -971,7 +975,7 @@ def plot_cliffs_delta_heatmap(
     if save_path:
         plt.savefig(save_path, dpi=300, bbox_inches="tight")
 
-    # plt.show()
+    plt.show()
 
 def plot_execution_scalability_5curves():
 
@@ -1111,7 +1115,7 @@ def plot_execution_scalability_5curves():
         bbox_inches="tight"
     )
 
-    # plt.show()
+    plt.show()
     
 
 def plot_density_slope():
